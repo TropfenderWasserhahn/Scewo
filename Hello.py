@@ -1,2 +1,2 @@
-x = int(input("Zahl: ")
+x = int(input("Zahl: "))
 print(x+12)
