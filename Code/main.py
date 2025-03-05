@@ -50,3 +50,20 @@ merged_data = merge_selected_columns(merged_data, dfs, "M1_", "Patient ID")
 merged_data = merge_selected_columns(merged_data, dfs, "M2_", "Patient ID")
 
 data_exploration(merged_data)
+
+# Der Pfad zum Projektordner (eine Ebene höher vom Code-Ordner)
+project_folder = os.path.dirname(os.path.dirname(__file__))
+
+# Der Output-Ordner im Projektordner
+output_folder = os.path.join(project_folder, "Output")
+
+# Wenn der Ordner noch nicht existiert, erstelle ihn
+os.makedirs(output_folder, exist_ok=True)
+
+# Pfad für die Excel-Datei im Output-Ordner
+output_path = os.path.join(output_folder, "merged_data.xlsx")
+
+# Speichern des gemergten DataFrames als Excel-Datei
+merged_data.to_excel(output_path, index=False)
+
+print(f"Die Datei wurde im Output-Ordner gespeichert: {output_path}")
