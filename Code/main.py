@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import os
 print("Module erfolgreich geladen!")
 
+x = int(input("Zahl: "))
+
 # Load data
 measurement_data_M1 = pd.read_csv("Data/M1.csv")
 measurement_data_M2 = pd.read_csv("Data/M2.csv")
