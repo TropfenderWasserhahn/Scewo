@@ -1,5 +1,14 @@
 # This is the main file for data analysis
 
+"""
+The script needs the following packages to be installed (pip install <package>):
+- pandas
+- numpy
+- matplotlib
+- os
+- openpyxl
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -25,10 +34,10 @@ def data_exploration(data):
 
 """
 Merge all data to Screening data so the merged DataFrame will have to following order:
-Screening ¦ Measurement M1 ¦ Interview M1 ¦ PIADS M1 ¦ Measurement M2 ¦ Interview M2 ¦ PIADS M2
-The 'Patient ID' is the unique identifier for the data
-The randomization is set in the Screening dataframe
-The prefixes 'M1_' and 'M2_' are the identifiers for the measurementscores and -times 
+- Screening ¦ Measurement M1 ¦ Interview M1 ¦ PIADS M1 ¦ Measurement M2 ¦ Interview M2 ¦ PIADS M2
+- The 'Patient ID' is the unique identifier for the data
+- The randomization is set in the Screening dataframe
+- The prefixes 'M1_' and 'M2_' are the identifiers for the measurementscores and -times 
 """
 
 # Set Screening data as base
