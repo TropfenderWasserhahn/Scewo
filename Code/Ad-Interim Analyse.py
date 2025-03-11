@@ -189,8 +189,8 @@ def save_histplot(column_suffix, title_suffix):
 
     # **1️⃣ M1 (A) & M2 (B) Histogramm**
     fig, ax = plt.subplots(figsize=(8, 6))
-    sns.histplot(data_a_m1, bins=bin_edges, color="blue", label="M1 (Group A)", ax=ax, multiple="dodge", shrink=0.8)
-    sns.histplot(data_b_m2, bins=bin_edges, color="red", label="M2 (Group B)", ax=ax, multiple="dodge", shrink=0.8)
+    sns.histplot(data_a_m1, bins=bin_edges, color="blue", label="M1 (Group A)", ax=ax, multiple="stack", shrink=0.8)
+    sns.histplot(data_b_m2, bins=bin_edges, color="red", label="M2 (Group B)", ax=ax, multiple="stack", shrink=0.8)
     
     plt.xlabel(column_suffix)
     plt.ylabel("Häufigkeit")
@@ -203,21 +203,35 @@ def save_histplot(column_suffix, title_suffix):
     plt.savefig(os.path.join(output_folder, f"hist_{column_suffix}_M1A_M2B.png"), dpi=300, bbox_inches="tight")
     plt.close()
 
-    # **2️⃣ M2 (A) & M1 (B) Histogramm**
+    # **2️⃣ M2 (A) & M1 (B) Histogramm (gestapelt)**
     fig, ax = plt.subplots(figsize=(8, 6))
-    sns.histplot(data_a_m2, bins=bin_edges, color="green", label="M2 (Group A)", ax=ax, multiple="dodge", shrink=0.8)
-    sns.histplot(data_b_m1, bins=bin_edges, color="purple", label="M1 (Group B)", ax=ax, multiple="dodge", shrink=0.8)
+
+    # **Fix: Daten kombinieren für richtiges Stapeln**
+    data_m2a = pd.DataFrame({"Wert": data_a_m2, "Group": "M2 (Group A)"})
+    data_m1b = pd.DataFrame({"Wert": data_b_m1, "Group": "M1 (Group B)"})
+
+    # Kombiniere beide Gruppen in ein gemeinsames DataFrame
+    data_combined = pd.concat([data_m2a, data_m1b])
+
+    # Jetzt funktioniert `multiple="stack"` korrekt
+    sns.histplot(data=data_combined, x="Wert", hue="Group", bins=bin_edges, multiple="stack", shrink=0.8, ax=ax)
 
     plt.xlabel(column_suffix)
     plt.ylabel("Häufigkeit")
     plt.title(f"Histogramm für {column_suffix} (M2 von A & M1 von B) {title_suffix}")
     plt.xticks(range(0, 8))
-    max_count = max(np.histogram(data_a_m2, bins=range(0, 9))[0].max(), np.histogram(data_b_m1, bins=range(0, 9))[0].max(), 1)
-    plt.yticks(range(0, max_count + 1))
+
+    # **Y-Achse auf ganze Zahlen setzen**
+    max_count = data_combined["Wert"].value_counts().max() + 1
+    plt.yticks(range(0, max_count))
+
     ax.yaxis.grid(True, linestyle="--", alpha=0.7)
     plt.legend()
+
+    # Speichern
     plt.savefig(os.path.join(output_folder, f"hist_{column_suffix}_M2A_M1B.png"), dpi=300, bbox_inches="tight")
     plt.close()
+
 
     print(f"✅ Histogramme für {column_suffix} gespeichert!")
 
