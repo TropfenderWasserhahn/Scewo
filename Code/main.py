@@ -76,3 +76,11 @@ output_path = os.path.join(output_folder, "merged_data.xlsx")
 merged_data.to_excel(output_path, index=False)
 
 print(f"Die Datei wurde im Output-Ordner gespeichert: {output_path}")
+
+# Pfad für die CSV-Datei im Output-Ordner
+output_csv_path = os.path.join(output_folder, "merged_data.csv")
+
+# Speichern des gemergten DataFrames als CSV-Datei
+merged_data.to_csv(output_csv_path, index=False, sep=",")
+
+print(f"Die Datei wurde im Output-Ordner gespeichert: {output_csv_path}")
