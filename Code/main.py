@@ -1,36 +1,35 @@
 # This is the main file for data analysis
 
 """
-The script needs the following packages to be installed (pip install <package>):
+The script needs the following packages to be installed in a virtual environment:
 - pandas
 - numpy
 - matplotlib
 - os
 - openpyxl
+In the terminal, navigate to the folder where this file is located and run the following command:
+pip install pandas numpy matplotlib openpyxl
+This will install the required packages in the virtual environment.
 """
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-print("Module erfolgreich geladen!")
+
+# Define path and function to load data
+base_dir = os.path.dirname(os.path.abspath(__file__))
+def load_csv(filename):
+    file_path = os.path.join(base_dir, "../Data", filename)
+    return pd.read_csv(file_path)
 
 # Load data
-measurement_data_M1 = pd.read_csv("Data/M1.csv")
-measurement_data_M2 = pd.read_csv("Data/M2.csv")
-screening_data = pd.read_csv("Data/Screening.csv")
-piads_data = pd.read_csv("Data/PIADS.csv")
-interview_data = pd.read_csv("Data/Interview.csv")
-
-# Data exploration (just for first visualisation, will be deleted later)
-def data_exploration(data):
-    print(data.head(10))
-    print(data.shape)
-    print(data.columns)
-    print(data.info())
-    print(data.describe())
-    print(data.isna().sum())
-    print('############################################################')
+measurement_data_M1 = load_csv("M1.csv")
+measurement_data_M2 = load_csv("M2.csv")
+screening_data = load_csv("Screening.csv")
+piads_data = load_csv("PIADS.csv")
+interview_data = load_csv("Interview.csv")
+print("CSV-files loaded successfully!")
 
 """
 Merge all data to Screening data so the merged DataFrame will have to following order:
@@ -58,29 +57,27 @@ merged_data = merge_selected_columns(merged_data, dfs, "M1_", "Patient ID")
 # Merge all columns from the dataframes that start with 'M2_'
 merged_data = merge_selected_columns(merged_data, dfs, "M2_", "Patient ID")
 
-data_exploration(merged_data)
-
-# Der Pfad zum Projektordner (eine Ebene höher vom Code-Ordner)
+# Path to the project-folder (one level above the code-folder)
 project_folder = os.path.dirname(os.path.dirname(__file__))
 
-# Der Output-Ordner im Projektordner
+# Define the output-folder in the project-folder
 output_folder = os.path.join(project_folder, "Output")
 
-# Wenn der Ordner noch nicht existiert, erstelle ihn
+# Make the folder if it does not exist
 os.makedirs(output_folder, exist_ok=True)
 
-# Pfad für die Excel-Datei im Output-Ordner
+# Path for the excel-file in the output-folder
 output_path = os.path.join(output_folder, "merged_data.xlsx")
 
-# Speichern des gemergten DataFrames als Excel-Datei
+# Save the merged data to an excel-file
 merged_data.to_excel(output_path, index=False)
 
-print(f"Die Datei wurde im Output-Ordner gespeichert: {output_path}")
+print(f"The excel-file was saved in the 'Output' folder ({output_path})")
 
-# Pfad für die CSV-Datei im Output-Ordner
+# Path for the csv-file in the output-folder
 output_csv_path = os.path.join(output_folder, "merged_data.csv")
 
-# Speichern des gemergten DataFrames als CSV-Datei
+# Save the merged data to an csv-file
 merged_data.to_csv(output_csv_path, index=False, sep=",")
 
-print(f"Die Datei wurde im Output-Ordner gespeichert: {output_csv_path}")
+print(f"The CSV-file was saved in the 'Output' folder ({output_csv_path})")
