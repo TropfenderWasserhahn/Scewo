@@ -78,8 +78,96 @@ for i, col in enumerate(score_names, 1):
 
 # === Speichern ===
 plt.tight_layout()
+# === Boxplots speichern im Output-Ordner ===
 output_path = os.path.join(base_dir, "../Output", "piads_score_boxplots_colored.png")
 plt.savefig(output_path, dpi=300)
 plt.close()
+print(f"PIADS-Boxplots gespeichert unter: {output_path}")
 
-print(f"Gespeichert unter: {output_path}")
+
+# Funktion zum Extrahieren der SSI-Werte
+def extract_ssi(row, version):
+    if version == 'Set 1':
+        return {
+            'SSI_1': row.get('M1_SSI_1') if row['Group'] == 'A' else row.get('M2_SSI_1'),
+            'SSI_3': row.get('M1_SSI_3') if row['Group'] == 'A' else row.get('M2_SSI_3'),
+            'SSI_9': row.get('M1_SSI_9') if row['Group'] == 'A' else row.get('M2_SSI_9'),
+            'SSI_10': row.get('M1_SSI_10') if row['Group'] == 'A' else row.get('M2_SSI_10'),
+            'Version': 'BRO'
+        }
+    else:
+        return {
+            'SSI_1': row.get('M2_SSI_1') if row['Group'] == 'A' else row.get('M1_SSI_1'),
+            'SSI_3': row.get('M2_SSI_3') if row['Group'] == 'A' else row.get('M1_SSI_3'),
+            'SSI_9': row.get('M2_SSI_9') if row['Group'] == 'A' else row.get('M1_SSI_9'),
+            'SSI_10': row.get('M2_SSI_10') if row['Group'] == 'A' else row.get('M1_SSI_10'),
+            'Version': 'Permobil M3'
+        }
+
+# Daten erzeugen
+ssi_set1 = df.apply(lambda row: extract_ssi(row, 'Set 1'), axis=1, result_type='expand')
+ssi_set2 = df.apply(lambda row: extract_ssi(row, 'Set 2'), axis=1, result_type='expand')
+
+# Kombinieren und bereinigen
+ssi_combined = pd.concat([ssi_set1, ssi_set2], ignore_index=True)
+ssi_combined_clean = ssi_combined.dropna()
+
+
+# SSI-Items und Titelzuordnung
+ssi_items = ['SSI_1', 'SSI_3', 'SSI_9', 'SSI_10']
+ssi_titles = {
+    'SSI_1': 'Komfort',
+    'SSI_3': 'Zufriedenheit',
+    'SSI_9': 'Anstrengung',
+    'SSI_10': 'Sicherheit'
+}
+
+bar_colors = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (0/255, 155/255, 0/255)}
+
+# --- Maximalwert über alle Kombinationen finden ---
+max_count = 0
+for item in ssi_items:
+    for version in ['BRO', 'Permobil M3']:
+        version_data = ssi_combined_clean[ssi_combined_clean['Version'] == version][item]
+        counts = version_data.value_counts()
+        if not counts.empty:
+            max_count = max(max_count, counts.max())
+
+# Für Übersicht etwas Puffer geben (z. B. +1)
+y_max = int(np.ceil(max_count + 1))
+
+# --- Plots ---
+fig, axs = plt.subplots(2, 4, figsize=(20, 10))
+
+for col_idx, item in enumerate(ssi_items):
+    for row_idx, version in enumerate(['BRO', 'Permobil M3']):
+        ax = axs[row_idx, col_idx]
+        version_data = ssi_combined_clean[ssi_combined_clean['Version'] == version][item]
+        value_counts = version_data.value_counts().sort_index()
+
+        for score in range(0, 8):
+            if score not in value_counts.index:
+                value_counts.loc[score] = 0
+        value_counts = value_counts.sort_index()
+
+        ax.bar(value_counts.index, value_counts.values, color=bar_colors[version])
+
+        n = int(value_counts.sum())
+        ax.set_title(f"{ssi_titles[item]} – {version} (n={n})")
+
+        ax.set_xlim(-0.5, 7.5)
+        ax.set_ylim(0, y_max)
+        ax.set_xticks(range(0, 8))
+        ax.set_yticks(range(0, y_max + 1))  # Nur ganze Zahlen
+        ax.set_xlabel('Score')
+        ax.set_ylabel('Anzahl')
+        ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+
+plt.tight_layout()
+
+# Speichern
+# === SSI-Balkenplots speichern im Output-Ordner ===
+split_named_bar_path = os.path.join(base_dir, "../Output", "ssi_stacked_barplots_split_named.png")
+plt.savefig(split_named_bar_path, dpi=300)
+plt.close()
+print(f"SSI-Barplots gespeichert unter: {split_named_bar_path}")
