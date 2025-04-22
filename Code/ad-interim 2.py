@@ -53,12 +53,7 @@ for i, col in enumerate(score_names, 1):
     n_bro = combined_scores_clean[combined_scores_clean['Version'] == 'BRO'][col].notna().sum()
     n_perm = combined_scores_clean[combined_scores_clean['Version'] == 'Permobil M3'][col].notna().sum()
 
-    ax = sns.boxplot(
-        data=combined_scores_clean,
-        x='Version',
-        y=col,
-        palette=color_map
-    )
+    ax = sns.boxplot(data=combined_scores_clean, x='Version', y=col, hue='Version', palette=color_map, legend=False)
 
     # Titel mit Score-Namen und n
     plt.title(f'PIADS {col} (n={n_bro} | n={n_perm})')
