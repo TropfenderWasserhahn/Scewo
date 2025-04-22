@@ -8,7 +8,7 @@ import numpy as np
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
 def load_csv(filename):
-    file_path = os.path.join(base_dir, "../Output", filename)
+    file_path = os.path.join(base_dir, "../Data", filename)
     return pd.read_csv(file_path)
 
 df = load_csv("merged_data.csv")

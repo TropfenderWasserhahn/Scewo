@@ -1,20 +1,4 @@
-# This is the main file for data analysis
-
-"""
-The script needs the following packages to be installed in a virtual environment:
-- pandas
-- numpy
-- matplotlib
-- os
-- openpyxl
-In the terminal, navigate to the folder where this file is located and run the following command:
-pip install pandas numpy matplotlib openpyxl
-This will install the required packages in the virtual environment.
-"""
-
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import os
 
 # Define path and function to load data
@@ -61,7 +45,7 @@ merged_data = merge_selected_columns(merged_data, dfs, "M2_", "Patient ID")
 project_folder = os.path.dirname(os.path.dirname(__file__))
 
 # Define the output-folder in the project-folder
-output_folder = os.path.join(project_folder, "Output")
+output_folder = os.path.join(project_folder, "Data")
 
 # Make the folder if it does not exist
 os.makedirs(output_folder, exist_ok=True)
@@ -72,7 +56,7 @@ output_path = os.path.join(output_folder, "merged_data.xlsx")
 # Save the merged data to an excel-file
 merged_data.to_excel(output_path, index=False)
 
-print(f"The excel-file was saved in the 'Output' folder ({output_path})")
+print(f"The excel-file was saved in the 'Data' folder ({output_path})")
 
 # Path for the csv-file in the output-folder
 output_csv_path = os.path.join(output_folder, "merged_data.csv")
@@ -80,4 +64,4 @@ output_csv_path = os.path.join(output_folder, "merged_data.csv")
 # Save the merged data to an csv-file
 merged_data.to_csv(output_csv_path, index=False, sep=",")
 
-print(f"The CSV-file was saved in the 'Output' folder ({output_csv_path})")
+print(f"The CSV-file was saved in the 'Data' folder ({output_csv_path})")
