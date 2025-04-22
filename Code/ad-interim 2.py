@@ -171,3 +171,81 @@ split_named_bar_path = os.path.join(base_dir, "../Output", "ssi_stacked_barplots
 plt.savefig(split_named_bar_path, dpi=300)
 plt.close()
 print(f"SSI-Barplots gespeichert unter: {split_named_bar_path}")
+
+# === Gruppierte Barplots für Aufgaben 1–6 mit korrekt zugewiesenen Scores ===
+
+color_map = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (0/255, 155/255, 0/255)}
+
+fig, axs = plt.subplots(3, 2, figsize=(12, 10))  # 3 Zeilen, 2 Spalten
+axs = axs.flatten()
+
+# Funktion zur Extraktion gemäß korrekter Logik
+def extract_scores_correct_by_group(row, task_num, version_label):
+    if version_label == 'BRO':
+        if row['Group'] == 'A':
+            return [row[col] for col in df.columns if col.startswith(f"M1_{task_num}.") and col.endswith("_score")]
+        elif row['Group'] == 'B':
+            return [row[col] for col in df.columns if col.startswith(f"M2_{task_num}.") and col.endswith("_score")]
+    elif version_label == 'Permobil M3':
+        if row['Group'] == 'A':
+            return [row[col] for col in df.columns if col.startswith(f"M2_{task_num}.") and col.endswith("_score")]
+        elif row['Group'] == 'B':
+            return [row[col] for col in df.columns if col.startswith(f"M1_{task_num}.") and col.endswith("_score")]
+    return []
+
+# Schritt 1: Daten sammeln & globales y-Maximum berechnen
+score_data_per_task = []
+global_max = 0
+
+for task_num in range(1, 7):
+    bro_rows = []
+    m3_rows = []
+
+    for _, row in df.iterrows():
+        bro_rows.extend([{'Score': s, 'Version': 'BRO'} for s in extract_scores_correct_by_group(row, task_num, 'BRO') if pd.notna(s)])
+        m3_rows.extend([{'Score': s, 'Version': 'Permobil M3'} for s in extract_scores_correct_by_group(row, task_num, 'Permobil M3') if pd.notna(s)])
+
+    all_scores = pd.DataFrame(bro_rows + m3_rows)
+    all_scores['Score'] = all_scores['Score'].astype(int)
+
+    score_counts = all_scores.groupby(['Score', 'Version']).size().unstack(fill_value=0)
+    for version in ['BRO', 'Permobil M3']:
+        if version not in score_counts.columns:
+            score_counts[version] = 0
+    score_counts = score_counts.reindex([1, 2, 3], fill_value=0)
+
+    global_max = max(global_max, score_counts.values.max())
+    score_data_per_task.append((task_num, score_counts))
+
+# Schritt 2: Plots erstellen mit einheitlicher y-Achse
+for i, (task_num, score_counts) in enumerate(score_data_per_task):
+    ax = axs[i]
+    width = 0.35
+    x = np.arange(len(score_counts.index))
+
+    bars_bro = ax.bar(x - width/2, score_counts['BRO'], width, label='BRO', color=color_map['BRO'])
+    bars_m3 = ax.bar(x + width/2, score_counts['Permobil M3'], width, label='Permobil M3', color=color_map['Permobil M3'])
+
+    ax.set_title(f'Aufgabe {task_num}', fontsize=11)
+    ax.set_xticks(x)
+    ax.set_xticklabels(['1', '2', '3'], fontsize=10)
+    ax.set_ylim(0, global_max + 1)
+    ax.set_yticks(list(range(0, global_max + 5, 5)))
+    ax.set_ylabel('Anzahl', fontsize=10)
+    ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+
+    # Balkenbeschriftung
+    for bar in bars_bro + bars_m3:
+        height = bar.get_height()
+        if height > 0:
+            ax.text(bar.get_x() + bar.get_width() / 2, height + 0.3, f"{int(height)}", ha='center', va='bottom', fontsize=9)
+
+axs[-1].set_xlabel('Score', fontsize=10)
+axs[0].legend(loc='upper left', fontsize=9)
+
+plt.tight_layout()
+output_path = os.path.join(base_dir, "../Output", "task1to6_score_grouped_barplot_corrected.png")
+plt.savefig(output_path, dpi=300)
+plt.close()
+
+print(f"KORREKTER Score-Barplot (BRO vs. Permobil M3) gespeichert unter: {output_path}")
