@@ -35,7 +35,7 @@ combined_scores = pd.concat([scores_set1, scores_set2], ignore_index=True)
 combined_scores_clean = combined_scores.dropna()
 
 # === Plot-Einstellungen ===
-color_map = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (0/255, 155/255, 0/255)}
+color_map = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (169/255, 169/255, 169/255)}
 score_names = ['total_score', 'competence_score', 'adaptability_score', 'self_esteem_score']
 
 # Einheitlicher Y-Achsenbereich
@@ -117,7 +117,7 @@ ssi_titles = {
     'SSI_10': 'Sicherheit'
 }
 
-bar_colors = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (0/255, 155/255, 0/255)}
+bar_colors = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (169/255, 169/255, 169/255)}
 
 # --- Maximalwert über alle Kombinationen finden ---
 max_count = 0
@@ -132,44 +132,64 @@ for item in ssi_items:
 y_max = int(np.ceil(max_count + 1))
 
 # --- Plots ---
-fig, axs = plt.subplots(2, 4, figsize=(20, 10))
+# --- Plots ---
+fig, axs = plt.subplots(1, 4, figsize=(20, 5))  # Nur eine Zeile, vier Spalten für die SSI-Items
 
 for col_idx, item in enumerate(ssi_items):
-    for row_idx, version in enumerate(['BRO', 'Permobil M3']):
-        ax = axs[row_idx, col_idx]
+    ax = axs[col_idx]
+
+    bar_width = 0.4
+    score_range = range(1, 8)
+
+    # Durchschnittswerte initialisieren
+    mean_values = {}
+
+    for i, version in enumerate(['BRO', 'Permobil M3']):
         version_data = ssi_combined_clean[ssi_combined_clean['Version'] == version][item]
         value_counts = version_data.value_counts().sort_index()
 
-        for score in range(0, 8):
+        # Fehlende Scores mit 0 auffüllen
+        for score in score_range:
             if score not in value_counts.index:
                 value_counts.loc[score] = 0
         value_counts = value_counts.sort_index()
 
-        ax.bar(value_counts.index, value_counts.values, color=bar_colors[version])
+        # Mittelwert berechnen
+        total = sum(score * count for score, count in zip(value_counts.index, value_counts.values))
+        n_version = value_counts.sum()
+        mean = total / n_version if n_version > 0 else 0
+        mean_values[version] = mean
 
-        n = int(value_counts.sum())
-        ax.set_title(f"{ssi_titles[item]} – {version} (n={n})")
+        # X-Position leicht verschieben je nach Version
+        x = [s + (i - 0.5) * bar_width for s in score_range]
+        ax.bar(x, value_counts.values, width=bar_width, label=f"{version} (Ø={mean:.2f})", color=bar_colors[version])
 
-        ax.set_xlim(-0.5, 7.5)
-        ax.set_ylim(0, y_max)
-        ax.set_xticks(range(0, 8))
-        ax.set_yticks(range(0, y_max + 1))  # Nur ganze Zahlen
-        ax.set_xlabel('Score')
-        ax.set_ylabel('Anzahl')
-        ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+    # Formatierung
+    n = int(ssi_combined_clean[item].count() / 2)  # n pro Version
+    ax.set_title(f"{ssi_titles[item]} (n={n})")
+    ax.set_xlim(0.5, 7.5)
+    ax.set_ylim(0, y_max)
+    ax.set_xticks(score_range)
+    ax.set_xlabel('Score')
+    ax.set_ylabel('Anzahl')
+    ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+
+    # Legende mit Mittelwerten
+    ax.legend(loc='upper left', fontsize=9)
 
 plt.tight_layout()
 
 # Speichern
-# === SSI-Balkenplots speichern im Output-Ordner ===
-split_named_bar_path = os.path.join(base_dir, "../Output", "ssi_stacked_barplots_split_named.png")
-plt.savefig(split_named_bar_path, dpi=300)
+combined_bar_path = os.path.join(base_dir, "../Output", "ssi_grouped_barplots_combined.png")
+plt.savefig(combined_bar_path, dpi=300)
 plt.close()
-print(f"SSI-Barplots gespeichert unter: {split_named_bar_path}")
+print(f"Gruppierte SSI-Barplots mit Mittelwerten gespeichert unter: {combined_bar_path}")
+
+
 
 # === Gruppierte Barplots für Aufgaben 1–6 mit korrekt zugewiesenen Scores ===
 
-color_map = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (0/255, 155/255, 0/255)}
+color_map = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (169/255, 169/255, 169/255)}
 
 fig, axs = plt.subplots(3, 2, figsize=(12, 10))  # 3 Zeilen, 2 Spalten
 axs = axs.flatten()
@@ -212,19 +232,42 @@ for task_num in range(1, 7):
     global_max = max(global_max, score_counts.values.max())
     score_data_per_task.append((task_num, score_counts))
 
+# Neue Titel definieren
+task_titles = [
+    "Einstellungen",
+    "Manövrierfähigkeit / Beweglichkeit",
+    "Alltagssituationen in der Küche",
+    "Steigung",
+    "Bordsteinkanten",
+    "Treppe"
+]
+
 # Schritt 2: Plots erstellen mit einheitlicher y-Achse
 for i, (task_num, score_counts) in enumerate(score_data_per_task):
     ax = axs[i]
     width = 0.35
     x = np.arange(len(score_counts.index))
 
+    # Balken zeichnen
     bars_bro = ax.bar(x - width/2, score_counts['BRO'], width, label='BRO', color=color_map['BRO'])
     bars_m3 = ax.bar(x + width/2, score_counts['Permobil M3'], width, label='Permobil M3', color=color_map['Permobil M3'])
 
-    ax.set_title(f'Aufgabe {task_num}', fontsize=11)
+    # Mittelwertberechnung
+    bro_total = sum(score * count for score, count in zip(score_counts.index, score_counts['BRO']))
+    bro_n = score_counts['BRO'].sum()
+    mean_bro = bro_total / bro_n if bro_n > 0 else 0
+
+    m3_total = sum(score * count for score, count in zip(score_counts.index, score_counts['Permobil M3']))
+    m3_n = score_counts['Permobil M3'].sum()
+    mean_m3 = m3_total / m3_n if m3_n > 0 else 0
+
+    # Angepasster Titel
+    ax.set_title(task_titles[i], fontsize=11)
+
+    # Achsen
     ax.set_xticks(x)
-    ax.set_xticklabels(['1', '2', '3'], fontsize=10)
-    ax.set_ylim(0, global_max + 1)
+    ax.set_xticklabels(['Fail (1)', 'Partial Pass (2)', 'Pass (3)'], fontsize=10)
+    ax.set_ylim(0, global_max + 3)
     ax.set_yticks(list(range(0, global_max + 5, 5)))
     ax.set_ylabel('Anzahl', fontsize=10)
     ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
@@ -235,12 +278,19 @@ for i, (task_num, score_counts) in enumerate(score_data_per_task):
         if height > 0:
             ax.text(bar.get_x() + bar.get_width() / 2, height + 0.3, f"{int(height)}", ha='center', va='bottom', fontsize=9)
 
-axs[-1].set_xlabel('Score', fontsize=10)
-axs[0].legend(loc='upper left', fontsize=9)
+    # Legende mit Mittelwerten
+    ax.legend(
+        [f'BRO (Ø={mean_bro:.2f})', f'Permobil M3 (Ø={mean_m3:.2f})'],
+        loc='upper left',
+        fontsize=9
+    )
 
+# Beschriftung unten rechts
+axs[-1].set_xlabel('Score', fontsize=10)
 plt.tight_layout()
 output_path = os.path.join(base_dir, "../Output", "task1to6_score_grouped_barplot_corrected.png")
 plt.savefig(output_path, dpi=300)
 plt.close()
 
-print(f"KORREKTER Score-Barplot (BRO vs. Permobil M3) gespeichert unter: {output_path}")
+print(f"KORREKTER Score-Barplot (BRO vs. Permobil M3) mit Mittelwerten gespeichert unter: {output_path}")
+
