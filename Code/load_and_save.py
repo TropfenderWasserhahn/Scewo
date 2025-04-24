@@ -1,67 +1,43 @@
 import pandas as pd
 import os
 
-# Define path and function to load data
+# Define paths
 base_dir = os.path.dirname(os.path.abspath(__file__))
+project_folder = os.path.dirname(base_dir)
+data_folder = os.path.join(project_folder, "Data")
+
+# Helper function to load CSV files
 def load_csv(filename):
-    file_path = os.path.join(base_dir, "../Data", filename)
-    return pd.read_csv(file_path)
+    return pd.read_csv(os.path.join(data_folder, filename))
 
 # Load data
-measurement_data_M1 = load_csv("M1.csv")
-measurement_data_M2 = load_csv("M2.csv")
-screening_data = load_csv("Screening.csv")
-piads_data = load_csv("PIADS.csv")
-interview_data = load_csv("Interview.csv")
+data_files = ["M1.csv", "M2.csv", "Screening.csv", "PIADS.csv", "Interview.csv"]
+measurement_data_M1, measurement_data_M2, screening_data, piads_data, interview_data = map(load_csv, data_files)
 print("CSV-files loaded successfully!")
 
-"""
-Merge all data to Screening data so the merged DataFrame will have to following order:
-- Screening ¦ Measurement M1 ¦ Interview M1 ¦ PIADS M1 ¦ Measurement M2 ¦ Interview M2 ¦ PIADS M2
-- The 'Patient ID' is the unique identifier for the data
-- The randomization is set in the Screening dataframe
-- The prefixes 'M1_' and 'M2_' are the identifiers for the measurementscores and -times 
-"""
+# Merge dataframes based on prefixes
+def merge_data(base_df, dfs, prefixes, id_col="Patient ID"):
+    for prefix in prefixes:
+        for df in dfs:
+            selected_cols = [id_col] + [col for col in df.columns if col.startswith(prefix)]
+            if len(selected_cols) > 1:  # Merge only if columns with the prefix exist
+                base_df = pd.merge(base_df, df[selected_cols], on=id_col, how="left")
+    return base_df
 
-# Set Screening data as base
-merged_data = screening_data
-# List of dataframes that wil be merged in correct order
-dfs = [measurement_data_M1, measurement_data_M2, interview_data, piads_data]
-# Function for selective merging according to prefix M1_ or M2_
-def merge_selected_columns(df_base, dfs, prefix, id_col):
-    for df in dfs:
-        selected_cols = [id_col] + [col for col in df.columns if col.startswith(prefix)]
-        if len(selected_cols) > 1:  # Nur mergen, wenn Spalten mit dem Präfix existieren
-            df_base = pd.merge(df_base, df[selected_cols], on=id_col, how="left")
-    return df_base
+# Merge all data into the screening data
+merged_data = merge_data(screening_data, [measurement_data_M1, measurement_data_M2, interview_data, piads_data], ["M1_", "M2_"])
 
-# Merge all columns from the dataframes that start with 'M1_'
-merged_data = merge_selected_columns(merged_data, dfs, "M1_", "Patient ID")
+# Save merged data to Excel and CSV
+output_files = {
+    "merged_data.xlsx": merged_data.to_excel,
+    "merged_data.csv": lambda path: merged_data.to_csv(path, index=False, sep=",")
+}
 
-# Merge all columns from the dataframes that start with 'M2_'
-merged_data = merge_selected_columns(merged_data, dfs, "M2_", "Patient ID")
-
-# Path to the project-folder (one level above the code-folder)
-project_folder = os.path.dirname(os.path.dirname(__file__))
-
-# Define the output-folder in the project-folder
-output_folder = os.path.join(project_folder, "Data")
-
-# Make the folder if it does not exist
-os.makedirs(output_folder, exist_ok=True)
-
-# Path for the excel-file in the output-folder
-output_path = os.path.join(output_folder, "merged_data.xlsx")
-
-# Save the merged data to an excel-file
-merged_data.to_excel(output_path, index=False)
-
-print(f"The excel-file was saved in the 'Data' folder ({output_path})")
-
-# Path for the csv-file in the output-folder
-output_csv_path = os.path.join(output_folder, "merged_data.csv")
-
-# Save the merged data to an csv-file
-merged_data.to_csv(output_csv_path, index=False, sep=",")
-
-print(f"The CSV-file was saved in the 'Data' folder ({output_csv_path})")
+os.makedirs(data_folder, exist_ok=True)
+for filename, save_func in output_files.items():
+    output_path = os.path.join(data_folder, filename)
+    if filename.endswith(".xlsx"):
+        save_func(output_path, index=False)
+    else:
+        save_func(output_path)
+    print(f"The file was saved in the 'Data' folder ({output_path})")
