@@ -13,6 +13,8 @@ def load_csv(filename):
 
 df = load_csv("merged_data.csv")
 
+color_map = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (169/255, 169/255, 169/255)}
+
 # === Set 1: A → M1, B → M2 | Set 2: A → M2, B → M1 ===
 scores_set1 = df.apply(lambda row: pd.Series({
     'total_score': row.get('M1_total_score') if row['Group'] == 'A' else row.get('M2_total_score'),
@@ -35,7 +37,6 @@ combined_scores = pd.concat([scores_set1, scores_set2], ignore_index=True)
 combined_scores_clean = combined_scores.dropna()
 
 # === Plot-Einstellungen ===
-color_map = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (169/255, 169/255, 169/255)}
 score_names = ['total_score', 'competence_score', 'adaptability_score', 'self_esteem_score']
 
 # Einheitlicher Y-Achsenbereich

@@ -14,9 +14,9 @@ def load_csv(filename):
 
 df = load_csv("merged_data.csv")
 
-# === Gruppierte Barplots für Aufgaben 1–6 mit korrekt zugewiesenen Scores ===
-
 color_map = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (169/255, 169/255, 169/255)}
+
+# === Gruppierte Barplots für Aufgaben 1–6 mit korrekt zugewiesenen Scores ===
 
 fig, axs = plt.subplots(3, 2, figsize=(12, 10))  # 3 Zeilen, 2 Spalten
 axs = axs.flatten()
@@ -120,6 +120,8 @@ plt.savefig(output_path, dpi=300)
 plt.close()
 
 print(f"KORREKTER Score-Barplot (BRO vs. Permobil M3) mit Mittelwerten gespeichert unter: {output_path}")
+
+# ---------------------------------------------------------------------------------------------------------------------------
 
 # Alle Aufgaben einzeln darstellen
 titles_ordered = [

@@ -13,6 +13,8 @@ def load_csv(filename):
 
 df = load_csv("merged_data.csv")
 
+color_map = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (169/255, 169/255, 169/255)}
+
 # Funktion zum Extrahieren der SSI-Werte
 def extract_ssi(row, version):
     if version == 'Set 1':
@@ -49,8 +51,6 @@ ssi_titles = {
     'SSI_9': 'Anstrengung',
     'SSI_10': 'Sicherheit'
 }
-
-bar_colors = {'BRO': (0/255, 165/255, 249/255), 'Permobil M3': (169/255, 169/255, 169/255)}
 
 # --- Maximalwert über alle Kombinationen finden ---
 max_count = 0
@@ -95,7 +95,7 @@ for col_idx, item in enumerate(ssi_items):
 
         # X-Position leicht verschieben je nach Version
         x = [s + (i - 0.5) * bar_width for s in score_range]
-        ax.bar(x, value_counts.values, width=bar_width, label=f"{version} (Ø={mean:.2f})", color=bar_colors[version])
+        ax.bar(x, value_counts.values, width=bar_width, label=f"{version} (Ø={mean:.2f})", color=color_map[version])
 
     # Formatierung
     n = int(ssi_combined_clean[item].count() / 2)  # n pro Version
