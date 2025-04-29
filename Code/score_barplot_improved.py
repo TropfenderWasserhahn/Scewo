@@ -58,10 +58,10 @@ df = load_csv("merged_data.csv")
 # === Combined Barplots (Tasks 1–6) ===
 fig, axs = plt.subplots(3, 2, figsize=(12, 10))
 axs = axs.flatten()
-global_max = 0
 
 for i, task_num in enumerate(range(1, 7)):
     bro_rows, m3_rows = [], []
+    global_max = 0
 
     for _, row in df.iterrows():
         bro_rows.extend([{'Score': s, 'Version': 'BRO'} for s in extract_scores(row, task_num, 'BRO')])

@@ -84,7 +84,7 @@ for ax, item in zip(axs, SSI_ITEMS):
     n = int(ssi_combined_clean[item].count() / 2)  # n per version
     ax.set_title(f"{SSI_TITLES[item]} (n={n})")
     ax.set_xlim(0.5, 7.5)
-    ax.set_ylim(0, y_max_values[item])  # Use dynamic y_max for each item
+    ax.set_ylim(0, max_count + 1)  # Use dynamic y_max for each item
     ax.set_xticks(SCORE_RANGE)
     ax.set_xlabel('Score')
     ax.set_ylabel('Anzahl')
