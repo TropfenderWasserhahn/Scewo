@@ -49,17 +49,28 @@ def spider_chart(df, detailed_titles, color_map, save_path=None):
             bro_col = f"M1_{subtask}_time" if row['Group'] == 'A' else f"M2_{subtask}_time"
             m3_col = f"M2_{subtask}_time" if row['Group'] == 'A' else f"M1_{subtask}_time"
 
-            if bro_col in row and pd.notna(row[bro_col]):
+            if bro_col in df.columns and pd.notna(row.get(bro_col, np.nan)):
                 bro_values.append(float(row[bro_col]))
-            if m3_col in row and pd.notna(row[m3_col]):
+            if m3_col in df.columns and pd.notna(row.get(m3_col, np.nan)):
                 m3_values.append(float(row[m3_col]))
 
-        mean_times_bro.append(np.mean(bro_values) if bro_values else 0)
-        mean_times_m3.append(np.mean(m3_values) if m3_values else 0)
+        bro_mean = np.mean(bro_values) if bro_values else 0
+        m3_mean = np.mean(m3_values) if m3_values else 0
+
+        mean_times_bro.append(bro_mean)
+        mean_times_m3.append(m3_mean)
+
+    # === Logarithmische Transformation (log(1 + x))
+    mean_times_bro = [np.log1p(t) for t in mean_times_bro]
+    mean_times_m3 = [np.log1p(t) for t in mean_times_m3]
 
     # === Spider Chart erstellen ===
     num_vars = len(detailed_titles)
     angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
+
+    if not mean_times_bro or not mean_times_m3:
+        print("⚠️ Keine gültigen Zeitwerte für Plot gefunden.")
+        return
 
     # Schleife schließen
     mean_times_bro += [mean_times_bro[0]]
@@ -77,7 +88,7 @@ def spider_chart(df, detailed_titles, color_map, save_path=None):
     ax.set_theta_offset(np.pi / 2)
     ax.set_theta_direction(-1)
     ax.set_thetagrids(np.degrees(angles[:-1]), detailed_titles)
-    ax.set_title("Ø Zeit pro Aufgabe – BRO vs. Permobil M3", size=14, pad=20)
+    ax.set_title("Ø Zeit pro Aufgabe – BRO vs. Permobil M3 (log)", size=14, pad=20)
     ax.legend(loc='upper right', bbox_to_anchor=(1.2, 1.1))
 
     plt.tight_layout()
