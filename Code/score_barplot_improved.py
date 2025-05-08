@@ -1,8 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 import os
 import numpy as np
 import re
+from math import ceil
 
 # === Constants ===
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -45,10 +47,20 @@ def plot_bar_chart(ax, score_counts, title, global_max):
 
     ax.set_title(title, fontsize=10)
     ax.set_xticks(x)
-    ax.set_xticklabels(['Fail (1)', 'Partial Pass (2)', 'Pass (3)'])
-    ax.set_ylim(0, global_max + 3)
+    ax.set_xticklabels(['No Part (0)', 'Fail (1)', 'Partial Pass (2)', 'Pass (3)'])
+
+    # === Y-Achse: mindestens +4 und auf Tick enden ===
+    minimum_ymax = global_max + 4
+    locator = ticker.MaxNLocator(integer=True)
+    tick_values = locator.tick_values(0, minimum_ymax)
+
+    final_ymax = tick_values[tick_values >= minimum_ymax].min()  # nächster gültiger Tick ≥ minimum
+    ax.set_ylim(0, final_ymax)
+    ax.yaxis.set_major_locator(locator)
+
     ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
     ax.legend(loc='upper left', fontsize=10)
+
 
 # === Main Logic ===
 df = load_csv("merged_data.csv")
@@ -67,7 +79,7 @@ for i, task_num in enumerate(range(1, 7)):
 
     all_scores = pd.DataFrame(bro_rows + m3_rows)
     all_scores['Score'] = all_scores['Score'].astype(int)
-    score_counts = all_scores.groupby(['Score', 'Version']).size().unstack(fill_value=0).reindex([1, 2, 3], fill_value=0)
+    score_counts = all_scores.groupby(['Score', 'Version']).size().unstack(fill_value=0).reindex([0, 1, 2, 3], fill_value=0)
     global_max = max(global_max, score_counts.values.max())
 
     plot_bar_chart(axs[i], score_counts, COMBINED_TITLES[i], global_max)
@@ -101,7 +113,13 @@ for subtask, title, ax in zip(subtasks, DETAILED_TITLES, axs):
             m3_scores.append({'Score': int(row[m3_col]), 'Version': 'Permobil M3'})
 
     all_scores = pd.DataFrame(bro_scores + m3_scores)
-    score_counts = all_scores.groupby(['Score', 'Version']).size().unstack(fill_value=0).reindex([1, 2, 3], fill_value=0)
+    score_counts = (
+        all_scores.groupby(['Score', 'Version'])
+        .size()
+        .unstack(fill_value=0)
+        .reindex(index=pd.Index([0, 1, 2, 3], name='Score'), fill_value=0)
+)
+
     global_max = max(global_max, score_counts.values.max())
 
     plot_bar_chart(ax, score_counts, title, global_max)
