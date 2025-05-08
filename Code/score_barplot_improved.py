@@ -35,22 +35,20 @@ def plot_bar_chart(ax, score_counts, title, global_max):
     x = np.arange(len(score_counts.index))
     width = 0.35
 
-    bars_bro = ax.bar(x - width/2, score_counts['BRO'], width, label='BRO', color=COLOR_MAP['BRO'])
-    bars_m3 = ax.bar(x + width/2, score_counts['Permobil M3'], width, label='Permobil M3', color=COLOR_MAP['Permobil M3'])
-
     mean_bro = calculate_mean(score_counts, 'BRO')
     mean_m3 = calculate_mean(score_counts, 'Permobil M3')
 
-    ax.set_title(f"{title} – BRO (Ø={mean_bro:.2f}), M3 (Ø={mean_m3:.2f})", fontsize=10)
+    bars_bro = ax.bar(x - width/2, score_counts['BRO'], width,
+                      label=f'BRO (Ø={mean_bro:.2f})', color=COLOR_MAP['BRO'])
+    bars_m3 = ax.bar(x + width/2, score_counts['Permobil M3'], width,
+                     label=f'Permobil M3 (Ø={mean_m3:.2f})', color=COLOR_MAP['Permobil M3'])
+
+    ax.set_title(title, fontsize=10)
     ax.set_xticks(x)
     ax.set_xticklabels(['Fail (1)', 'Partial Pass (2)', 'Pass (3)'])
     ax.set_ylim(0, global_max + 3)
     ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
-
-    for bar in bars_bro + bars_m3:
-        height = bar.get_height()
-        if height > 0:
-            ax.text(bar.get_x() + bar.get_width() / 2, height + 0.3, f"{int(height)}", ha='center', va='bottom', fontsize=8)
+    ax.legend(loc='upper left', fontsize=10)
 
 # === Main Logic ===
 df = load_csv("merged_data.csv")

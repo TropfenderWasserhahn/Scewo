@@ -89,7 +89,7 @@ for ax, item in zip(axs, SSI_ITEMS):
     ax.set_xlabel('Score')
     ax.set_ylabel('Anzahl')
     ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
-    ax.legend(loc='upper left', fontsize=9)
+    ax.legend(loc='upper left', fontsize=11)
 
 plt.tight_layout()
 

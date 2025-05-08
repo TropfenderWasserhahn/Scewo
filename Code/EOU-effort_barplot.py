@@ -15,13 +15,11 @@ def load_csv(filename):
     return pd.read_csv(os.path.join(BASE_DIR, "../Data", filename))
 
 def calculate_mean(value_counts):
-    """Calculate the mean score from value counts."""
     scores = np.array(value_counts.index)
     freq = value_counts.values
     return (scores * freq).sum() / freq.sum() if freq.sum() > 0 else 0
 
 def extract_metric_values(df, metric_suffix, task_labels):
-    """Extract EOU or effort values with correct M1/M2 mapping based on group."""
     records = []
     for _, row in df.iterrows():
         for task in task_labels:
@@ -51,23 +49,26 @@ def plot_eou_effort_paired(data_eou, data_effort, task_labels, output_file):
                     continue
 
                 mean_vals = {}
+                max_height = 0
+
                 for j, version in enumerate(['BRO', 'Permobil M3']):
                     values = subset[subset['Version'] == version]['Score']
                     counts = values.value_counts().reindex(SCORE_RANGE, fill_value=0).sort_index()
                     scores = np.array(counts.index)
                     freq = counts.values
                     mean_vals[version] = (scores * freq).sum() / freq.sum() if freq.sum() > 0 else 0
+                    max_height = max(max_height, freq.max())
                     x = [s + (j - 0.5) * BAR_WIDTH for s in SCORE_RANGE]
                     ax.bar(x, freq, width=BAR_WIDTH, label=f"{version} (Ø={mean_vals[version]:.2f})", color=COLOR_MAP[version])
 
                 ax.set_title(f"{metric_label} – Aufgabe {task}")
                 ax.set_xlim(0.5, 7.5)
-                ax.set_ylim(0, max(freq.max(), 1) + 1)
+                ax.set_ylim(0, max_height + 1)
                 ax.set_xticks(SCORE_RANGE)
                 ax.set_xlabel('Score')
                 ax.set_ylabel('Anzahl')
                 ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
-                ax.legend(loc='upper left', fontsize=9)
+                ax.legend(loc='upper left', fontsize=11)
 
         if len(task_pair) == 1:
             axs[row_idx][1].axis('off')
@@ -79,7 +80,6 @@ def plot_eou_effort_paired(data_eou, data_effort, task_labels, output_file):
 # === Main Logic ===
 df = load_csv("merged_data.csv")
 
-# Tasks extrahieren
 eou_columns = [col for col in df.columns if col.endswith('_EOU')]
 effort_columns = [col for col in df.columns if col.endswith('_effort')]
 task_pattern = re.compile(r'^[Mm][12]_(\d+\.\d+)_')
@@ -90,12 +90,10 @@ task_labels = sorted({
     if (match := task_pattern.match(col))
 }, key=lambda x: list(map(int, x.split('.'))))
 
-# EOU und Effort extrahieren
 eou_df = extract_metric_values(df, 'EOU', task_labels)
 effort_df = extract_metric_values(df, 'effort', task_labels)
 
-# Plot erstellen
-output_path = os.path.join(BASE_DIR, "../Output", "eou_effort_grouped_barplots_combined.png")
+output_path = os.path.join(BASE_DIR, "../Output", "eou_effort_grouped_barplots_combined_dynamic_ylim.png")
 plot_eou_effort_paired(eou_df, effort_df, task_labels, output_path)
 
 print(f"EOU + Effort Diagramm gespeichert unter: {output_path}")
