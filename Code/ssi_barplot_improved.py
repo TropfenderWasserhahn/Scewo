@@ -94,7 +94,36 @@ for ax, item in zip(axs, SSI_ITEMS):
 plt.tight_layout()
 
 # Save plot
-output_path = os.path.join(BASE_DIR, "../Output", "ssi_grouped_barplots_combined.png")
+output_path = os.path.join(BASE_DIR, "../Output", "ssi_grouped_barplots.png")
 plt.savefig(output_path, dpi=300)
 plt.close()
 print(f"Gruppierte SSI-Barplots mit Mittelwerten gespeichert unter: {output_path}")
+
+# === Separate Boxplots für SSI-Items ===
+fig, axs = plt.subplots(1, len(SSI_ITEMS), figsize=(20, 5))
+
+for ax, item in zip(axs, SSI_ITEMS):
+    bro_scores = ssi_combined_clean[ssi_combined_clean['Version'] == 'BRO'][item].dropna()
+    m3_scores = ssi_combined_clean[ssi_combined_clean['Version'] == 'Permobil M3'][item].dropna()
+
+    box = ax.boxplot([bro_scores, m3_scores], labels=['BRO', 'Permobil M3'],
+                     patch_artist=True,
+                     medianprops=dict(color='black'),
+                     whiskerprops=dict(color='black'),
+                     capprops=dict(color='black'),
+                     flierprops=dict(markerfacecolor='red', marker='o', markersize=5, linestyle='none'))
+
+    # Farben zuweisen
+    for patch, color in zip(box['boxes'], [COLOR_MAP['BRO'], COLOR_MAP['Permobil M3']]):
+        patch.set_facecolor(color)
+
+    ax.set_title(SSI_TITLES[item])
+    ax.set_ylabel('Score')
+    ax.set_ylim(0.5, 7.5)
+    ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+
+plt.tight_layout()
+boxplot_output_path = os.path.join(BASE_DIR, "../Output", "ssi_boxplots.png")
+plt.savefig(boxplot_output_path, dpi=300)
+plt.close()
+print(f"SSI-Boxplots separat gespeichert unter: {boxplot_output_path}")

@@ -93,7 +93,40 @@ task_labels = sorted({
 eou_df = extract_metric_values(df, 'EOU', task_labels)
 effort_df = extract_metric_values(df, 'effort', task_labels)
 
-output_path = os.path.join(BASE_DIR, "../Output", "eou_effort_grouped_barplots_combined_dynamic_ylim.png")
+output_path = os.path.join(BASE_DIR, "../Output", "eou_effort_grouped_barplots.png")
 plot_eou_effort_paired(eou_df, effort_df, task_labels, output_path)
 
 print(f"EOU + Effort Diagramm gespeichert unter: {output_path}")
+
+# === Boxplots für EOU und Effort über alle Aufgaben ===
+def plot_overall_boxplots(eou_df, effort_df, output_file):
+    fig, axs = plt.subplots(1, 2, figsize=(12, 5))
+
+    for ax, data, title in zip(axs, [eou_df, effort_df], ['Benutzerfreundlichkeit (EOU)', 'Anstrengung (Effort)']):
+        scores_bro = data[data['Version'] == 'BRO']['Score'].dropna()
+        scores_m3 = data[data['Version'] == 'Permobil M3']['Score'].dropna()
+
+        box = ax.boxplot([scores_bro, scores_m3], labels=['BRO', 'Permobil M3'],
+                         patch_artist=True,
+                         medianprops=dict(color='black'),
+                         whiskerprops=dict(color='black'),
+                         capprops=dict(color='black'),
+                         flierprops=dict(markerfacecolor='red', marker='o', markersize=5, linestyle='none'))
+
+        # Farben manuell zuweisen
+        for patch, color in zip(box['boxes'], [COLOR_MAP['BRO'], COLOR_MAP['Permobil M3']]):
+            patch.set_facecolor(color)
+
+        ax.set_title(title)
+        ax.set_ylabel('Score')
+        ax.set_ylim(0.5, 7.5)
+        ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+
+    plt.tight_layout()
+    boxplot_output = output_file.replace(".png", "_boxplot.png")
+    plt.savefig(boxplot_output, dpi=300)
+    plt.close()
+    print(f"Boxplot gespeichert unter: {boxplot_output}")
+
+# Am Ende der Main-Logik aufrufen:
+plot_overall_boxplots(eou_df, effort_df, output_path)

@@ -65,5 +65,5 @@ combined_scores = pd.concat([scores_set1, scores_set2], ignore_index=True)
 combined_scores_clean = combined_scores.dropna()
 
 # Plot and save boxplots
-output_path = os.path.join(BASE_DIR, "../Output", "piads_score_boxplots_colored.png")
+output_path = os.path.join(BASE_DIR, "../Output", "piads_boxplots.png")
 plot_boxplots(combined_scores_clean, SCORE_NAMES, Y_LIM, Y_TICKS, COLOR_MAP, output_path)

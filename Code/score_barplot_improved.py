@@ -85,7 +85,7 @@ for i, task_num in enumerate(range(1, 7)):
     plot_bar_chart(axs[i], score_counts, COMBINED_TITLES[i], global_max)
 
 plt.tight_layout()
-output_path = os.path.join(BASE_DIR, "../Output", "task1to6_score_grouped_barplot_corrected.png")
+output_path = os.path.join(BASE_DIR, "../Output", "task1to6_score_grouped_barplot.png")
 plt.savefig(output_path, dpi=300)
 plt.close()
 
@@ -128,6 +128,44 @@ for ax in axs[len(subtasks):]:
     ax.axis('off')
 
 plt.tight_layout()
-output_path = os.path.join(BASE_DIR, "../Output", "subtask_detailed_grouped_barplots_named.png")
+output_path = os.path.join(BASE_DIR, "../Output", "task1to6_score_ detailed_grouped_barplot.png")
+plt.savefig(output_path, dpi=300)
+plt.close()
+
+# === Combined Boxplots (Tasks 1–6) ===
+fig, axs = plt.subplots(3, 2, figsize=(12, 10))
+axs = axs.flatten()
+
+for i, task_num in enumerate(range(1, 7)):
+    bro_scores, m3_scores = [], []
+
+    for _, row in df.iterrows():
+        bro_scores.extend(extract_scores(row, task_num, 'BRO'))
+        m3_scores.extend(extract_scores(row, task_num, 'Permobil M3'))
+
+    # Nur gültige Werte behalten
+    bro_scores = [s for s in bro_scores if pd.notna(s)]
+    m3_scores = [s for s in m3_scores if pd.notna(s)]
+
+    ax = axs[i]
+    box = ax.boxplot([bro_scores, m3_scores], labels=['BRO', 'Permobil M3'],
+                     patch_artist=True,
+                     medianprops=dict(color='black'),
+                     whiskerprops=dict(color='black'),
+                     capprops=dict(color='black'),
+                     flierprops=dict(markerfacecolor='red', marker='o', markersize=5, linestyle='none'))
+
+    # Farbe manuell zuweisen
+    colors = [COLOR_MAP['BRO'], COLOR_MAP['Permobil M3']]
+    for patch, color in zip(box['boxes'], colors):
+        patch.set_facecolor(color)
+
+    ax.set_title(COMBINED_TITLES[i], fontsize=10)
+    ax.set_ylabel('Score')
+    ax.set_ylim(-0.5, 3.5)
+    ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+
+plt.tight_layout()
+output_path = os.path.join(BASE_DIR, "../Output", "task1to6_score_boxplots.png")
 plt.savefig(output_path, dpi=300)
 plt.close()
