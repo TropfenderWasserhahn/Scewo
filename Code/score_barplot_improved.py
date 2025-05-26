@@ -45,7 +45,7 @@ def plot_bar_chart(ax, score_counts, title, global_max):
     bars_m3 = ax.bar(x + width/2, score_counts['Permobil M3'], width,
                      label=f'Permobil M3 (Ø={mean_m3:.2f})', color=COLOR_MAP['Permobil M3'])
 
-    ax.set_title(title, fontsize=10)
+    ax.set_title(title, fontsize=14)
     ax.set_xticks(x)
     ax.set_xticklabels(['No Part (0)', 'Fail (1)', 'Partial Pass (2)', 'Pass (3)'])
 
@@ -61,6 +61,28 @@ def plot_bar_chart(ax, score_counts, title, global_max):
     ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
     ax.legend(loc='upper left', fontsize=10)
 
+def plot_percentage_bar_chart(ax, score_counts, title):
+    score_counts_percent = score_counts.div(score_counts.sum(axis=0), axis=1) * 100
+
+    x = np.arange(len(score_counts.index))
+    width = 0.35
+
+    mean_bro = calculate_mean(score_counts, 'BRO')
+    mean_m3 = calculate_mean(score_counts, 'Permobil M3')
+
+    ax.bar(x - width/2, score_counts_percent['BRO'], width,
+           label=f'BRO (Ø={mean_bro:.2f})', color=COLOR_MAP['BRO'])
+    ax.bar(x + width/2, score_counts_percent['Permobil M3'], width,
+           label=f'Permobil M3 (Ø={mean_m3:.2f})', color=COLOR_MAP['Permobil M3'])
+
+    ax.set_title(title, fontsize=14)
+    ax.set_xticks(x)
+    ax.set_xticklabels(['No Part (0)', 'Fail (1)', 'Partial Pass (2)', 'Pass (3)'])
+    ax.set_ylim(0, 100)
+    ax.set_ylabel('Prozent')
+    ax.yaxis.set_major_locator(ticker.MultipleLocator(10))
+    ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+    ax.legend(loc='upper left', fontsize=10)
 
 # === Main Logic ===
 df = load_csv("merged_data.csv")
@@ -143,7 +165,6 @@ for i, task_num in enumerate(range(1, 7)):
         bro_scores.extend(extract_scores(row, task_num, 'BRO'))
         m3_scores.extend(extract_scores(row, task_num, 'Permobil M3'))
 
-    # Nur gültige Werte behalten
     bro_scores = [s for s in bro_scores if pd.notna(s)]
     m3_scores = [s for s in m3_scores if pd.notna(s)]
 
@@ -155,17 +176,81 @@ for i, task_num in enumerate(range(1, 7)):
                      capprops=dict(color='black'),
                      flierprops=dict(markerfacecolor='red', marker='o', markersize=5, linestyle='none'))
 
-    # Farbe manuell zuweisen
-    colors = [COLOR_MAP['BRO'], COLOR_MAP['Permobil M3']]
-    for patch, color in zip(box['boxes'], colors):
+    for patch, color in zip(box['boxes'], [COLOR_MAP['BRO'], COLOR_MAP['Permobil M3']]):
         patch.set_facecolor(color)
 
-    ax.set_title(COMBINED_TITLES[i], fontsize=10)
+    # Mittelwertraute
+    for j, (scores, version) in enumerate(zip([bro_scores, m3_scores], ['BRO', 'Permobil M3'])):
+        mean_val = np.mean(scores)
+        ax.plot(j + 1, mean_val, marker='D', color='black', markersize=6, label='Mittelwert' if i == 0 and version == 'BRO' else "")
+
+    ax.set_title(COMBINED_TITLES[i], fontsize=14)
     ax.set_ylabel('Score')
     ax.set_ylim(-0.5, 3.5)
     ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
 
+    if i == 0:
+        ax.legend()
+
 plt.tight_layout()
 output_path = os.path.join(BASE_DIR, "../Output", "task1to6_score_boxplots.png")
+plt.savefig(output_path, dpi=300)
+plt.close()
+
+
+# === Prozentuale Barplots (Tasks 1–6) ===
+fig, axs = plt.subplots(3, 2, figsize=(12, 10))
+axs = axs.flatten()
+
+for i, task_num in enumerate(range(1, 7)):
+    bro_rows, m3_rows = [], []
+
+    for _, row in df.iterrows():
+        bro_rows.extend([{'Score': s, 'Version': 'BRO'} for s in extract_scores(row, task_num, 'BRO')])
+        m3_rows.extend([{'Score': s, 'Version': 'Permobil M3'} for s in extract_scores(row, task_num, 'Permobil M3')])
+
+    all_scores = pd.DataFrame(bro_rows + m3_rows)
+    all_scores['Score'] = all_scores['Score'].astype(int)
+    score_counts = all_scores.groupby(['Score', 'Version']).size().unstack(fill_value=0).reindex([0, 1, 2, 3], fill_value=0)
+
+    plot_percentage_bar_chart(axs[i], score_counts, COMBINED_TITLES[i])
+
+plt.tight_layout()
+output_path = os.path.join(BASE_DIR, "../Output", "task1to6_score_grouped_barplot_percent.png")
+plt.savefig(output_path, dpi=300)
+plt.close()
+
+# === Prozentuale Barplots (Subtasks 1.x – 6.x) ===
+fig, axs = plt.subplots((len(subtasks) + 2) // 3, 3, figsize=(15, 20))
+axs = axs.flatten()
+
+for subtask, title, ax in zip(subtasks, DETAILED_TITLES, axs):
+    bro_scores, m3_scores = [], []
+
+    for _, row in df.iterrows():
+        bro_col = f"M1_{subtask}_score" if row['Group'] == 'A' else f"M2_{subtask}_score"
+        m3_col = f"M2_{subtask}_score" if row['Group'] == 'A' else f"M1_{subtask}_score"
+
+        if bro_col in row and pd.notna(row[bro_col]):
+            bro_scores.append({'Score': int(row[bro_col]), 'Version': 'BRO'})
+        if m3_col in row and pd.notna(row[m3_col]):
+            m3_scores.append({'Score': int(row[m3_col]), 'Version': 'Permobil M3'})
+
+    all_scores = pd.DataFrame(bro_scores + m3_scores)
+    score_counts = (
+        all_scores.groupby(['Score', 'Version'])
+        .size()
+        .unstack(fill_value=0)
+        .reindex(index=pd.Index([0, 1, 2, 3], name='Score'), fill_value=0)
+    )
+
+    plot_percentage_bar_chart(ax, score_counts, title)
+
+# Leere Achsen ausschalten
+for ax in axs[len(subtasks):]:
+    ax.axis('off')
+
+plt.tight_layout()
+output_path = os.path.join(BASE_DIR, "../Output", "task1to6_score_detailed_grouped_barplot_percent.png")
 plt.savefig(output_path, dpi=300)
 plt.close()

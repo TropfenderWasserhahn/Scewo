@@ -32,7 +32,7 @@ def plot_boxplots(data, score_names, y_lim, y_ticks, color_map, output_path):
     for i, col in enumerate(score_names, 1):
         plt.subplot(2, 2, i)
         ax = sns.boxplot(data=data, x='Version', y=col, hue='Version', palette=color_map, dodge=False)
-        
+
         # Add title with sample sizes
         n_bro = data[data['Version'] == 'BRO'][col].notna().sum()
         n_perm = data[data['Version'] == 'Permobil M3'][col].notna().sum()
@@ -47,6 +47,16 @@ def plot_boxplots(data, score_names, y_lim, y_ticks, color_map, output_path):
         # Add gridlines
         ax.yaxis.grid(True, linestyle='-', linewidth=0.5)
         ax.set_axisbelow(True)
+
+        # Mittelwerte als schwarze Rauten
+        for version in data['Version'].unique():
+            mean_val = data[data['Version'] == version][col].mean()
+            xpos = 0 if version == 'BRO' else 1
+            ax.plot(xpos, mean_val, marker='D', color='black', markersize=6, label='Mittelwert' if i == 1 and version == 'BRO' else "")
+
+        if i == 1:
+            ax.legend()
+
 
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)

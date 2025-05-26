@@ -99,7 +99,7 @@ plt.savefig(output_path, dpi=300)
 plt.close()
 print(f"Gruppierte SSI-Barplots mit Mittelwerten gespeichert unter: {output_path}")
 
-# === Separate Boxplots für SSI-Items ===
+# === Separate Boxplots für SSI-Items ===  --> zusätzlich Mittelwerte in Boxplots anzeigen
 fig, axs = plt.subplots(1, len(SSI_ITEMS), figsize=(20, 5))
 
 for ax, item in zip(axs, SSI_ITEMS):
@@ -117,10 +117,19 @@ for ax, item in zip(axs, SSI_ITEMS):
     for patch, color in zip(box['boxes'], [COLOR_MAP['BRO'], COLOR_MAP['Permobil M3']]):
         patch.set_facecolor(color)
 
+    # Mittelwert-Rauten
+    for i, (scores, version) in enumerate(zip([bro_scores, m3_scores], ['BRO', 'Permobil M3'])):
+        mean_val = scores.mean()
+        ax.plot(i + 1, mean_val, marker='D', color='black', markersize=6, label='Mittelwert' if item == 'SSI_1' and version == 'BRO' else "")
+
     ax.set_title(SSI_TITLES[item])
     ax.set_ylabel('Score')
     ax.set_ylim(0.5, 7.5)
     ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+
+    if item == 'SSI_1':
+        ax.legend()
+
 
 plt.tight_layout()
 boxplot_output_path = os.path.join(BASE_DIR, "../Output", "ssi_boxplots.png")

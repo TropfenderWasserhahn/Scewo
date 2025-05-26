@@ -61,7 +61,7 @@ def plot_eou_effort_paired(data_eou, data_effort, task_labels, output_file):
                     x = [s + (j - 0.5) * BAR_WIDTH for s in SCORE_RANGE]
                     ax.bar(x, freq, width=BAR_WIDTH, label=f"{version} (Ø={mean_vals[version]:.2f})", color=COLOR_MAP[version])
 
-                ax.set_title(f"{metric_label} – Aufgabe {task}")
+                ax.set_title(f"{metric_label} – Aufgabe {task}", fontsize=14)
                 ax.set_xlim(0.5, 7.5)
                 ax.set_ylim(0, max_height + 1)
                 ax.set_xticks(SCORE_RANGE)
@@ -98,7 +98,7 @@ plot_eou_effort_paired(eou_df, effort_df, task_labels, output_path)
 
 print(f"EOU + Effort Diagramm gespeichert unter: {output_path}")
 
-# === Boxplots für EOU und Effort über alle Aufgaben ===
+# === Boxplots für EOU und Effort über alle Aufgaben === --> zusätzlich Mittelwert-Linie
 def plot_overall_boxplots(eou_df, effort_df, output_file):
     fig, axs = plt.subplots(1, 2, figsize=(12, 5))
 
@@ -107,20 +107,29 @@ def plot_overall_boxplots(eou_df, effort_df, output_file):
         scores_m3 = data[data['Version'] == 'Permobil M3']['Score'].dropna()
 
         box = ax.boxplot([scores_bro, scores_m3], labels=['BRO', 'Permobil M3'],
-                         patch_artist=True,
-                         medianprops=dict(color='black'),
-                         whiskerprops=dict(color='black'),
-                         capprops=dict(color='black'),
-                         flierprops=dict(markerfacecolor='red', marker='o', markersize=5, linestyle='none'))
+                        patch_artist=True,
+                        medianprops=dict(color='black'),
+                        whiskerprops=dict(color='black'),
+                        capprops=dict(color='black'),
+                        flierprops=dict(markerfacecolor='red', marker='o', markersize=5, linestyle='none'))
 
         # Farben manuell zuweisen
         for patch, color in zip(box['boxes'], [COLOR_MAP['BRO'], COLOR_MAP['Permobil M3']]):
             patch.set_facecolor(color)
 
+        # Mittelwert-Raute
+        for i, (scores, version) in enumerate(zip([scores_bro, scores_m3], ['BRO', 'Permobil M3'])):
+            mean_val = scores.mean()
+            ax.plot(i + 1, mean_val, marker='D', color='black', markersize=6, label='Mittelwert' if title == 'Benutzerfreundlichkeit (EOU)' and version == 'BRO' else "")
+
         ax.set_title(title)
         ax.set_ylabel('Score')
         ax.set_ylim(0.5, 7.5)
         ax.grid(True, axis='y', linestyle='--', linewidth=0.5)
+
+    if title == 'Benutzerfreundlichkeit (EOU)':
+        ax.legend()
+
 
     plt.tight_layout()
     boxplot_output = output_file.replace(".png", "_boxplot.png")
