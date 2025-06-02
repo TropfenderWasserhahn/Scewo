@@ -27,41 +27,56 @@ def extract_scores(df, group_col, version_label, prefix1, prefix2):
     }), axis=1)
 
 def plot_boxplots(data, score_names, y_lim, y_ticks, color_map, output_path):
-    """Create and save boxplots for the given scores."""
-    plt.figure(figsize=(16, 12))
-    for i, col in enumerate(score_names, 1):
-        plt.subplot(2, 2, i)
-        ax = sns.boxplot(data=data, x='Version', y=col, hue='Version', palette=color_map, dodge=False)
+    """Create and save boxplots using matplotlib (volle Kontrolle)."""
+    fig, axes = plt.subplots(1, 4, figsize=(20, 5))
 
-        # Add title with sample sizes
-        n_bro = data[data['Version'] == 'BRO'][col].notna().sum()
-        n_perm = data[data['Version'] == 'Permobil M3'][col].notna().sum()
-        plt.title(f'PIADS {col} (n={n_bro} | n={n_perm})')
-        plt.xlabel('')
-        plt.ylabel('Score')
+    for i, (col, ax) in enumerate(zip(score_names, axes)):
+        # Daten für beide Gruppen
+        bro_vals = data[data['Version'] == 'BRO'][col].dropna()
+        perm_vals = data[data['Version'] == 'Permobil M3'][col].dropna()
+        grouped_data = [bro_vals, perm_vals]
 
-        # Set y-axis limits and ticks
+        # Boxplot mit vollen Kontrollelementen
+        box = ax.boxplot(
+            grouped_data,
+            widths=0.2,
+            patch_artist=True,
+            boxprops=dict(linewidth=1, edgecolor='black'),
+            medianprops=dict(color='black'),
+            whiskerprops=dict(color='black', linewidth=1),
+            capprops=dict(color='black', linewidth=1),
+            flierprops=dict(marker='o', color='black', markersize=3, alpha=0.6)
+        )
+
+        # Farben setzen
+        colors = [color_map['BRO'], color_map['Permobil M3']]
+        for patch, color in zip(box['boxes'], colors):
+            patch.set_facecolor(color)
+
+        # Achsen- und Titelbeschriftungen
+        ax.set_xticks([1, 2])
+        ax.set_xticklabels(['BRO', 'Permobil M3'])
+        ax.set_title(f'PIADS {col} (n={len(bro_vals)} | n={len(perm_vals)})')
+        ax.set_ylabel("Score" if i == 0 else "")
         ax.set_ylim(y_lim)
         ax.set_yticks(y_ticks)
-
-        # Add gridlines
         ax.yaxis.grid(True, linestyle='-', linewidth=0.5)
         ax.set_axisbelow(True)
 
         # Mittelwerte als schwarze Rauten
-        for version in data['Version'].unique():
-            mean_val = data[data['Version'] == version][col].mean()
-            xpos = 0 if version == 'BRO' else 1
-            ax.plot(xpos, mean_val, marker='D', color='black', markersize=6, label='Mittelwert' if i == 1 and version == 'BRO' else "")
+        for j, values in enumerate(grouped_data, start=1):
+            mean_val = values.mean()
+            ax.plot(j, mean_val, marker='D', color='black', markersize=6,
+                    label='Mittelwert' if i == 0 and j == 1 else "")
 
-        if i == 1:
+        if i == 0:
             ax.legend()
-
 
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)
     plt.close()
     print(f"PIADS-Boxplots gespeichert unter: {output_path}")
+
 
 # === Main Logic ===
 df = load_csv("merged_data.csv")

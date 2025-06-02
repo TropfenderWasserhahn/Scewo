@@ -169,8 +169,9 @@ for i, task_num in enumerate(range(1, 7)):
     m3_scores = [s for s in m3_scores if pd.notna(s)]
 
     ax = axs[i]
-    box = ax.boxplot([bro_scores, m3_scores], labels=['BRO', 'Permobil M3'],
+    box = ax.boxplot([bro_scores, m3_scores], tick_labels=['BRO', 'Permobil M3'],
                      patch_artist=True,
+                     widths=0.2,
                      medianprops=dict(color='black'),
                      whiskerprops=dict(color='black'),
                      capprops=dict(color='black'),

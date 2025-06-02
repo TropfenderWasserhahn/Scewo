@@ -106,8 +106,9 @@ for ax, item in zip(axs, SSI_ITEMS):
     bro_scores = ssi_combined_clean[ssi_combined_clean['Version'] == 'BRO'][item].dropna()
     m3_scores = ssi_combined_clean[ssi_combined_clean['Version'] == 'Permobil M3'][item].dropna()
 
-    box = ax.boxplot([bro_scores, m3_scores], labels=['BRO', 'Permobil M3'],
+    box = ax.boxplot([bro_scores, m3_scores], tick_labels=['BRO', 'Permobil M3'],
                      patch_artist=True,
+                     widths=0.2,
                      medianprops=dict(color='black'),
                      whiskerprops=dict(color='black'),
                      capprops=dict(color='black'),

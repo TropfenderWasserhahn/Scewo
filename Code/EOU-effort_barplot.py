@@ -106,11 +106,12 @@ def plot_overall_boxplots(eou_df, effort_df, output_file):
         scores_bro = data[data['Version'] == 'BRO']['Score'].dropna()
         scores_m3 = data[data['Version'] == 'Permobil M3']['Score'].dropna()
 
-        box = ax.boxplot([scores_bro, scores_m3], labels=['BRO', 'Permobil M3'],
+        box = ax.boxplot([scores_bro, scores_m3], tick_labels=['BRO', 'Permobil M3'],
                         patch_artist=True,
                         medianprops=dict(color='black'),
                         whiskerprops=dict(color='black'),
                         capprops=dict(color='black'),
+                        widths=0.2,
                         flierprops=dict(markerfacecolor='red', marker='o', markersize=5, linestyle='none'))
 
         # Farben manuell zuweisen
