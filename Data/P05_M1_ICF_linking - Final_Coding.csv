@@ -1,0 +1,10 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P05,M1,1b,man sieht auf der Seite nicht runter und deswegen ist es schwierig die Breite des Rollstuhls zu schätzen,appraisal,"Grösse des Rollstuhls, Überblick",,"b1565.2, e1201.2",
+P05,M1,1b,"Man sieht trotz Kamera beim rückwärtsfahren nicht, wie weit etwas weg ist",descriptive: performance,Orientierung,,"b1143.1, d465.1, e1151.1, e1251.2",
+P05,M1,1b,"Handling ist etwas schwer, mit übung wird das besser, ist halt neu, man muss es auswendig lernen",descriptive: performance,Bedienung,Kognition,"d1551.1, e1151.1","b1646.1, b1442.1, d4402.1"
+P05,M1,4a,Treppen fahren ist super,appraisal,Treppen steigen,,"d451.0, e1201+4",
+P05,M1,4a,Das überwinden von steilen Rampen (15°) ist auch ein Vorteil,descriptive: performance,Steigungen überwinden,Umwelt,"d465.0, e1201+2","e2108.0, e1508.0, e1558.0"
+P05,M1,4b,"um Rollstuhl einzuladen braucht man entprechendes Auto, der Rollstuhl ist sehr schwer im Vergleich zu einem kleinen Rollstuhl",need or dependency,Transport des Rollstuhls,,"d4701.2, e1201.2",
+P05,M1,5,"Zuhause kann ich den Rollstuhl nicht benutzen, da die Wohnung nicht geeignet ist, es ist zu eng, Türbreiten würden gehen, es lohnt sich nicht mit dem Rollstuhl rein zu fahren weil er zu gross ist für die Wohnung",descriptive: performance,Manövrieren im Haus,Design von Gebäuden,"d4600.8, d465.1, e1201.1","e1551.0, e1558.3"
+P05,M1,7,Mit dem Rollstuhl könnte ich mit meiner Frau laufen gehen,descriptive: performance,Beziehung pflegen,Mobilität im Aussenbereich,"d7701.0, d9205.0","d4602.0, d4500.0, d4501.0, d465.0"
+P05,M1,7,Ich könnte weitere Umgebungen erkunden mit dem Rollstuhl,descriptive: performance,Mobilität,,"d4602.0, d465.0, d4501.0",

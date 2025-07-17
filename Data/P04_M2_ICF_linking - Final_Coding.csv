@@ -1,0 +1,9 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P04,M2,1b,"Koordination der Handbewegungen, Zittern der Hand",descriptive:performance,Kontrolle von Willkürbewegungen,Feinmotorik,"b7601.2, b7602.2, b1471.2","d4402.2, b7651.1"
+P04,M2,2,Der Rollstuhl hat sich gut an verschiedene Umgebungen angepasst,descriptive:performance,Fortbewegung in unterschiedlichen Umgebungen,Umwelt,"d4502.0, d4609.0, d465.0, e1201+3",e2109.0
+P04,M2,4a,Der Rollstuhl erhält einem viele Möglichkeiten der Beweglichkeit und Mobilität,descriptive: performance,Mobilität,,"d465.0, e1201+2",
+P04,M2,4a,Man ist mobiler mit dem Rollstuhl,descriptive: performance,Mobilität,,"d4500.0, d4501.0, d465.0, e1201+3",
+P04,M2,4a,Der Rollstuhl macht Freude,appraisal,Mentale Funktionen,,"b1265.0, b1266.0, b1528.0",
+P04,M2,4a,Mit dem Rollstuhl kommt man unter die Leute und kann die Gegend auskundschaften,descriptive:performance,Geselligkeit,Ausserhalb des Hauses bewegen,"d7509.0, d9205.0","d4602.0, d465.0, e1201+3"
+P04,M2,5a,"Ich könnte im Haus herumfahren, die Treppe zum 1. Stock überwinden und dort das WC und die Dusche benutzen",descriptive:performance,Treppensteigen,Körperpflege,"d451.0, e1551.0, d4600.0, e1201+3, e1151+3"," d5109.0, d5309.0"
+P04,M2,7,Ich könnte mit dem Rollstuhl einkaufen gehen,descriptive: performance,Einkaufen,Ausserhalb des Hauses bewegen,d6200.0,"d4602.0, d465.0, e1201+2"

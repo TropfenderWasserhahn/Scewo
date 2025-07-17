@@ -1,0 +1,18 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P06,M1,1b,Zu Beginn macht man viele Bedienungsfehler,descriptive: performance,Bedienung,Gedächtnis,"d1551.2, e1151.2","b1440.1, b1443.1"
+P06,M1,1b,Die Fussstütze ist nicht so stabil,appraisal,Rollstuhlteil,,e1151.1,
+P06,M1,2,"Im Rollstuhl kann man verschiedene Herausforderungen drinnen und draussen meisten, aber es braucht etwas Zeit, bis man sich daran gewöhnt und alles gelernt hat",descriptive: performance,In verschiedenen Umgebungen fortbewegen,Lernen,"d4600.1, d4601.1, d4602.1, d465.1, e1201+2","d1551.2, d198.2"
+P06,M1,4a,"Der Rollstuhl ist super, wenn die Mobilität und die Bewegung in den oberen Extremitäten eingeschränkt ist",appraisal,Mobilität,,"d465.0, e1201+3","b7609.3, d4459.3"
+P06,M1,4a,Der Rollstuhl kann auch mit Ataxie noch gut bedient werden,descriptive: performance,Ataxie,Bedienung,"d7600.2, d7602.2","e1151+2, d4402.0"
+P06,M1,4a,"Die Treppenfunktion ist super, ansonsten bin ich mit dem Handrollstuhl viel flexibler",descriptive: performance,Treppensteigen,Flexibilität,"d451.0, d465.0, e1201+3",e1201.2
+P06,M1,4b,"Mit dem Elektrorollstuhl würde mir die Bewegung fehlen, um fit zu bleiben",appraisal,körperliche Aktivität,,"d9201.1, e1201.1",
+P06,M1,5a,"Zuhause würde ich ihn noch nicht benutzen, da ich noch nicht darauf angewiesen bin und es im Haus zu eng ist",descriptive: performance,Indoor Mobilität,Design von Gebäuden,"d4600.8, e1201.0",e1558.3
+P06,M1,5a,Ich könnte mit dem Rollstuhl die Treppe überwinden und meine Schwiegereltern besuchen,descriptive: performance,Beziehungen pflegen,Treppen steigen,"d9100.0, d7603.0","d451.0, e1201+3"
+P06,M1,5a,"Wenn die Wohnung geeignet ist, kann man den Rollstuhl für alles benutzen",descriptive: performance,Design von Gebäuden,Indoor Mobilität,"e1550.0, e1551.0","d4600.0, d465.0"
+P06,M1,5a,Man könnte mit dem Rollstuhl kochen,descriptive: performance,Kochen,,d6309.0,
+P06,M1,7a,"Man könnte den Rollstuhl bei der Arbeit brauchen, z.B. wenn man im Lager arbeitet",descriptive: performance,Arbeiten,,"d8451.0, e1201+2",
+P06,M1,7a,Der Rollstuhl wäre ein bequemer Bürostuhl,appraisal,Sitzen,Unterstützung im Arbeitsalltag,"b265.0, d4153.0, e1201+3",e1351+2
+P06,M1,7a,"Der Rollstuhl könnte viele andere Hilfsmittel ersetzen (z.B. Treppenlift, Griffe im Bad um sich hochzuziehen und festzuhalten, Umbau der Küche um an Utensilien zu gelangen, höhenverstellbarer Bürotisch)",descriptive: performance,Alltagshilfe,,"d2302.0, d4153.0, d451.0, d8451.0, e1151+3, e1201+3",
+P06,M1,7a,"Draussen über unebenen Grund wie Steine zu fahren, ist kein Problem mit dem Rollstuhl, mit dem Handrollstuhlist das schwierig vorallem wegen der Ataxie",descriptive: performance,Outdoor Mobilität,,"d4502.0, d4602.0, e1201+3, e2108.0",
+P06,M1,9,Die Bedienung ist weder physisch noch mental anstrengend,descriptive: performance,Anstrengung,,"b4550.0, b1300.0, e1151.0",
+P06,M1,10,Ich habe mich während der Benutzung des Rollstuhls sehr sicher gefühlt,appraisal,Sicherheit,,"b1268.0, b1528.0",

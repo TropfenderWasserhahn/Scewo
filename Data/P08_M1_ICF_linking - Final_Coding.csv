@@ -1,0 +1,17 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P08,M1,1b,"Angst vor der Treppe war da, aber wenn man es ein paar Mal gemacht hat ist das eine super Sache",appraisal,Angst,Treppen steigen,b1266.2,d451.1
+P08,M1,2,"Türen öffnen ist sehr gewöhnungsbedürftig, weil sich der Rollstuhl bewegt, wenn ich mich nach vorne lehne",descriptive: performance,Türen öffnen,Gewöhnung an Bewegung des Rollstuhls,"d4153.1, d4450.1, d4451.1, d4452.1, d4453.1, e1550.1, e1500.1","e1151.0, d4106.1"
+P08,M1,2,Der Rollstuhl hat sich gut an verschiedene Umgebungen angepasst,descriptive: performance,Fortbwegwegung in verschiedenen Umgebungen,,"d465.0, d4609.0, e1201+2",
+P08,M1,2,"Wenn ich die Abläufe im Kopf habe, klappt es gut in der Küche",descriptive: performance,Kognition,Küche,"b1442.1, b1443.1, b1643.1","d4600.1, d4601.1, d4402.1"
+P08,M1,4a,"Der Rollstuhl macht alles automatisch, man muss einfach die Knöpfe auf der Bedienung kennen",descriptive: performance,Bedienung,Langzeitgedächtnis,"e1151.0, d465.0, e1201+3",b1442.1
+P08,M1,4a,Die Rückfahrkamera ist sehr gut,appraisal,Technische Unterstützung bei der Fortbewegung,,"d465.0, e1151+3, e1251+3",
+P08,M1,4b,"Man muss einen klaren Kopf haben, damit man sich die verschiedenen Funktionen und Abläufe merken kann, dann ist der Rollstuhl super",descriptive: performance,Kognitive Flexibilität,,"b1400.1, b1441.1, b1442.1, b1443.1, b1643.1, e1201+2",
+P08,M1,4b,Die Kellertreppe wäre wahrscheinlich zu eng,appraisal,Treppe,,"d451.3, e1551.3, d4600.3",
+P08,M1,5a,In einem ebenerdigen Haus kann der Rollstuhl gut helfen,appraisal,Zuhause fortbewegen,,"d4600.0, d4601.0, d465.0, e1201+3, e1551.0, e1501.0",
+P08,M1,5a,"Der Rollstuhl würde mir sehr helfen, die 2 Treppenstufen vom Wohn- ins Esszimmer zu überwinden",descriptive: performance,Treppen steigen,,"d451.0, e1201+3, d4600.0, e1551.0",
+P08,M1,5a,Ich könnte den Absatz beim Ausgang auf die Terrasse überwinden,descriptive: performance,Absatz überwinden,,"d451.0, e1201+3, e1551.0, d4600.09",
+P08,M1,5a,Das Gartentor öffnen und draussen im Garten fahren geht gut,descriptive: performance,Im Garten fahren,,"d4450.0, d4451.0, d4452.0, d4600.0",
+P08,M1,5a,"Im Haus hat es einige Barrieren, die mit dem Rollstuhl aber kein Problem sind",descriptive: performance,Barrieren,,"e1551.0, d465.0, e1201+3",
+P08,M1,7,"Ich könnte mit dem Bus nach Chur fahren, um herumzuschauen und zu lädelen",descriptive: performance,"Freizeit, Einkaufen, Hobby",öffentlicher Verkehr,"d4602.0, d9204.0, d6200.0, e1201+3",d4702.0
+P08,M1,7,Ich könnte Steigungen auf dem Gras fahren,descriptive: performance,Unebene Untergründe,,"d4502.0, d4602.0, d465.0, e2108.0",
+P08,M1,7,Ich würde den Rollstuhl outdoor zum spazieren benützen,descriptive: performance,Spazieren,,"d4502.0, d4602.0, d9204.0, d465.0",

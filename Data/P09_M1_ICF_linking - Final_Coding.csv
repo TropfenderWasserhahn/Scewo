@@ -1,0 +1,10 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P09,M1,1b,"Am Anfang ist noch unklar, welcher Knopf welche Funktion hat. Die Bezeichnungen sind nicht eindeutig",descriptive: performance,Bedienung,,e1151.2,
+P09,M1,2,"Der Rollstuhl hat sich gut an die Umgebungen angepasst, auch draussen über die Holpersteine wars gut",descriptive: performance,Fortbwegwegung in verschiedenen Umgebungen,verschiedne Untergründe,"d465.0, e1201+2","d4502.0, d4609.0, e2108.0"
+P09,M1,4a,"Ich finde es sensationell, dass man an Ort und Stelle sich drehen kan",descriptive: performance,Manövrieren,,"d465.0, e1201+4",
+P09,M1,4a,"Man hat Licht und eine Hupe, damit kann man sich bemerkbar machen und durchsetzen",appraisal,Kommunikation,,e1251+2,
+P09,M1,4a,"Der Rollstuhl ist sehr bequem wie ein Sitz, die Armlehne ist super",appraisal,Sitzen & Körpergefühl,,"b265.0, d4153.0, e1151+3",
+P09,M1,5a,"Im Haus würde ich den Rollstuhl nicht benutzen, da ich nicht darauf angewiesen bin. Ich würde aber gut ins Haus kommen und könnte im Haus herumfahren, will das aber nicht",need or dependency,Indoor Mobilität,Gebäude,"d4600.0, d465.0, e1201.3","e1550.0, e1551.0"
+P09,M1,7a,"Ich könnte mit dem Rollstuhl Distanzen überwinden und Orte besuchen, die ich früher besucht habe",descriptive: performance,Distanzen überwinden,Freizeit,"d4501.0, d4500.0, d465.0, e1201+3",d9208.0
+P09,M1,7a,Es wäre für mich ein Stuhl zum geniessen,appraisal,Lebensqualität,,"b1265.0, b1266.0, b1528.0",
+P09,M1,7a,"Wir wohnen am Hang, dann würde ich in den Wald mit dem Rollstuhl fahren und spazieren",descriptive: performance,Freizeit,Spazieren,d9204.0,"d4500.0, d4501.0, d4502.0, d4602.0, e2208.0, e2108.0, d465.0"

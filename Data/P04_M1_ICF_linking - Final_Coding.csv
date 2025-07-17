@@ -1,0 +1,14 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P04,M1,1b,Hat seit dem Schlaganfall Mühe mit der Koordination der Handbewegungen ,descriptive: performance,"Kontrolle von Willkürbewegungen, Feinmotorik",Steuerung bedienen,"b7600.2, b7602.2, d4402.2, b1471.2",e1151.2
+P04,M1,1b,"Die Bedienung braucht viel Konzentration, daher langsame Reaktionszeit",descriptive: performance,Rollstuhlbedienung,Reaktion,"e1151.2, b1400.2, b1402.2",b1470.2
+P04,M1,2,Den Rollstuhl drehen geht gut,descriptive: performance,Manövrieren,,"d465.0, e1201+2",
+P04,M1,2,"Türen öffnen geht gut, durch die Tür fahren ist schwierig",descriptive: performance,Türe öffnen,Manövrieren,"d4153.0, d4450.0, d4451.0, d4452.0, d4453.0","d465.2, d4600.2, d4601.2, e1201.2, e1500.2, e1550.2"
+P04,M1,2,Präzises Manövrieren in engem Raum ist schwierig,descriptive:performance,Manövrieren in engen Umgebungen,,"d4503.2, d4600.2, d4601.2, d465.2, e1201.2, d4402.2, e1151.2",
+P04,M1,4a,Die Steuerung ist benutzerfreundlich,appraisal,Bedienung,,e1151+2,
+P04,M1,4b,"Rückwärts fahren ist schwierig, etwas unkontrolliert",descriptive:performance,Manövrieren,,"d465.2, e1201.2",
+P04,M1,4b,Sie kommt die Rampe zuhause nicht noch,descriptive:performance,Mobilität,,d465.4,"e2108.4, e1550.4"
+P04,M1,5a,Würde damit Zuhause herumfahren,descriptive:performance,Umhergehen / Fortbewegen,,"d4600.0, d4500.0, d465.0, e1201+2",
+P04,M1,5a,"In der Küche um etwas zu kochen, Utensilien zu erreichen",descriptive: performance,Kochen,,"d6309.0, e1151+2, d4153.0, d4452.0",
+P04,M1,5b,Transfer ins und aus dem Bett würde gut gehen,descriptive:performance,Transfer,,d4200.0,
+P04,M1,6,Mit dem Rollstuhl kommt sie nicht die Rampe/Treppe hoch und somit nicht ins Haus,descriptive:performance,Fortbewegung mit Hilfsmittel,,"d451.4, d465.4, e1550.4",
+P04,M1,7,"Das Haus verlassen und auf der Strasse herumfahren, die nähere Umgebung anschauen",descriptive:performance,Umhergehen / Fortbewegen,Freizeit,"d4500.0, d4502.0, d4602.0, d465.0, e1201+2",d9204.0

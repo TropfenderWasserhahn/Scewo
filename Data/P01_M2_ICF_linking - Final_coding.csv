@@ -1,0 +1,15 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P01,M2,2,Der Rollstuhl passt sich okay an verschiedene Umgebungen an,descriptive:performance,Sich in verschiedenen Umgebungen fortbewegen,Sich unter Verwendung von Ausrüstung fortbewegen,"d4600.1, d4601.1, d4602.1","d465.1, e1201+2"
+P01,M2,4a,"der Rollstuhl ist handlich, er ist kompakt und braucht nicht viel Raum",descriptive:performance,"Persönliche Mobilität, Anpassung an Umgebung",,e1201+3,
+P01,M2,4a,Die Bedienung der Steuerung ist einfach,descriptive:performance,Sich Fertigkeiten aneignen und anwenden,,"d1551.0, d179.0, e1151+3",
+P01,M2,4a,Man kann an Ort drehen,descriptive:performance,Mobilität ,,"d465.0, e1201+3",
+P01,M2,4b,Der Rollstuhl ist nicht genug schnell,appraisal,Mobilität ,,"d465.2, e1201.2",
+P01,M2,4b,"Bordsteinkanten, Treppen und starke Steigungen können nicht überwunden werden",descriptive:capacity,"Treppen steigen, in verschiedenen Umgebungen fortbewegen",,"d451.4, d465.4, e1201.4",
+P01,M2,4b,Auf unebenem Untergrund wird man unangenehm durchgeschüttelt,descriptive:performance,Schmerz und negative Emotion,Auf verschiedenen Untergründen fortbewegen,"b280.1, b1528.1","e2108.2, d4608.2,  e1201.2"
+P01,M2,5a,"Im eigenen Haus würde ich den Rollstuhl nicht benutzen, da ich nicht darauf angewiesen bin",need or dependency,Mobilität ohne Hilfsgeräte (Indoor),Rollstuhl als Hilfsmittel Indoor,d4600.0,e1201.0
+P01,M2,7,Ausserhalb des Hauses würde ich den Rollstuhl zur Überwindung kurzer bis mittlerer Strecken benutzen,descriptive:performance,Mobilität im Aussenbereich,,"d4500.0, d4501.0, d4602.0, d465.0, e1201+2",
+P01,M2,7,Ich würde den Rollstuhl für Spaziergänge benutzen,descriptive:performance,Erholung und Freizeit,Mobilität,d9204.0,"d4500.0, d4501.0, d465.0, e1201+2"
+P01,M2,7,"Ich würde den Rollstuhl benutzen, um zur Physiotherapie zu fahren",descriptive:performance,auf seine Gesundheit achten,Mobilität,d5708.0,"d4500.0, d4501.0, d465.0, e1201+2"
+P01,M2,7,"Ich kann damit nur in rollstuhlgängige Gebäude (z.B. Restaurants) gehen, da Stufen und enge Verhältnisse nicht möglich sind",descriptive:performance,Barrieren in Gebäuden,"Treppen steigen, in verschiedenen Umgebungen fortbewegen","e1500.4, e1501.4","d465.4, d451.4, e1201.4"
+P01,M2,7,"Ich würde mit dem Rollstuhl zum Restaurant fahren, um mich mit Kollegen zu treffen",descriptive:performance,"Soziale Beziehungen, Gemeinschaftsleben","Strecken überwinden, ausserhalb des Hauses fortbewegen","d7500.0, d9100.0, d9205.0","d4601.0, d4602.0, d465.0, e1201+2"
+P01,M2,7,"In manchen Restaurants muss ich den Warenlift benutzen, um in den Speisesaal zu kommen",need or dependency,Braucht Unterstützung von Fremden,Zugänge zu Gebäuden,e345.4,e1500.4

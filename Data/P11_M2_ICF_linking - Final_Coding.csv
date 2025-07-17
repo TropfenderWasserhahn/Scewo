@@ -1,0 +1,11 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P11,M2,1b,Man ist eingeschränkt mit den Möglichkeiten mit dem Rollstuhl,appraisal,Einschränkung,,"d465.1, e1201.1, d2102.2",
+P11,M2,1b,"Der Rollstuhl fährt wackliger, vorallem draussen auf den Pflastersteinen, da schüttelt es einen unheimlich durch",descriptive: performance,Verschiedene Untergründe,,"d4502.2, d4602.2, d465.1, e2108.2, b2701.2",
+P11,M2,4a,Die Steuerung ist sehr leicht,descriptive: performance,Bedienung,,e1151+3,
+P11,M2,4b,"Der Rollstuhl kann seine Sitzhöhe nicht so stark anpassen, ich hätte in einigen Restaurants Mühe an einen Tisch zu sitzen",descriptive: performance,Sitzhöhe,Restaurant,"d4153.2, e1151.2",d9204.1
+P11,M2,4b,"Die Orientierung beim Rückwärtsfahren ist schwieriger als beim anderen, weil es keine Rückfahrkamera hat",descriptive: performance,Rückwärtsfahren,,"d465.2, e1251.4, b1143.1, b1144.1",
+P11,M2,7b,Ich würde den Rollstuhl benutzen um von A nach B zu kommen,descriptive: performance,Mobilität,,"d4509.0, d465.0, e1201+4",
+P11,M2,5a,"Der Rollstuhl wäre gut für Aktivitäten im Haus, ich könnte ihn in der Küche, in der Waschküche und im Badezimmer benutzen",descriptive: performance,Aktivitäten zuhause,,"d4600.0, d6309.0, d6409.0, d599.0",
+P11,M2,7a,Beim Einkaufen unterstützt der Rollstuhl,descriptive: performance,Einkaufen,,"d6200.0, e1201+2",
+P11,M2,7a,"Ich könnte meine Freunde besuchen, mit ihnen spazieren gehen und unter den Leuten sein, aber weniger gut als mit dem anderen Rollstuhl",descriptive: performance,Freizeit,,"d9204.0, d9205.0, d4501.0, d4602.0, d7500.0, e1201.1",
+P11,M2,7a,Ich würde mit dem Rollstuhl in die Natur raus,descriptive: performance,Verschiedene Umgebungen,,"d9204.0, e2202.0, e2109.0, d4602.0, d465.0",

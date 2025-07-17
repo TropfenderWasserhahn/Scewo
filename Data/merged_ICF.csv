@@ -1,0 +1,370 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P01,M1,1b,Moduswechsel ist relativ zeitraubend,descriptive:performance,Hilfsprodukte und unterstützende Technologien für den persönlichen Gebrauch im täglichen Leben,Entscheidungen treffen,e1151.1,d177.1
+P01,M1,1b,"Es dauert etwas, bis man die Bedienung ganz verstanden hat",descriptive:performance,Fertigkeiten aneignen und ausführen,Hilfsprodukte und unterstützende Technologien für den persönlichen Gebrauch im täglichen Leben, d1551.1,e1151.1
+P01,M1,1b,Grossflächig finde ich den Rollstuhl grossartig,appraisal,Emotionale Funktion,,b1522.0,
+P01,M1,2,"Auf Kopfsteinpflaster oder unebenem Boden fahren ist kein Problem, da es mehr federt und man nicht nach vorne bzw. unten wegrutscht",descriptive:performance,Fortbewegung auf unebenem Untergrund,Schmerz/Schütteln,"d465.0, d4602.0, e2108.0, e1201+2",b280.0
+P01,M1,4a,Treppen steigen und Steigungen fahren sind ein Vorteil,appraisal,"Mobilität, Treppen und Steigungen",,"d451.0, e1201+4, d465.0",
+P01,M1,4a,Wenn man genug Platz hat ist das Schaukeln ist sehr angenehm,appraisal,Emotionale Funktion,Vestibulärer Bewegungssinn,b1522.0,b2352.0
+P01,M1,4b,Indoor ist das Schaukeln negativ,appraisal,Indoor Mobilität,Vestibulärer Bewegungssinn,d4600.8,b2352.3
+P01,M1,4b,Der Rollstuhl ist zu gross für enge Räume,descriptive:performance,"Umgebung, Mobilität, Indoor",,"e150.2, e155.2, d4601.2, d4600.2",
+P01,M1,5a,"Ich würde den Rollstuhl zuhause wegen engen Platzverhältnissen nicht benutzen, da ich dort noch den Rollator nehmen kann",descriptive:performance,Indoor Benutzung,Hilfsmittel für Mobilität,"d4600.2, e155.2",e1201.2
+P01,M1,7a,"Ich würde den Rollstuhl benutzen, um die Steigung zum Haus zu überwinden",descriptive:performance,Hilfsmittel für Mobilität,Steiles Gelände,"d465.0, e1201+3 ",e2108.0
+P01,M1,7a,Ich würde mit dem Rollstuhl zur Physiotherapie fahren,descriptive:performance,Auf seine Gesundheit achten,"lange Distanzen bewältigen, Unterstützung des Hilfsmittels","d5708.0,","d4501.0, e1201+3"
+P01,M1,7a,"Der Rollstuhl ist sehr geländegängig, ich würde damit im Wald spazieren gehen und längere Distanzen überwinden",descriptive:performance,"Spazieren, Freizeit","längere Distanzen bewältigen, Geländegängigkeit, Outdoor",d9208.0,"d4501.0, e2108.0, d4602.0"
+P01,M1,7a,"Der Rollstuhl unterstützt mich, wenn ich mich mit Freunden treffen will",descriptive:performance,Interpersonelle Interaktionen,Hilfsmittel zur Partizipation und Geselligkeit,"d7500.0, d9100.0, d9205.0",e1201+3
+P01,M1,8,Mit dem Rollstuhl hat man mehr Freiheit und Möglichkeiten,descriptive:capacity,"Lebensqualität, Autonomie",Hilfsmittel,"nc-qol, d465.0",e1201+3
+P01,M1,9,Ich habe die Erfahrung mit dem Rollstuhl genossen,appraisal,Positive emotionale Evaluation,,b1522.0,
+P01,M1,10,Ich habe mich mit dem Rollstuhl sehr sicher gefühlt,appraisal,Gefühl der Sicherheit,Lebensqualität,b1522.0,nc-qol
+P01,M2,2,Der Rollstuhl passt sich okay an verschiedene Umgebungen an,descriptive:performance,Sich in verschiedenen Umgebungen fortbewegen,Sich unter Verwendung von Ausrüstung fortbewegen,"d4600.1, d4601.1, d4602.1","d465.1, e1201+2"
+P01,M2,4a,"der Rollstuhl ist handlich, er ist kompakt und braucht nicht viel Raum",descriptive:performance,"Persönliche Mobilität, Anpassung an Umgebung",,e1201+3,
+P01,M2,4a,Die Bedienung der Steuerung ist einfach,descriptive:performance,Sich Fertigkeiten aneignen und anwenden,,"d1551.0, d179.0, e1151+3",
+P01,M2,4a,Man kann an Ort drehen,descriptive:performance,Mobilität ,,"d465.0, e1201+3",
+P01,M2,4b,Der Rollstuhl ist nicht genug schnell,appraisal,Mobilität ,,"d465.2, e1201.2",
+P01,M2,4b,"Bordsteinkanten, Treppen und starke Steigungen können nicht überwunden werden",descriptive:capacity,"Treppen steigen, in verschiedenen Umgebungen fortbewegen",,"d451.4, d465.4, e1201.4",
+P01,M2,4b,Auf unebenem Untergrund wird man unangenehm durchgeschüttelt,descriptive:performance,Schmerz und negative Emotion,Auf verschiedenen Untergründen fortbewegen,"b280.1, b1528.1","e2108.2, d4608.2,  e1201.2"
+P01,M2,5a,"Im eigenen Haus würde ich den Rollstuhl nicht benutzen, da ich nicht darauf angewiesen bin",need or dependency,Mobilität ohne Hilfsgeräte (Indoor),Rollstuhl als Hilfsmittel Indoor,d4600.0,e1201.0
+P01,M2,7,Ausserhalb des Hauses würde ich den Rollstuhl zur Überwindung kurzer bis mittlerer Strecken benutzen,descriptive:performance,Mobilität im Aussenbereich,,"d4500.0, d4501.0, d4602.0, d465.0, e1201+2",
+P01,M2,7,Ich würde den Rollstuhl für Spaziergänge benutzen,descriptive:performance,Erholung und Freizeit,Mobilität,d9204.0,"d4500.0, d4501.0, d465.0, e1201+2"
+P01,M2,7,"Ich würde den Rollstuhl benutzen, um zur Physiotherapie zu fahren",descriptive:performance,auf seine Gesundheit achten,Mobilität,d5708.0,"d4500.0, d4501.0, d465.0, e1201+2"
+P01,M2,7,"Ich kann damit nur in rollstuhlgängige Gebäude (z.B. Restaurants) gehen, da Stufen und enge Verhältnisse nicht möglich sind",descriptive:performance,Barrieren in Gebäuden,"Treppen steigen, in verschiedenen Umgebungen fortbewegen","e1500.4, e1501.4","d465.4, d451.4, e1201.4"
+P01,M2,7,"Ich würde mit dem Rollstuhl zum Restaurant fahren, um mich mit Kollegen zu treffen",descriptive:performance,"Soziale Beziehungen, Gemeinschaftsleben","Strecken überwinden, ausserhalb des Hauses fortbewegen","d7500.0, d9100.0, d9205.0","d4601.0, d4602.0, d465.0, e1201+2"
+P01,M2,7,"In manchen Restaurants muss ich den Warenlift benutzen, um in den Speisesaal zu kommen",need or dependency,Braucht Unterstützung von Fremden,Zugänge zu Gebäuden,e345.4,e1500.4
+P02,M1,1b,"Rückwärts über Schwellen fahren ist schwierig, vorwärts ist einfacher",descriptive:performance,Manövrieren über Hindernis,,"d465.2, e1500.2, e1550.2, e1201.2",
+P02,M1,1b,Am Tisch konnte ich nicht genug tief sein mit dem Rollstuhl um drunter zu fahren,descriptive:performance,Sitzen,"Einschränkung bei sozialem Leben (essen, Arbeiten)","d4153.3, e1201.3","d550.3, d850.3"
+P02,M1,1b,Das Kunststoffmaterial des Sitzes ist unangenehm. Darunter wird es schwitzig,appraisal,sensorische Wahrnehmung der Oberfläche,Schwitzen/Hautgefühl,"b265.2, b298.2, e1150.2",b830.2
+P02,M1,2,"Auf Pflastersteinen fahren ist unangenehm, da es fest rüttelt und Spastik auslösen könnte",descriptive:performance,Fortbewegen auf verschiedenen Untergründen,Spastik,"d465.2, d4602.1, e2108.2, e1201.2","b7359.2, b7801.9"
+P02,M1,4a,"hat einen kleinen Aktionsradius, ist angenehm",descriptive:performance,Mobilitätsradius,,"d465.0, e1201+2",
+P02,M1,4b,Die Rückfahrkamera fehlt,dependency/need,Technische Unterstützung bei der Fortbewegung,,"d465.1, e1151.1, e1251.2",
+P02,M1,4b,In sehr engen Räumen oder schlauchartigen Küchen ist der Rollstuhl zu sperrig/gross,descriptive:performance,Grösse des Rollstuhls,Design von Gebäuden,"d4600.2, d4601.2","e1201.2, e1551.2"
+P02,M1,4b,"Beschriftung von den Knöpfen auf der Steuerkonsole fehlt, sieht nicht welcher Knopf welche Funktion hat, sollte infacher sein zum erkennen",appraisal,Bedienung ,,"e1151.2, b1646.1",
+P02,M1,4b,"Im Haus müsste eine elektrische Türe vorhanden sein, damit man nach dem Einkaufen ohne Probleme über die Schwelle kommt",need/dependency,Technische Unterstützung / Design von Gebäuden,,e1550.2,
+P02,M1,5a,"Sie würde den Rollstuhl brauchen, um den Haushalt zu machen",descriptive:performance,Haushalt,,"d640.0, d4600.0, e1201+2",
+P02,M1,7a,"Sie würde den Rollstuhl brauchen, um spazieren zu gehen",descriptive:performance,Freizeit und Erholung,Mobilität,d9204.0,"d4500.0, d4501.0, d465.0, e1201+2"
+P02,M1,6,Die Leistung des Rollstuhls zuhause ist in Ordnung. Sie kommt damit aber nicht in den Keller wegen einem hohen Absatz,descriptive:performance,Technische Unterstützung in der Mobilität,Design von Gebäuden,"e1201.1, d465.1","d451.4, e1551.4"
+P02,M1,7a,"Sie würde mit dem Rollstuhl einkaufen gehen, weiss aber nicht, wie gut sie die Waren transportieren kann",descriptive:performance,Tägliche Erledigungen wie Einkaufe,Fortbewegen und Objekte transportieren ,d6200.0,"d465.1, d4500.1, d4501.1, d4302.1"
+P02,M1,7a,Ich brauche den Rollstuhl für den Arbeitsweg,descriptive:performance,Fortbewegen (Arbeitsweg),,"d4500.0, d4501.0, d4601.0, d4602.0, d465.0, e1201+2",
+P02,M1,7a,Ich brauche den Rollstuhl fürs Arbeiten,descriptive:performance,Arbeiten,,"d8451.0, e1351+3",
+P02,M1,7b,"Ausserhalb des Hauses hat der Rollstuhl eine zufriedenstellende Leistung, grössere Absätze können aber nicht gut genommen werden, ist gut für flache Abschnitte ",descriptive:performance,Mobilität,,"d4500.0. d4501.0, d451.4, d465.2, e1201.1, e2108.1",
+P02,M1,10,Mit der Zeit fühlt man sich sicherer bei der Benutzung,appraisal,Sicherheitsgefühl,,b1268.1,
+P02,M2,1b,"Man muss sich daran gewöhnen, wie sich der Rollstuhl bei Verlagerung der Körpergewichtes verhält (z.B in der Küche)",appraisal,Schwerpunkt verlagern,Erlernen / Erfahrung,d4106.1,"b1470.1, b2352.1"
+P02,M2,1b,"Es ist schwierig, beim Einkaufen die Türe des Kühlregals zu öffnen",descriptive: performance,Türe öffnen,Einkaufen,"d4450.2, d4452.2, e1501.2, d4601.2",d6200.2
+P02,M2,4a,Der Sitzlift ist sehr praktisch und man kann auch in erhöhter Sitzposition etwas fahren,descriptive: performance,"
+Erhöhen, etwas erreichen",Sich fortbewegen,"d4452.0, d4153.0","d4500.0, d465.0, e1201+3"
+P02,M2,2,der Rollsltuhl hat sich sehr gut an die verschiedenen Umgebungen angepasst,descriptive: performance,Mobilität in verschiedenen Umgebungen,Umwelt,"d4502.0, d4600.0, d4601.0, d4602.0, d465.0, e1201+3",e2109.0
+P02,M2,4a,"ein Vorteil ist, dass der Rollstuhl sehr sehr wendig ist ",descriptive:performance,Mobilität ,,"d465.0, e1201+3",
+P02,M2,4a,"Der Rollstuhul ist nicht breit, von der Breite her angenehm Manövrieren ist sehr einfach, Slalom kann runder gefahren werden",descriptive:performance,"Manövrieren, Bewegen",,"d465.0, d4503.0, e1201+3",
+P02,M2,4a,Man fühlt sich sehr sicher im Rollstuhl,appraisal,Selbstvertrauen,,"b1268.0, b152.0",
+P02,M2,4a,Das Handling ist sehr angenehm,appraisal,"Bedienung, Steuern",,"e1151+3, d4402.0",
+P02,M2,4a,"Sitzpositionen kann man individuell ganz gut anpassen, das gefällt mir auch sehr",appraisal,Sitzen,,"d4153.0, e1201+3",
+P02,M2,4b,"Die Rückfahrkamera ist praktisch und hilfreich, ich hätte aber gerne Hilfslinien, Synchrone Darstellung von den Rädern und der Umgebung",appraisal,Technologische Unterstützung,,"e1201+2, d465.0, e1251+1",
+P02,M2,5a,"Überall und für Alles im Haus (Wäsche machen, Hausarbeiten erledigen, Putzen (Besensauger), in der Küche nur, wenn sie L-förmig gebaut ist, schlauchartig nicht",descriptive: performance,Tägliche Arbeiten zuhause,,"d6400.0, d6402.0, d6409.0 d6309.0, e1201+3",
+P02,M2,7,"Ausserhalb des Hauses grossflächig, z.B. zum Einkaufen, Bankgeschäfte erledigen, Leute treffen, ins Cafe oder Restaurant gehen (auch mit Treppen erreichbar), für Spaziergänge und Ausflüge. Gute Leistung des Rollstuhls",descriptive: performance,Aktivitäten ausserhalb des Hauses,Interaktion mit Fremden und Freunden,"d6200.0, d6201.0, d9204.0, d9205.0, d865.0, d2302.0, e1201+3","d730.0, d7400.0, d7500.0, "
+P02,M2,7,"Ein grosser Vorteil ist, dass man Leute besuchen kann, die in Häusern mit Treppen oder alleine wohnen, da dort keine Hilfe von Freunden oder Fremden benötigt wird",descriptive:performance,Freunde besuchen,Hindernisse überwinden und Mobilität,"d7500.0, d9205.0, d730.0, e345.0, e320.0","d465.0, d451, e1201+4"
+P02,M2,7,"Es ist angenehm über unebenen Grund zu fahren, viel angenehmer wie mit anderem Rollstuhl, er kippt nicht nach vorne, er balanciert aus und ruckelt weniger, der Rollstuhl federt mehr",descriptive:performance,Mobilität im Aussenbereich,Angenehme Fahrweise,"d4602.0, d465.0, d4502.0, e2109.0, e1201+3",b2800.0
+P02,M2,9,"Die Bedienung muss etwas erlernt werden, daher auch etwas anstrengend. Mit der Zeit aber sehr intuitiv",descriptive: performance,Gedächtnis & Bedienung,,"b1441.1, b1442.1, e1151.1",
+P03,M1,1b,Rollstuhl kann keine Treppen steigen,descriptive:performance,Treppensteigen,,"d451.4, e1201.4",
+P03,M1,2,Der Rollstuhl passt sich gut an verschiedene Umgebungen an,descriptive:performance,Fortbewegung in unterschiedlichen Umgebungen,Umwelt,"d4502.0, d4609.0, d465.0, e1201+3",e2109.0
+P03,M1,4a,"Man kann genau steuern und manövrieren, auch in engen Räumen",descriptive:performance,Manövrieren in engen Umgebungen,Feinmotorik,"d4503.0, d4600.0, d4601.0, d465.0, e1201+3",d4402.0. e1151+3
+P03,M1,4b,"Nachteil ist das Gewicht des Rollstuhls, um ihn mit einem Auto zu transportieren",appraisal ,Transportmöglichkeit in motorisierten Gefährt,,"d4701.2, e1201.2",
+P03,M1,5a,Der Rollstuhl hat eine gute Leistung zuhause,descriptive: performance,Mobilität Zuhause,,"d4600.0, d465.0, e1201+3",
+P03,M1,7,Man kann mit dem Rollstuhl ins Restaurant gehen,descriptive: performance,"Geselligkeit, Freizeit",Mobilität ausserhalb von Zuhause,"d9205.0, e1201+3","d4602.0, d4601.0, d465.0"
+P03,M1,7,"Ich weiss nicht genau wie der sich verhält im Gelände, das wäre wichtig, Steigungen und unebenen Boden vorallem",descriptive:performance,,,"d4502.8, d4602.8, e2108.8, e1201.9",
+P03,M1,7,"Ich muss üben um zu wissen welche Taste auf der Steuerkonsole was macht, zum drücken ist es einfach",appraisal,Gedächtnis & mentale Funktion,Bedienung,"b1441.1, b1442.1, b1643.1","e1151.1, d4402.0"
+P03,M1,9,Man fühlt sich sehr sicher,appraisal,Selbstvertrauen,,"b1268.0, b1528.0",
+P03,M2,2,Der Rollstuhl passt sich gut an verschiedene Umgebungen und Situationen an,descriptive:performance,Fortbewegung in unterschiedlichen Umgebungen,Umwelt,"d4502.0, d4609.0, d465.0, e1201+3",e2109.0
+P03,M2,2,der Rollstuhl ist gut für draussen und drinnen,descriptive:performance,Mobilität Innen und Aussen,,"d4502.0, d4600.0, d4601.0, d4602.0, d465.0, e1201+3",
+P03,M2,4a,Der Rollstuhl kann Treppen fahren und das ist ein Vorteil,descriptive: performance,Treppen steigen,,"d451.0, e1201+3",
+P03,M2,4a,"Hindernisse (z.B. Stufen) können besser überwunden werden als mit einem anderen Rollstuhl, so kann er zB seinen Bruder besuchen wo es eine 20 cm hohe Stufe hat",descriptive:performance,Hindernisse überwinsen,familiäre Beziehungen,"d451.0, e1550.0, e1201+3, d465.0","d7602.0, d9205.0"
+P03,M2,5a,Zuhause würde ich mit der Treppe einen Stock überwinden (ist wichtigste Funktion),descriptive: performance,Treppen steigen,,"d451.0, e1201+4, d4600.0, e1550.0",
+P03,M2,5a,Im Haus ist es zu eng für den Rollstuhl,descriptive: performance,Mit Rollstuhl fortbewegen,,"d465.2, d4600.2, e1201.2, e1551.2",
+P03,M2,5a,Die Pfeffermühle aus dem hohen Gestell rausnehmen ist viel besser gegangen wie mit dem anderen Rollstuhl (Sitzlift),descriptive: capacity,Objekte erreichen,Essen zubereiten,"d4153.0, d4452.0, e1151+4",d6300.0
+P03,M2,7,Man kann gut mit dem Rollstuhl auf unebenen Untergründen fahren,descriptive:performance,Mobilität in verschiedenen Umgebungen,physikalische Umwelt,"d4502.0, d4609.0, e1201+3",e2109.0
+P03,M2,7,Man kann im Sommer mit dem Rollstuhl in den Garten und auf den Sitzplatz oder ins Dorf gehen,descriptive:performance,Kurze und mittlere Distanzen fahren,In verschiedenen Umgebungen fortbewegen und Freizeit,"d4500.0, d4501.0","d4502.0, d4600.0, d4602.0, d465.0. e1201+3, d9204.0"
+P03,M2,7,Im Rollstuhl die Familie besuchen wäre möglich,descriptive:performance,Beziehungen pflegen,,"d7602.0, d9205.0",
+P03,M2,10,"Ich hatte nie ein ungutes Gefühl im Rollstuhl, man fühlt sich sehr sicher",appraisal,Selbstvertrauen,,"b1268.0, b1528.0",
+P04,M1,1b,Hat seit dem Schlaganfall Mühe mit der Koordination der Handbewegungen ,descriptive: performance,"Kontrolle von Willkürbewegungen, Feinmotorik",Steuerung bedienen,"b7600.2, b7602.2, d4402.2, b1471.2",e1151.2
+P04,M1,1b,"Die Bedienung braucht viel Konzentration, daher langsame Reaktionszeit",descriptive: performance,Rollstuhlbedienung,Reaktion,"e1151.2, b1400.2, b1402.2",b1470.2
+P04,M1,2,Den Rollstuhl drehen geht gut,descriptive: performance,Manövrieren,,"d465.0, e1201+2",
+P04,M1,2,"Türen öffnen geht gut, durch die Tür fahren ist schwierig",descriptive: performance,Türe öffnen,Manövrieren,"d4153.0, d4450.0, d4451.0, d4452.0, d4453.0","d465.2, d4600.2, d4601.2, e1201.2, e1500.2, e1550.2"
+P04,M1,2,Präzises Manövrieren in engem Raum ist schwierig,descriptive:performance,Manövrieren in engen Umgebungen,,"d4503.2, d4600.2, d4601.2, d465.2, e1201.2, d4402.2, e1151.2",
+P04,M1,4a,Die Steuerung ist benutzerfreundlich,appraisal,Bedienung,,e1151+2,
+P04,M1,4b,"Rückwärts fahren ist schwierig, etwas unkontrolliert",descriptive:performance,Manövrieren,,"d465.2, e1201.2",
+P04,M1,4b,Sie kommt die Rampe zuhause nicht noch,descriptive:performance,Mobilität,,d465.4,"e2108.4, e1550.4"
+P04,M1,5a,Würde damit Zuhause herumfahren,descriptive:performance,Umhergehen / Fortbewegen,,"d4600.0, d4500.0, d465.0, e1201+2",
+P04,M1,5a,"In der Küche um etwas zu kochen, Utensilien zu erreichen",descriptive: performance,Kochen,,"d6309.0, e1151+2, d4153.0, d4452.0",
+P04,M1,5b,Transfer ins und aus dem Bett würde gut gehen,descriptive:performance,Transfer,,d4200.0,
+P04,M1,6,Mit dem Rollstuhl kommt sie nicht die Rampe/Treppe hoch und somit nicht ins Haus,descriptive:performance,Fortbewegung mit Hilfsmittel,,"d451.4, d465.4, e1550.4",
+P04,M1,7,"Das Haus verlassen und auf der Strasse herumfahren, die nähere Umgebung anschauen",descriptive:performance,Umhergehen / Fortbewegen,Freizeit,"d4500.0, d4502.0, d4602.0, d465.0, e1201+2",d9204.0
+P04,M2,1b,"Koordination der Handbewegungen, Zittern der Hand",descriptive:performance,Kontrolle von Willkürbewegungen,Feinmotorik,"b7601.2, b7602.2, b1471.2","d4402.2, b7651.1"
+P04,M2,2,Der Rollstuhl hat sich gut an verschiedene Umgebungen angepasst,descriptive:performance,Fortbewegung in unterschiedlichen Umgebungen,Umwelt,"d4502.0, d4609.0, d465.0, e1201+3",e2109.0
+P04,M2,4a,Der Rollstuhl erhält einem viele Möglichkeiten der Beweglichkeit und Mobilität,descriptive: performance,Mobilität,,"d465.0, e1201+2",
+P04,M2,4a,Man ist mobiler mit dem Rollstuhl,descriptive: performance,Mobilität,,"d4500.0, d4501.0, d465.0, e1201+3",
+P04,M2,4a,Der Rollstuhl macht Freude,appraisal,Mentale Funktionen,,"b1265.0, b1266.0, b1528.0",
+P04,M2,4a,Mit dem Rollstuhl kommt man unter die Leute und kann die Gegend auskundschaften,descriptive:performance,Geselligkeit,Ausserhalb des Hauses bewegen,"d7509.0, d9205.0","d4602.0, d465.0, e1201+3"
+P04,M2,5a,"Ich könnte im Haus herumfahren, die Treppe zum 1. Stock überwinden und dort das WC und die Dusche benutzen",descriptive:performance,Treppensteigen,Körperpflege,"d451.0, e1551.0, d4600.0, e1201+3, e1151+3"," d5109.0, d5309.0"
+P04,M2,7,Ich könnte mit dem Rollstuhl einkaufen gehen,descriptive: performance,Einkaufen,Ausserhalb des Hauses bewegen,d6200.0,"d4602.0, d465.0, e1201+2"
+P05,M1,1b,man sieht auf der Seite nicht runter und deswegen ist es schwierig die Breite des Rollstuhls zu schätzen,appraisal,"Grösse des Rollstuhls, Überblick",,"b1565.2, e1201.2",
+P05,M1,1b,"Man sieht trotz Kamera beim rückwärtsfahren nicht, wie weit etwas weg ist",descriptive: performance,Orientierung,,"b1143.1, d465.1, e1151.1, e1251.2",
+P05,M1,1b,"Handling ist etwas schwer, mit übung wird das besser, ist halt neu, man muss es auswendig lernen",descriptive: performance,Bedienung,Kognition,"d1551.1, e1151.1","b1646.1, b1442.1, d4402.1"
+P05,M1,4a,Treppen fahren ist super,appraisal,Treppen steigen,,"d451.0, e1201+4",
+P05,M1,4a,Das überwinden von steilen Rampen (15°) ist auch ein Vorteil,descriptive: performance,Steigungen überwinden,Umwelt,"d465.0, e1201+2","e2108.0, e1508.0, e1558.0"
+P05,M1,4b,"um Rollstuhl einzuladen braucht man entprechendes Auto, der Rollstuhl ist sehr schwer im Vergleich zu einem kleinen Rollstuhl",need or dependency,Transport des Rollstuhls,,"d4701.2, e1201.2",
+P05,M1,5,"Zuhause kann ich den Rollstuhl nicht benutzen, da die Wohnung nicht geeignet ist, es ist zu eng, Türbreiten würden gehen, es lohnt sich nicht mit dem Rollstuhl rein zu fahren weil er zu gross ist für die Wohnung",descriptive: performance,Manövrieren im Haus,Design von Gebäuden,"d4600.8, d465.1, e1201.1","e1551.0, e1558.3"
+P05,M1,7,Mit dem Rollstuhl könnte ich mit meiner Frau laufen gehen,descriptive: performance,Beziehung pflegen,Mobilität im Aussenbereich,"d7701.0, d9205.0","d4602.0, d4500.0, d4501.0, d465.0"
+P05,M1,7,Ich könnte weitere Umgebungen erkunden mit dem Rollstuhl,descriptive: performance,Mobilität,,"d4602.0, d465.0, d4501.0",
+P05,M2,5a,Der Rollstuhl wirkt instabiler,appraisal,Gefühl von Sicherheit und Stabilität,,"b1268.1, e1201.1",
+P05,M2,4a,Handling ist einfacher bei diesem Rollstuhl,descriptive:performance,Bedienung,Kognition,"d1551.0, e1151+1","b1646.0, b1442.0, d4402.0"
+P05,M2,4b,"Der Rollstuhl ist bequemer, Sitzen über längere Zeit",appraisal,Sitzen,Körpergefühl,"d4153.0, e1201+2","b265.0, b810.0"
+P05,M2,4b,Bei dem Rollstuhl muss ich mehr aufpassen und oft auf den Display schauen,descriptive:performance,,,"b1400.1, b1401.2, d1601.1",
+P05,M2,4b,"Der Rollstuhl schüttelt sehr draussen beim Überfahren von grösseren Steinen, der Rollstuhl fährt nicht so einfach drüber auch beim Kies",descriptive:performance,In verschiedenen Umgebungen fortbewegen,,"d4502.2, d4602.2, d465.2, e2108.2, e1201.2",
+P05,M2,5a,"Zuhause kann ich den Rollstuhl nicht benutzen ohne Umbau, ich würde überall anstehen (Schwelle auf die Terasse (fast so hoch wie Randstein), Badzimmer ist ausgebaut, Schlafzimmer würde auch gehen, wäre knapp aber machbar)",descriptive:performance,Mobilität indoor,Design von Gebäuden,"d4600.3, d465.3, e1201.3","e1550.3, e1551.3"
+P05,M2,5a,"Ich würde nicht in die Pfannen sehen von dem Rollstuhl aus, Spühltrog würde nicht gehen von der Höhe her",descriptive:performance,Haushalt (Kochen und Abwasch),,"d6309.4, d6401.4, e1201.4",
+P05,M2,7a,"Ins Restaurant gehen, aber nur, wenn es einen Lift hat bzw. rollstuhlgängig ist",need or dependency,Design von Gebäuden,,"d9205.1, d9208.1","e1500.0, e1501.0"
+P05,M2,7,"Postauto mit Rampe wäre keine Sache, bräuchte Hilfe von Chauffeur",need or dependency,Transportmittel benutzen,Abhängigkeit,d4702.0,"e345+3, e360+3"
+P06,M1,1b,Zu Beginn macht man viele Bedienungsfehler,descriptive: performance,Bedienung,Gedächtnis,"d1551.2, e1151.2","b1440.1, b1443.1"
+P06,M1,1b,Die Fussstütze ist nicht so stabil,appraisal,Rollstuhlteil,,e1151.1,
+P06,M1,2,"Im Rollstuhl kann man verschiedene Herausforderungen drinnen und draussen meisten, aber es braucht etwas Zeit, bis man sich daran gewöhnt und alles gelernt hat",descriptive: performance,In verschiedenen Umgebungen fortbewegen,Lernen,"d4600.1, d4601.1, d4602.1, d465.1, e1201+2","d1551.2, d198.2"
+P06,M1,4a,"Der Rollstuhl ist super, wenn die Mobilität und die Bewegung in den oberen Extremitäten eingeschränkt ist",appraisal,Mobilität,,"d465.0, e1201+3","b7609.3, d4459.3"
+P06,M1,4a,Der Rollstuhl kann auch mit Ataxie noch gut bedient werden,descriptive: performance,Ataxie,Bedienung,"d7600.2, d7602.2","e1151+2, d4402.0"
+P06,M1,4a,"Die Treppenfunktion ist super, ansonsten bin ich mit dem Handrollstuhl viel flexibler",descriptive: performance,Treppensteigen,Flexibilität,"d451.0, d465.0, e1201+3",e1201.2
+P06,M1,4b,"Mit dem Elektrorollstuhl würde mir die Bewegung fehlen, um fit zu bleiben",appraisal,körperliche Aktivität,,"d9201.1, e1201.1",
+P06,M1,5a,"Zuhause würde ich ihn noch nicht benutzen, da ich noch nicht darauf angewiesen bin und es im Haus zu eng ist",descriptive: performance,Indoor Mobilität,Design von Gebäuden,"d4600.8, e1201.0",e1558.3
+P06,M1,5a,Ich könnte mit dem Rollstuhl die Treppe überwinden und meine Schwiegereltern besuchen,descriptive: performance,Beziehungen pflegen,Treppen steigen,"d9100.0, d7603.0","d451.0, e1201+3"
+P06,M1,5a,"Wenn die Wohnung geeignet ist, kann man den Rollstuhl für alles benutzen",descriptive: performance,Design von Gebäuden,Indoor Mobilität,"e1550.0, e1551.0","d4600.0, d465.0"
+P06,M1,5a,Man könnte mit dem Rollstuhl kochen,descriptive: performance,Kochen,,d6309.0,
+P06,M1,7a,"Man könnte den Rollstuhl bei der Arbeit brauchen, z.B. wenn man im Lager arbeitet",descriptive: performance,Arbeiten,,"d8451.0, e1201+2",
+P06,M1,7a,Der Rollstuhl wäre ein bequemer Bürostuhl,appraisal,Sitzen,Unterstützung im Arbeitsalltag,"b265.0, d4153.0, e1201+3",e1351+2
+P06,M1,7a,"Der Rollstuhl könnte viele andere Hilfsmittel ersetzen (z.B. Treppenlift, Griffe im Bad um sich hochzuziehen und festzuhalten, Umbau der Küche um an Utensilien zu gelangen, höhenverstellbarer Bürotisch)",descriptive: performance,Alltagshilfe,,"d2302.0, d4153.0, d451.0, d8451.0, e1151+3, e1201+3",
+P06,M1,7a,"Draussen über unebenen Grund wie Steine zu fahren, ist kein Problem mit dem Rollstuhl, mit dem Handrollstuhlist das schwierig vorallem wegen der Ataxie",descriptive: performance,Outdoor Mobilität,,"d4502.0, d4602.0, e1201+3, e2108.0",
+P06,M1,9,Die Bedienung ist weder physisch noch mental anstrengend,descriptive: performance,Anstrengung,,"b4550.0, b1300.0, e1151.0",
+P06,M1,10,Ich habe mich während der Benutzung des Rollstuhls sehr sicher gefühlt,appraisal,Sicherheit,,"b1268.0, b1528.0",
+P06,M2,1b,"Rückwärtsfahren ist schwierig, da sich die kleinen Räder seltsam drehen und man zuerst in die falsche RIchtung fährt, daran muss man sich gewöhnen",descriptive: performance,Manövrieren,,"d465.2, e1201.2",
+P06,M2,2,"Der Rollstuhl hat sich gut an verschiedene Umgebungen angepasst, aber es ist gewöhnungssache",descriptive: performance,In verschiedenen Umgebungen fortbewegen,Lernen,"d4609.0, d465.0, e1201+2","d1551.2, d198.0"
+P06,M2,2,"Ich bin nicht auf den Rollstuhl angewiesen, daher ist er für mich auch nicht alltagstauglich",appraisal,Alltagstauglichkeit,,"d2309.2, e1201.2",
+P06,M2,4a,Man braucht weniger Kraft als mit einem Handrollstuhl,descriptive: performance,Anstrengung,,"b7309.0, e1201+2",
+P06,M2,4a,Der Rollstuhl unterstützt in der Mobilität,descriptive: performance,Mobilität,,"d4509.0, d4609.0, d465.0, e1201+2",
+P06,M2,4a,"Der Rollstuhl steht still, wenn man sich bewegt",descriptive: performance,Rollstuhlcharakteristik,Schwerpunkt verlagern,e1151.0,"d4106.0, e1201+2"
+P06,M2,4b,"Die öV Benutzung ist nicht möglich, wenn man eine steile Rampe oder einen grossen Abstand zwischen Perron und Zugtüre überwinden muss",descriptive: performance,öffentlichen Transport benutzen,,d4702.3,
+P06,M2,4b,"Ich denke es ist nicht möglich, den Rollstuhl in ein normales Auto zu verladen",appraisal,privaten Transport benutzen,,"d4701.3, e1201.3",
+P06,M2,5a,Mit dem Rollstuhl würde ich nicht ins Haus kommen,descriptive: performance,Ins Haus kommen,,"d465.3, e1201.3, e1550.3",
+P06,M2,5a,Das Tempo und der Modus (In- und outdoor) können schnell und einfach angepasst werden,descriptive: performance,Bedienung,Mobilität indoor und outdoor,e1151+3,"d4502.0, d4600.0, d4602.0, d465.0"
+P06,M2,7a,Ich würde den Rollstuhl für Spaziergänge benutzen,descriptive: performance,Freizeit,Distanzen überwinden,d9204.0,"d4509.0, d4602.0, d465.0"
+P06,M2,7a,Ich würde mit dem Rollstuhl Einkaufen gehen,descriptive: performance,Einkaufen,,"d6200.0, e1201+2",
+P06,M2,7a,"Mit dem Rollstuhl kann man ein Konzert besuchen, man braucht einfach mehr Platz als mit dem Handrollstuhl",descriptive: performance,Kultur,,"d9202.0, e1201.1",
+P06,M2,7a,Ich könnte mit dem Rollstuhl meinen Alltag meistern,descriptive: performance,Alltag bewältigen,,"d2202.0, d2309.0",
+P06,M2,10,Ich hatte keine Sicherheitsbedenken,appraisal,Sicherheit,,"b1268.0, b1528.0",
+P07,M1,1b,In einem kleinen Raum ist das Manövrieren schwierig,descriptive:performance,Manövrieren,kleiner Raum,d465.2,e1559.2
+P07,M1,1b,"Automatische Türen wären hilfreich, da das Öffnen sonst schwierig ist",descriptive:performance,Türen öffnen,Eingänge,"d4153.2, d4450.2, d4451.2, d4452.2,  d4453.2","e1500.2, e1550.2"
+P07,M1,1b,"Der Parkmodus ist verwirrend da dort viele Funktionen vorhanden sind, das muss man sich zuerst einprägen",descriptive:performance,Bedienung,Kognition,e1151.2,"b1442.1, b1443.1, b1643.2"
+P07,M1,2,Im Gelände traut man sich mehr mit dem Rollstuhl,descriptive:performance,Verschiedene Untergründe,Vertrauen,"e2109.0, d4502.0, d4602.0, d465.0",b1266.0
+P07,M1,2,"Treppe steigen war erstaunlich, Sicherheit ist sehr einbezogen, das war top",descriptive: performance,Treppen steigen,Vertrauen,"d451.0, e1201+3",b1266.0
+P07,M1,2,"Im Geröll muss man die Geschwindigkeit anpassen, es schüttelt viel weniger als mit einem anderen Rollstuhl",descriptive:performance,Verschiedene Untergründe,Körpergefühl,"e2108.0, d465.0, e1201+3, d4502.0, d4602.0", b2701.0
+P07,M1,2,Auf kleinen Steinen fahren geht gut,descriptive:performance,Verschiedene Untergründe,,"e2108.0, e1201+2, d4502.0, d4602.0",
+P07,M1,2,Steigungen fahren hat sich gut angefühlt mit dem Rollstuhl,appraisal,Steigungen ,,"e2108.0, d465.0, e1201+2",
+P07,M1,4a,Die Treppenfunktion und über Schwellen ist super,appraisal,Treppensteigen,,"d451.0, e1201+3",
+P07,M1,4a,"Der Sitzlift ist praktisch, wenn man aus dem Rollstuhl nicht mehr aufstehen kann, z.B. wenn man beim Einkaufen etwas aus dem Regal holen möchte",descriptive:performance,Sitzen bleiben,Einkaufen,"d4153.0, e1151+3","d6200.0, d4452.0"
+P07,M1,4a,"Drehungen seitwärts an Ort und Stelle ist sensationell, das geht mit meinem Rollstuhl nicht gut",descriptive: performance,Manövrieren,,"d465.0, e1201+3",
+P07,M1,4b,Das Ausgleichen des Rollstuhls ist ungewohnt und belastend wenn man müde wird,appraisal,Schwanken,Belastung,"e1151.2, d4106.2",b1300.1
+P07,M1,4b,Der Rollstuhl ist etwas gross,appraisal,Dimension des Rollstuhls,,e1201.1,
+P07,M1,,"Ich würde zuhause die Treppe fahren, wenn der Lift nicht kommt oder wenn es einen Brand gibt, ist man auf dem sicheren Weg, sosnt ist man ausgeliefert, gibt ein Gefühl von Sicherheit",descriptive:performance,Treppen steigen,Sicherheit,"d451.0, e1201+3","b1265.0, b1266.0"
+P07,M1,7a,Ich würde ihn zum Einkaufen benutzen,descriptive: performance,Einkaufen,,d6200.0,
+P07,M1,7a,"mit dem Rollstuhl könnte ich draussen jemanden ziehen, zum Beispiel die Steigung zum Friedhof hoch",descriptive: performance,Gemeinschaft und anderen helfen,Steigungen fahren,"d9100.0, d6601.0","d4602.0, e2108.0"
+P07,M1,7a,"Spazieren im Seniorenzentrum, vorallem bei Steigungen wäre der Rollstuhl geeignet",descriptive: performance,"Spazieren, Freizeit",,"d4502.0, d4602.0, e2108.0, d9204.0, d465.0, e1201+2",
+P07,M1,7a,"Ich bräuchte weniger Platz mit dem Rollstuhl beim drehen, zB im Bus, mein Rollstuhl braucht da mehr Platz",descriptive: performance,Manövrieren,Transport,"d465.0, e1201+2",d4702.0
+P07,M1,7a,In den Bus einsteigen müsste ich üben,descriptive:performance,öffentliche Verkehrsmittel,,d4702.1,
+P07,M2,1b,"Rückwärtsfahren geht nicht gut, das Handling ist mühsam und muss viel geübt werden",descriptive:performance,Manövrieren,Handling,"d465.2, e1201.2",e1151.2
+P07,M2,1b,"Fahren über grosse Steine draussen war sehr erschütternd, würde ich eher umfahren",descriptive:performance,Verschiedene Untergründe,Körpergefühl,"d465.3, e1201.2, d4502.2, d4602.2, e1208.2", b2701.2
+P07,M2,2,"In der Küche braucht man eine gute Strategie, wie man die Probleme lösen kann, es ist aber gewöhnungssache",descriptive:performance,Manövrieren Indoor,Kognitive Felxibilität,"d465.1, d4600.1, e1201.1","b1643.2, d1750.2"
+P07,M2,4a,"Die Bedienung ist sehr fein, nicht brüsk",appraisal,Bedienung,,e1151+2,
+P07,M2,4a,Man kann an Ort drehen,descriptive:performance,Manövrieren,,"d465.0, e1201+2",
+P07,M2,4a,Der Rollstuhl macht sehr wenig Geräusche,appraisal,Geräusche,,"e2500.0, e1201.0",
+P07,M2,4a,Das Bedienungsfeld ist sehr übersichtlich,appraisal,Bedienung,,e1151+2,
+P07,M2,4b,"Gelände draussen muss vielfach umgangen werden, auf Steigung muss man auch achten, Rollstuhl ist nicht so geländegängig",descriptive:performance,Verschiedene Untergründe,,"d4502.2, d4602.2, e1201.2, e2108.2, e2109.2, d465.2",
+P07,M2,5a,Ich würde in der Wohnung inkl. Küche herumfahren,descriptive:performance,Indoor Mobilität,,"d4600.0, d465.0",
+P07,M2,5a,Türen sind kein Problem,descriptive:performance,Türen,Gebäude,"d4153.0, d4450.0, d4451.0, d4452.0, d4453.0","e1550.0, e1500.0"
+P07,M2,5a,In der Küche könnte ich Utensilien in der Höhe erreichen,descriptive:performance,Utensilien erreichen,,"d4153.0, d4452.0, e1151+2",
+P07,M2,7a,"im Bus (ÖV) könnte man die Drehung an Ort und Stelle ausnutzen, dann muss man nicht rückwärts fahren",descriptive:performance,Transport,,"d4702.0, d465.0, e1201+3",
+P07,M2,7a,"Ich kann nicht in den Wald fahren, da dort eine steile Steigung ist",descriptive:performance,Freizeit,Verschiedene Untergründe,"d9204.0, e2208.0","d4502.4, d4602.4, d465.4, e2108.4"
+P08,M1,1b,"Angst vor der Treppe war da, aber wenn man es ein paar Mal gemacht hat ist das eine super Sache",appraisal,Angst,Treppen steigen,b1266.2,d451.1
+P08,M1,2,"Türen öffnen ist sehr gewöhnungsbedürftig, weil sich der Rollstuhl bewegt, wenn ich mich nach vorne lehne",descriptive: performance,Türen öffnen,Gewöhnung an Bewegung des Rollstuhls,"d4153.1, d4450.1, d4451.1, d4452.1, d4453.1, e1550.1, e1500.1","e1151.0, d4106.1"
+P08,M1,2,Der Rollstuhl hat sich gut an verschiedene Umgebungen angepasst,descriptive: performance,Fortbwegwegung in verschiedenen Umgebungen,,"d465.0, d4609.0, e1201+2",
+P08,M1,2,"Wenn ich die Abläufe im Kopf habe, klappt es gut in der Küche",descriptive: performance,Kognition,Küche,"b1442.1, b1443.1, b1643.1","d4600.1, d4601.1, d4402.1"
+P08,M1,4a,"Der Rollstuhl macht alles automatisch, man muss einfach die Knöpfe auf der Bedienung kennen",descriptive: performance,Bedienung,Langzeitgedächtnis,"e1151.0, d465.0, e1201+3",b1442.1
+P08,M1,4a,Die Rückfahrkamera ist sehr gut,appraisal,Technische Unterstützung bei der Fortbewegung,,"d465.0, e1151+3, e1251+3",
+P08,M1,4b,"Man muss einen klaren Kopf haben, damit man sich die verschiedenen Funktionen und Abläufe merken kann, dann ist der Rollstuhl super",descriptive: performance,Kognitive Flexibilität,,"b1400.1, b1441.1, b1442.1, b1443.1, b1643.1, e1201+2",
+P08,M1,4b,Die Kellertreppe wäre wahrscheinlich zu eng,appraisal,Treppe,,"d451.3, e1551.3, d4600.3",
+P08,M1,5a,In einem ebenerdigen Haus kann der Rollstuhl gut helfen,appraisal,Zuhause fortbewegen,,"d4600.0, d4601.0, d465.0, e1201+3, e1551.0, e1501.0",
+P08,M1,5a,"Der Rollstuhl würde mir sehr helfen, die 2 Treppenstufen vom Wohn- ins Esszimmer zu überwinden",descriptive: performance,Treppen steigen,,"d451.0, e1201+3, d4600.0, e1551.0",
+P08,M1,5a,Ich könnte den Absatz beim Ausgang auf die Terrasse überwinden,descriptive: performance,Absatz überwinden,,"d451.0, e1201+3, e1551.0, d4600.09",
+P08,M1,5a,Das Gartentor öffnen und draussen im Garten fahren geht gut,descriptive: performance,Im Garten fahren,,"d4450.0, d4451.0, d4452.0, d4600.0",
+P08,M1,5a,"Im Haus hat es einige Barrieren, die mit dem Rollstuhl aber kein Problem sind",descriptive: performance,Barrieren,,"e1551.0, d465.0, e1201+3",
+P08,M1,7,"Ich könnte mit dem Bus nach Chur fahren, um herumzuschauen und zu lädelen",descriptive: performance,"Freizeit, Einkaufen, Hobby",öffentlicher Verkehr,"d4602.0, d9204.0, d6200.0, e1201+3",d4702.0
+P08,M1,7,Ich könnte Steigungen auf dem Gras fahren,descriptive: performance,Unebene Untergründe,,"d4502.0, d4602.0, d465.0, e2108.0",
+P08,M1,7,Ich würde den Rollstuhl outdoor zum spazieren benützen,descriptive: performance,Spazieren,,"d4502.0, d4602.0, d9204.0, d465.0",
+P08,M2,1b,Die Armlehnen sind nicht so gut,appraisal,Rollstuhlteil,,"e1151.2, b265.2",
+P08,M2,1b,"Ich hatte Mühe, die Räder gerade auszurichten, um über eine Türschwelle zu fahren",descriptive:performance,Türschwelle fahren,Gebäude,"d465.2, e1151.2","e1550.2, e1500.2"
+P08,M2,1b,Die Türe halten und über die Schwelle fahren war problematisch,descriptive: performance,Türen halten,Durch Türen fahren,"d4153.2, d4450.2, d4451.2, d4452.2","d465.2, e1500.2, e1550.2"
+P08,M2,4a,"Mit dem Rollstuhl ist man selbstständiger, ausser bei Treppen und Stufen",descriptive: performance,Selbstständigkeit,,"d465.1, e1201+2, d451.4, d2102.1",
+P08,M2,4a,"Der Rollstuhl ist gut beim täglichen Gebrauch im Haus, wenn es ebenerdig ist. Die Grösse des Rollstuhls ist gut",appraisal,Mobilität Indoor,,"d465.0, d4600.0, d4601.0, e1201+2",
+P08,M2,4b,Im Sand könnte es schwierig werden mit dem Rollstuhl,appraisal,Verschiedene Untergründe,,"e2108.3, d4502.2, d4602.2",
+P08,M2,4b,"Auf Kies fahren geht, auf Pflastersteinen ist es holprig",descriptive: performance,Verschiedene Untergründe,,"d4502.1, d4602.1, e2108.2, b2701.1, d465.1",
+P08,M2,4b,Die Steuerung und feine Bewegungen waren schwierig,descriptive: performance,Bedienung,,"d4402.3, e1151.3",
+P08,M2,5,"Der Rollstuhl würde mich zuhause unterstützen, man müsste halt die Treppen in der Wohnung mit einer Rampe überbrücken",descriptive: performance,Mobilität Indoor,,"d4600.0, d465.1, e1201+2, d451.4, e2108+3",
+P08,M2,7a,Ich könnte mit dem Rollstuhl in den Garten,descriptive: performance,Garten,,"d4600.0, 
+d465.0, d9204.0",
+P08,M2,7a,"Ich könnte mit dem Rollstuhl auf die Strasse und dann in den Bus steigen, wenn es eine Rampe hat",descriptive: performance,Transport benutzen,Distanzen,"d4602.0, d4702.0, e2108+3","d4501.0, d4500.0"
+P08,M2,7a,"In der Stadt wäre es kein Problem, ich könnte auch ins Café gehen",descriptive: performance,Freizeit,,"d4602.0, d465.0, d9208.0",
+P08,M2,7a,Ich kann andere Menschen abholen oder begleiten,descriptive: performance,Anderen Helfen,,"d6609.0, d7509.0, d9109.0, e1201+2, d9205.0",
+P08,M2,7b,Am wichtigsten wäre die Mobilität draussen,appraisal,Mobilität,,"d4602.0, d465.0, e1201+4",
+P09,M1,1b,"Am Anfang ist noch unklar, welcher Knopf welche Funktion hat. Die Bezeichnungen sind nicht eindeutig",descriptive: performance,Bedienung,,e1151.2,
+P09,M1,2,"Der Rollstuhl hat sich gut an die Umgebungen angepasst, auch draussen über die Holpersteine wars gut",descriptive: performance,Fortbwegwegung in verschiedenen Umgebungen,verschiedne Untergründe,"d465.0, e1201+2","d4502.0, d4609.0, e2108.0"
+P09,M1,4a,"Ich finde es sensationell, dass man an Ort und Stelle sich drehen kan",descriptive: performance,Manövrieren,,"d465.0, e1201+4",
+P09,M1,4a,"Man hat Licht und eine Hupe, damit kann man sich bemerkbar machen und durchsetzen",appraisal,Kommunikation,,e1251+2,
+P09,M1,4a,"Der Rollstuhl ist sehr bequem wie ein Sitz, die Armlehne ist super",appraisal,Sitzen & Körpergefühl,,"b265.0, d4153.0, e1151+3",
+P09,M1,5a,"Im Haus würde ich den Rollstuhl nicht benutzen, da ich nicht darauf angewiesen bin. Ich würde aber gut ins Haus kommen und könnte im Haus herumfahren, will das aber nicht",need or dependency,Indoor Mobilität,Gebäude,"d4600.0, d465.0, e1201.3","e1550.0, e1551.0"
+P09,M1,7a,"Ich könnte mit dem Rollstuhl Distanzen überwinden und Orte besuchen, die ich früher besucht habe",descriptive: performance,Distanzen überwinden,Freizeit,"d4501.0, d4500.0, d465.0, e1201+3",d9208.0
+P09,M1,7a,Es wäre für mich ein Stuhl zum geniessen,appraisal,Lebensqualität,,"b1265.0, b1266.0, b1528.0",
+P09,M1,7a,"Wir wohnen am Hang, dann würde ich in den Wald mit dem Rollstuhl fahren und spazieren",descriptive: performance,Freizeit,Spazieren,d9204.0,"d4500.0, d4501.0, d4502.0, d4602.0, e2208.0, e2108.0, d465.0"
+P09,M2,1b,Das Wackeln bzw. Ausgleichen des Rollstuhls während des Manövrierens (z.B. beim Türe öffnen) ist nicht komfortabel,descriptive: performance,Bewegung des Rollstuhls,Türen öffnen,"d4153.1, d4106.2, e1151.2, d465.2","d4450.1, d4451.1, d4452.1"
+P09,M2,2,Der Rollstuhl hat sich sehr gut an die verschiedenen Umgebungen angepasst,descriptive: performance,Fortbwegwegung in verschiedenen Umgebungen,,"d465.0, d4609.0, e1201+3",
+P09,M2,4a,Der Rollstuhl hat eine angenehme Grösse,appraisal,Rollstuhl,,e1201+2,
+P09,M2,4a,"Der eingebaute Rucksack ist sehr praktisch, wenn z.B. Picknicken will",appraisal,Dinge transportieren,,"d4303.0, e1151+3",
+P09,M2,4a,"Man kann alles einstellen, zB Geschwindigkeit",descriptive: performance,Bedienung,,e1151+2,
+P09,M2,5a,"Sie würde den Rollstuhl überall im Haus benutzen, es muss einfach genug breit sein, damit man manövrieren kann",descriptive: performance,Indoor Mobilität,Design von Gebäuden,"d4600.0, d4601.0, d465.0","e1501.0, e1551.0"
+P09,M2,5a,In der Küche wäre der Rollstuhl am hilfreichsten,descriptive: performance,Küche,,"d6309.0, d4600.0, d465.0, e1201+4",
+P09,M2,5a,Zum Staubsaugen würde ich den Rollstuhl auch benutzen,descriptive: performance,Haushalt,,d6402.0,
+P09,M2,7a,"Ich gehe jeden Tag in die Stadt, da muss ich Steigungen überwinden, und Spaziergänge wären auch möglich, das wäre viel weniger anstrengend",descriptive: performance,Mobilität Outdoor,Spazieren & Freizeit,"d4602.0, d465.0, d4502.0, d4500.0, d4501.0, e2108.0","d9204.0, e1201+3, b1300.0,"
+P09,M2,7a,"Ich will wieder dabei sein in sozialen Interaktionen und das könnte ich mit dem Rollstuhl, ich muss unter die Leute",need/dependency,Sozialleben,,"d7509.0, d9205.0, e320+2, e325+2, e1201+3, d465.0",
+P09,M2,7a,Ich könnte mit dem Rollstuhl in ein Cafee ,descriptive: performance,Freizeit,,"d4602.0, d465.0, d9208.0",
+P09,M2,7a,Der Rollstuhl kann Treppensteigen,descriptive: performance,Treppen steigen,,d451.0,
+P09,M2,9,Nach langer Benutzung wird es etwas anstrengend,descriptive: performance,Kognitive Anstrengung,,"b1643.2, b1300.1",
+P09,M2,10,Man fühlt sich sicher bei der Benutzung,appraisal,Sicherheit,,"b1265.0, b1266.0, b1528.0",
+P10,M1,1b,"Ich kann die linke Seite nicht richtig wahrnehmen, manövrieren ist schwierig",descriptive: performance,Manövrieren,Wahrnehmung,d465.2,b1561.2
+P10,M1,1b,Bergab muss man richtig bremsen,descriptive: performance,Steigungen,,"d4609.1, d465.1, e2108.1",
+P10,M1,2,Es war angenehm mit dem Rollstuhl in verschiedenen Umgebungen,descriptive: performance,Verschiedene Umgebungen,,"d465.0, d4609.0, e1201+2",
+P10,M1,2,Bei mir zuhause wäre es nicht möglich mit dem Rollstuhl,appraisal,Indoor Mobilität,Gebäude,"d4600.4, d465.4","e1550.4, e1551.4"
+P10,M1,4a,"Man braucht keine Hilfe, niemand muss einen stossen",appraisal,Selbstständigkeit,,"d465.0, e1201+3, e399.0",
+P10,M1,4a,"Berg auf und bergab fahren war sehr gut, mit dem manuelllen Rollstuhl werde ich meistens schräg da ich nur mit einer Hand bremsen kann",descriptive: performance,Steigungen fahren,Handbenutzung,"d4609.0, d465.0, e1201+3, e2108.0","d4401.3, d4402.3, d4458.3"
+P10,M1,4a,Auf dem Kies fahren ist viel einfacher als mit einem Handrollstuhl,descriptive: performance,Verschiedene Untergründe,,"d4502.0, d4602.0, d465.0, e1201+3, e2108.0",
+P10,M1,4b,Auf die Toilette gehen muss man üben,appraisal,Toilette benutzen,,"d5309.2, e1551.1, e1501.1",
+P10,M1,4b,"Der Rollstuhl ist sehr gross, ein Nachteil in engen Räumen",descriptive: performance,Dimensionen,Design von Gebäuden,"e1201.2, d465.2","e1508.2, e1558.2, d4600.2"
+P10,M1,4b,"Nach draussen gehen ist schwierig mit dem Rollstuhl, da man nicht gut ins oder aus dem Haus kommt, ich müsste den Rollstuhl tragen",descriptive: performance,Nach draussen gehen,,"d4600.2, e1550.2, e1201.2",
+P10,M1,4b,Ich könnte die Treppe ins Haus nicht überwinden,descriptive: performance,Treppen steigen,,"d451.4, e1550.4",
+P10,M1,4b,Türe auf unf zu machen war herausfordernd,descriptive: performance,Türen,,"d4153.2, d4450.2, d4451.0, d4452.2, d4106.2",
+P10,M1,5a,Ich könnte mit dem Rollstuhl auf den Sitzplatz im Garten und die kleine Steigung dahin überwinden,descriptive: performance,Verschiedene Umgebungen,Freizeit,"d4600.0, d465.0, e1201+2, e2108.0",d9204.0
+P10,M1,5b,Garten ist die wichtigste Aktivität für mich,appraisal,Garten,Freizeit,d4600.0,d9204.0
+P10,M1,7a,Ich könnte mit dem Rollstuhl einkaufen gehen,descriptive: performance,Einkaufen,,"d4602.0, d465.0, d6200.0",
+P10,M1,7a,Ich könnte selbständig in die Therapie mit dem Rollstuhl,descriptive: performance,Therapie,,"d5702.0, d2102.0",
+P10,M1,7a,"Zum auswärtsessen oder ins Konzert brauche ich immer jemanden der Auto fährt und den Rollstuhl einlädt, das kann ich mir mit dem Rollstuhl eher weniger vorstellen",need/dependence,Freizeitaktivitäten,Unterstützung,"d550.2, d9202.2, d9204.2, d9205.2","d4701.2. e399+2, e5400+2"
+P10,M1,7a,"Beim Hochbeet hat es einen Absatz (so hoch wie einen Randstein), da könnte ich mit dem Rollstuhl nicht hin",descriptive: performance,Absätze überwinden,Garten,"d451.4, d4600.4, e1550.4",d9204.4
+P10,M1,7b,Die wichtigste Aktivität ist auswärts mit den Verwandten Essen gehen,appraisal,Soziale Kontakte pflegen,,"d9205.0, d4602.0, e310+4, e315+4, d7603.0, d550.0",
+P10,M2,1b,Rückwärts gerade an eine Treppe oder einen Randstein ran fahren ist schwierig mit dem Rollstuhl,descriptive: performance,Rückwärts manövrieren,Treppensteigen,"d4402.2, d465.2, b1143.2, e1151.2, e1201.2",d451.1
+P10,M2,1b,"Über die Strasse fahren kann gefährlich werden, wenn auf der anderen Seite ein Absatz ist, den man überwinden muss",appraisal,Verschiedene Umgebungen,,"d4501.3, d451.3, d4602.3, e1602.2",
+P10,M2,2,Der Rollstuhl hat sich sehr gut an verschiedene Umgebungen angepasst,descriptive: performance,Fortbwegwegung in verschiedenen Umgebungen,,"d465.0, d4609.0, e1201+3",
+P10,M2,2,Weitere Strecken überwinden ist sehr komfortabel,descriptive: performance,Mobilität,,"d4501.0, d465.0, e1201+3",
+P10,M2,2,"Im Haus ist es auch komfortabel, wenn man genug Platz hat",descriptive: performance,Indoor Mobilität,,"d4600.0, d4601.0, e1508.0, e1558.0",
+P10,M2,4a,"Man kann komfortabel mit dem öV unterwegs sein, weil man gut ohne Hilfe ein- und aussteigen kann",description:performance,öffentliche Verkrehrsmittel,,"d4702.0, d465.0, e399.0, d2202.0",
+P10,M2,4a,Man kann Treppen alleine bewältigen,descriptive: performance,Treppen steigen,,"d451.0, e1201+4, d2100.0",
+P10,M2,4b,"Der Rollstuhl ist zu gross, um ihn in einen normalen Kofferraum zu laden",descriptive: performance,Transport benutzen,,"e1201.3, d4701.4",
+P10,M2,5a,Ich könnte alleine in den Garten auf den Sitzplatz,descriptive: performance,Ums Haus bewegen,,"d4600.0, d465.0, e1201+3, d9204.0",
+P10,M2,5b,"Am liebsten bin ich im Garten, das ist die wichtigste Aktivität",appraisal,Garten,,"d4600.0, d9204.0, e1201+4",
+P10,M2,7a,"Wenn man den Rollstuhl transportieren kann, könnte ich ins Restaurant oder an ein Konzert gehen",description:performance,Transport,Freizeitaktivität,"d4701.2. e399+2, e5400+2","d550.2, d9202.2, d9204.2, d9205.0"
+P10,M2,7a,"Beim Spazieren müsste meine Frau mich nicht mehr stossen auf dem Kiesweg, das ist viel weniger anstrengend als mit dem Handrollstuhl",need/dependency,Hilfe durch Verwandte,Erschöpfung,"d4602.0, d465.0, e1201+3, d9204.0, e310.0 , e2108.0",b4552.0
+P10,M2,7a,Draussen über Kies oder grosse Steine fahren ist viel angenehmer als mit einem Handrollstuhl,descriptive: performance,Verschiedene Untergründe,,"d465.0, e1201+3, e2108.0, b2701.0, d4609.0, d4502.0",
+P10,M2,9,Der Rollstuhl hat eine gute Bedienung,appraisal,Bedienung,,e1151+2,
+P11,M1,1b,"Zu Beginn ist noch unklar, wann sich der Rollstuhl wie bewegt",appraisal,Schwerpunkt verlagern,Erlernen / Erfahrung,"d465.1, d4106.1, e1151.1,  b2352.1","b1470.1, d1558.0"
+P11,M1,1b,Es braucht Zeit und Konzentration für die Bedienung,descriptive: performance,Bedienung,kognitive Anstrengung,"d1608.2, e1151.2","b1643.2, b1300.2, b1400.2"
+P11,M1,2,"Der Rollstuhl hat sich gut an verschiedene Umgebungen angepasst, er kann viele Situationen meistern",descriptive: performance,Verschiedene Umgebungen,,"d4609.0, d465.0, e1201+2",
+P11,M1,4a,"Der Rollstuhl kann gerade Treppen überwinden, auch mit Podest, das ist wichtig",descriptive: performance,Treppensteigen,,"d451.0, e1201+3",
+P11,M1,4a,Die Wenidigkeit des Rollstuhls ist gut,descriptive: performance,Manövrieren,,"d465.0, e1201+2",
+P11,M1,4a,Das Handling ist gut,descriptive: performance,Handling,,e1151+2,
+P11,M1,4b,"Der Rollstuhl hat keine Nachteile, er erleichtert das Leben enorm",appraisal,Lebensqualität,,e1201+3,
+P11,M1,4b,"Der Rollstuhl braucht viel Platz, da er sehr breit ist",descriptive: performance,Dimension,Design von Gebäuden,e1201.1,"e1509.2, e1559.2"
+P11,M1,5a,"Ich würde im Rollstuhl Kochen und den Haushalt machen, putzen eher nicht",descriptive: performance,Haushalt,,"d6309.0, d6409.0, d6402.2",
+P11,M1,7b,"Am wichtigsten ist für mich, von A nach B zu kommen",appraisal,Distanzen überwinden,,"d4509.0, d465.0, e1201+4",
+P11,M1,7a,"Ausser Haus hilft der Rollstuhl bei der Mobilität, beim Einkaufen, der Lebensstandard ist höher",descriptive: performance,Einkaufen,Mobilität,"d4602.0, d4601.0, d6200.0","d465.0, d4609.0, e1201+3"
+P11,M1,7a,öffentliche Verkehrsmittel ist auch wichtig,appraisal,Transport benutzen,,"d4702.0, e5400.0",
+P11,M1,7a,"Ich brauche den Rollstuhl um am täglichen Leben teilnehmen zB. Kino, Fussball Match anschauen, Leichtathlethik anschauen, das kann man mit dem Rollstuhl",descriptive: performance,Freizeit,Tagesroutine,"d9202.0, d9204.0, d9205.0",d2309.0
+P11,M2,1b,Man ist eingeschränkt mit den Möglichkeiten mit dem Rollstuhl,appraisal,Einschränkung,,"d465.1, e1201.1, d2102.2",
+P11,M2,1b,"Der Rollstuhl fährt wackliger, vorallem draussen auf den Pflastersteinen, da schüttelt es einen unheimlich durch",descriptive: performance,Verschiedene Untergründe,,"d4502.2, d4602.2, d465.1, e2108.2, b2701.2",
+P11,M2,4a,Die Steuerung ist sehr leicht,descriptive: performance,Bedienung,,e1151+3,
+P11,M2,4b,"Der Rollstuhl kann seine Sitzhöhe nicht so stark anpassen, ich hätte in einigen Restaurants Mühe an einen Tisch zu sitzen",descriptive: performance,Sitzhöhe,Restaurant,"d4153.2, e1151.2",d9204.1
+P11,M2,4b,"Die Orientierung beim Rückwärtsfahren ist schwieriger als beim anderen, weil es keine Rückfahrkamera hat",descriptive: performance,Rückwärtsfahren,,"d465.2, e1251.4, b1143.1, b1144.1",
+P11,M2,7b,Ich würde den Rollstuhl benutzen um von A nach B zu kommen,descriptive: performance,Mobilität,,"d4509.0, d465.0, e1201+4",
+P11,M2,5a,"Der Rollstuhl wäre gut für Aktivitäten im Haus, ich könnte ihn in der Küche, in der Waschküche und im Badezimmer benutzen",descriptive: performance,Aktivitäten zuhause,,"d4600.0, d6309.0, d6409.0, d599.0",
+P11,M2,7a,Beim Einkaufen unterstützt der Rollstuhl,descriptive: performance,Einkaufen,,"d6200.0, e1201+2",
+P11,M2,7a,"Ich könnte meine Freunde besuchen, mit ihnen spazieren gehen und unter den Leuten sein, aber weniger gut als mit dem anderen Rollstuhl",descriptive: performance,Freizeit,,"d9204.0, d9205.0, d4501.0, d4602.0, d7500.0, e1201.1",
+P11,M2,7a,Ich würde mit dem Rollstuhl in die Natur raus,descriptive: performance,Verschiedene Umgebungen,,"d9204.0, e2202.0, e2109.0, d4602.0, d465.0",
+P12,M1,1b,"In der Küche ist es schwierig, zum Glück bin ich noch nicht darauf angewiesen",descriptive: performance,Mobilität indoor,,"d6309.2, e1201.2, d4600.2, e1551.2",
+P12,M1,1b,"Die verschiedenen Modi und Features sind gut, aber ich bin zu ungeduldig",descriptive: performance,Rollstuhlfunktionen,,"b1304.1, e1151+2",
+P12,M1,2,"Der Rollstuhl hat sich gut an die verschiedenen Umgebungen angepasst, es gibt immer entsprechende Modi, die gut passen",descriptive: performance,Fortbewegen in unterschiedlichen Umgebungen,,"d465.0, e1201+2, d4609.0, e1151+2",
+P12,M1,2,"Draussen ist der Rollstuhl besser als drinnen, enge Räume gehen nicht so gut",descriptive: performance,Verschiedene Umgebungen,Design von Gebäuden,"d4600.1, d4601.1, d4602.0","e1509.2, e1559.2"
+P12,M1,4a,Die Modi des Rollstuhls decken viele Situationen mit einem Gerät ab,descriptive: performance,Rollstuhlfunktionen,,"d465.0, e1201+2, e1151+2, d299.0",
+P12,M1,4a,Der Rollstuhl ist in- und outdoor super,descriptive: performance,Mobilität,,"d4600.0, d4601.0, d4602.0, d465.0, e1201+3",
+P12,M1,4a,"Der Sitzlift ist sehr gut, damit kann man in der Küche Dinge runterholen, sich zum Herd und an den Tisch setzen",descriptive: performance,Sitzhöhe,Verpflegung,"d4153.0, e1151+3, ","d6309.0, d4452.0"
+P12,M1,4a,Der Rollstuhl ist recht schnell,descriptive: performance,Geschwindigkeit,,"d465.0, e1151+2",
+P12,M1,4a,"Die Bedienung ist gut, man kann sehr fein justieren",descriptive: performance,Bedienung,,"d4402.0, e1151+2",
+P12,M1,4a,"Ich finde sehr gut, dass man an Ort drehen kann",descriptive: performance,Manövrieren,,"d465.0, e1201+3",
+P12,M1,4a,"Der Treppenmodus kann einen Treppenlift ersetzen, was unter Umständen einen Treppenlift nicht erforderlich macht",descriptive: performance,Treppen steigen,,"d451.0,  e1201+2, e1500.0, e1550.0",
+P12,M1,4b,"Der Rollstuhl ist gleich gross wie andere Elektrorollstühle, aber grösser als ein Handrollstuhl",appraisal,Dimension,,e1201.1,
+P12,M1,4b,"Vielleicht ist die Software störungsanfällig, die Reparatur muss über einen Techniker",appraisal,Maintenance,,nd,
+P12,M1,7a,"Ich würde den Rollstuhl eher draussen nutzen, vorallem zum unterwegs sein",descriptive: performance,Mobilität outdoor,,"d4500.0, d4500.0, d4602.0, d465.0",
+P12,M1,7a,Ich würde den Rollstuhl im ÖV benutzen,descriptive: performance,Transport benutzen,,"d4702.0, e5400.0",
+P12,M1,7a,"Ich muss mir weniger Gedanken machen, wo Treppen und Stufen vorhanden sind",need / dependency,Treppen steigen,,"d451.0, e1201+3, e2108.0, b1602.0",
+P12,M1,7a,"Ich könnte mir gut vorstellen, im Wald spazieren zu gehen und unebenes Gelände auszuprobieren",appraisal,Spazieren,,"d9204.0, d4602.0, d4501.0, e2108.0, d4502.0",
+P12,M1,7a,Ich könnte einkaufen gehen,descriptive: performance,Einkaufen,,"d6200.0, d4602.0",
+P12,M1,7b,Am wichtigsten ist mir die unabhängige Mobilität,appraisal,Mobilität,,"d465.0, d499.0",
+P12,M2,1b,Der Rollstuhl fühlt sich massig und schwerfällig an,appraisal,Dimension,,e1201.2,
+P12,M2,2,"Der Rollstuhl hat sich gut an die verschiedenen Umgebungen angepasst, indoor besser als outdoor",descriptive: performance,Verschiedene Umgebungen,,"d465.0, d4600.0. d4601.0, d4602.1, e1201+2",
+P12,M2,1b,Der Rollstuhl kann keine Hindernisse überwinden und ist nicht komfortabel auf unebenem Gelände,descriptive: performance,Hindernisse,Unebenes Gelände,"d451.4, e2109.3","d465.2, e1201.2, d4502.2, d4609.2, b2701.2"
+P12,M2,4a,"Indoor ist er einfacher, da er nicht balanciert, man muss nicht den Modus wechseln, was komfortabler ist",descriptive: performance,Manövrieren indoor,Modus wechseln,"d4600.0, b755.0, d4106.0",e1151+2
+P12,M2,4a,Das Handling ist einfacher wegen weniger Möglichkeiten,descriptive: performance,Handling,,"b1643.0, d4402.0, e1151+2",
+P12,M2,4a,Man kann den Sitz sehr gut einstellen,descriptive: performance,Sitz,,"d4153.0, d4108.0, e1151+3, d5700.0",
+P12,M2,4a,"Im Raum drinnen fand ich den Rollstuhl angenehm, weil er nicht balanciert",descriptive: performance,Manövrieren indoor,,"d4600.0, d4601.0, e1151+2, e1509.0, e1559.0",
+P12,M2,4b,"Auf Kopfsteinpflaster schüttelt es enorm, es fühlt sich an als bekommt man einen Bandscheibenvorfall",descriptive: performance,Verschiedene Untergründe,,"d4502.3, e2108.3, b2701.3, e255.3, b28013.3",
+P12,M2,4b,"Der Sitzlift kann nicht tief genug, man sitzt sehr hoch am Tisch, das ist nicht so komfortabel",descriptive: performance,Sitzhöhe,,"d4153.2, e1151.2",
+P12,M2,4b,Treppen steigen ist nicht möglich,descriptive: performance,Treppen steigen,,d451.4,
+P12,M2,4b,Türen öffnen und Transfer zwischen den Räumen war schwierig,descriptive: performance,Türen öffnen,Räume wechseln,"d4153.3, d4450.3, d4451.3, d4452.3, d4453.3","e1500.3, e1501.3, e1550.3, e1551.3"
+P12,M2,4b,Das Feintuning ist schwierig,descriptive: performance,Bedienung,,"d4402.2, e1151.2",
+P12,M2,5a,"Ich könnte ihn zum arbeiten brauchen, auch für kleine Transfers",descriptive: performance,Arbeiten,,"d8451.0, d465.0, d4500.0, e1201+2",
+P12,M2,5a,Im Haushalt ist er geeignet,descriptive: performance,Haushalt,,d469.0,
+P12,M2,5b,Die wichtigsten Aktivitäten im Haus sind Sachen von A nach B zu bewegen und Dinge von irgendwo runter zu holen,appraisal,Transport von Gegenständen,Utensilien erreichen,"d4309.0, d465.0, d4500.0, d4600.0","d4153.0, d4452.0"
+P12,M2,7a,Outdoor würde ich ihn im ÖV verwenden,descriptive: performance,Transport benutzen,,"d4602.0, d4702.0, e5400.0",
+P12,M2,7a,"Ich müsste immer überlegen, wo es Randsteine, Treppen oder Absätze und Aufzüge hat, ich würde mich weniger frei fühlen",appraisal,Hindernisse,,"d451.4, e2109.3, b1565.2, b1646.2",
+P12,M2,7a,Ich könnte Einkaufen oder zum Arzt gehen und weitere Termine wahrnehmen,descriptive: performance,Alltag bewältigen,,"d6200.0, d5702.0, d2309.0, d4501.0, d465.0",
+P12,M2,7a,"Ich würde nur auf Asphalt oder Kieswegen fahren, im Wald nicht",descriptive: performance,Verschiedene Untergründe,,"d4502.1, d4602.1, d465.1, e1201.1, e2108.0, e2208.4",
+P12,M2,7b,"Am wichtigsten ist mir die Mobilität, von A nach B zu kommen, man muss aber immer den Untergrund im Kopf haben",appraisal,Mobilität,,"d465.0, d4500.0, d4501.0, d4502.1, d4609.0, e2109.1",
+P13,M1,1b,"The auto-balancing mode was distracting, especially when opening a door",descriptive: performance,Türe öffnen,,"d4153.2, d4450.2, d4451.2, d4452.2, d4106.2, e1151.2",
+P13,M1,2,I was comfortable throughout in different environments with this wheelchair,descriptive: performance,Different environments,,"d465.0, d4609.0, e1201+2",
+P13,M1,4a,"The wheelchair is pretty effortless, fine adjustment of the controls are possible ",descriptive: performance,Controls,,"d4402.0, e1151+2, b1300.0, e1201+3",
+P13,M1,4a,"The basic control of the wheelchair is very intuitive, the more complex situations (Stairs and tracks) are a bit more challenging, its required to be trained to know when its appropriate to use which mode",descriptive: performance,Solving problems,Training,"d177.1, d451.1, d1750.0, d1751.1, e1151+2","b1442.1, b1443.1, d1551.1"
+P13,M1,4a,"It is more advanced than a manual wheelchair, you can get up steps independently",descriptive: performance,Absätze überwinden,,"d451.0, d2102.0, e1201+4",
+P13,M1,4a,The camera covers the back so your're able to see where to go,descriptive: performance,Technologie zur Unterstützung (Kamera),,"b1143.0, b1144.0, b1565.0, e1251+2",
+P13,M1,4b,"There is a uncertainity factor with this wheelchair, I get a bit worried when for example being on the stairs and it needs training",appraisal,Treppen steigen,Training,"b1265.2, b1266.2, b1528.2, d451.1","b1442.1, b1443.1.  d1551.1"
+P13,M1,5a,I could get up and down the stairs to my apartment,descriptive: performance,Stairs,,"d451.0, e1201+4, d4600.0",
+P13,M1,5a,"I could do some housework (e.g. dusting, hoovering may not be possible)",descriptive: performance,Housework,,d6409.1,
+P13,M1,5a,"I'd have access to shelves in the kitchen, cooking would also be possible",descriptive: performance,Kochen,,"e1151+3, d6309.0, d4452.0, d4153.0",
+P13,M1,5b,"The most important function for me is mobility, it enables me to get out and about",descriptive: performance,Mobilität,,"d465.0, d4609.0, e1201+4",
+P13,M1,7a,"I need to go to appointments, public transport to be in the city",descriptive: performance,Termine im Alltag,,"d2309.0, d4702.0, e5400.0, d465.0, d4609.0",
+P13,M1,7a,Getting a regular cab wouldn't be possible,descriptive: performance,Transportation,,"d4701.4, e5400.4",
+P13,M1,7a,I need to go to work with the wheelchair,descriptive: performance,Arbeit,,"d8451.0, d4602.0, d4601.0",
+P13,M1,7a,"Going to the shop and reach things from the shelf, which I could not reach before",descriptive: performance,Shopping,,"d6200.0, d4452.0, e1151+3, d4153.0",
+P13,M1,7a,"Meet friends, going to the badi, different terrains (gras, gravel)",descriptive: performance,Freizeit,Verschiedene Untergründe,"d9100.0, d9201.0, d9204.0, d9205.0, d7500.0","d4502.0, d4602.0, e2108.0"
+P13,M1,7b,Transport / Mobility is the most important activity,descriptive: performance,Mobilität,,"d465.0, e1201+4, d4500.0, d4501.0",
+P13,M2,1b,"overall this device makes my life easier in terms of effort, but is still limited",descriptive: performance,Lebensqualität,,"b1300.0, e1201+2, d465.1, d2309.1",
+P13,M2,1b,The control interface doesn't have the same fidelity (Genauigkeit) as the other one,descriptive: performance,Bedienung,,"d4402.2, e1151.2",
+P13,M2,1b,This device can not go up and down stairs,descriptive: performance,Treppensteigen,,"d451.4, e1201.4, e1509.4, e1559.4",
+P13,M2,2,It's very shaky on uneven ground,descriptive: performance,Fortbewegen über verschiedene Untergründe,,"d4609.2, e2108.2, b2701.2, e255.2, d4502.2",
+P13,M2,4a,The interface is simple and doesn't require a lot of learning,descriptive: performance,Interface,,"e1151+3, b1441.0, b1442.0, d1551.0",
+P13,M2,4b,"Manouvering is difficult because of the small wheels, the fine control is not good",descriptive: performance,Manouvering,,"d465.2, e1201.2, d4402.2",
+P13,M2,5a,"I could go to the toilet, brush my teeth",descriptive: performance,Körperpflege,,"d5309.0, d5201.0",
+P13,M2,5a,I could go th the kitchen and reach most shelves (around 80%),descriptive: performance,Preparing meals,,"d4153.1, d4452.1, d6309.0, e1151+3",
+P13,M2,5a,I could move around the house,descriptive: performance,Moving indoor,,"d4600.0, d4601.0, d465.0",
+P13,M2,5a,I could do some housework like dusting or hoovering,descriptive: performance,Haushalt,,d6409.0,
+P13,M2,5a,I can't get into the apartment with this wheelchair because of the stairs,descriptive: performance,Stairs,,"d451.4, e1550.4, d4600.4",
+P13,M2,5b,"The most important thing for me is personal hygiene, where the wheelchair would support me well",descriptive: performance,Körperpflege,,"d5109.0, d5209.0, d5309.0, e1201+4",
+P13,M2,7a,"Be mobile, public transport, also the control would be a bit difficult, as its hard to maneuver in narrow spaces",descriptive: performance,Mobility,,"d465.1, d4702.1, e5400.1, e1509.2, e1559.2",
+P13,M2,7a,On soft ground the small wheels will dig in ,descriptive: performance,Fortbewegen über verschiedene Untergründe,,"d4502.3, d4602.3, d465.2, e1151.3, e2108.3",
+P13,M2,7a,"I cant go up steps, i need to do a detour",descriptive: performance,Stairs,,"d451.4, d4501.2",
+P13,M2,7a,I would not be able to go to every place where maybe my friends want to go,descriptive: performance,Socializing,,"d9100.2, d9205.2, d7500.2, d465.2",
+P13,M2,7a,Steep inclinations outside the house would not be possible with this wheelchair,descriptive: performance,Inclinations,,"d4602.2, e2108.4, d465.4",

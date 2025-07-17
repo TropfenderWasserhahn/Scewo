@@ -1,0 +1,20 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P12,M1,1b,"In der Küche ist es schwierig, zum Glück bin ich noch nicht darauf angewiesen",descriptive: performance,Mobilität indoor,,"d6309.2, e1201.2, d4600.2, e1551.2",
+P12,M1,1b,"Die verschiedenen Modi und Features sind gut, aber ich bin zu ungeduldig",descriptive: performance,Rollstuhlfunktionen,,"b1304.1, e1151+2",
+P12,M1,2,"Der Rollstuhl hat sich gut an die verschiedenen Umgebungen angepasst, es gibt immer entsprechende Modi, die gut passen",descriptive: performance,Fortbewegen in unterschiedlichen Umgebungen,,"d465.0, e1201+2, d4609.0, e1151+2",
+P12,M1,2,"Draussen ist der Rollstuhl besser als drinnen, enge Räume gehen nicht so gut",descriptive: performance,Verschiedene Umgebungen,Design von Gebäuden,"d4600.1, d4601.1, d4602.0","e1509.2, e1559.2"
+P12,M1,4a,Die Modi des Rollstuhls decken viele Situationen mit einem Gerät ab,descriptive: performance,Rollstuhlfunktionen,,"d465.0, e1201+2, e1151+2, d299.0",
+P12,M1,4a,Der Rollstuhl ist in- und outdoor super,descriptive: performance,Mobilität,,"d4600.0, d4601.0, d4602.0, d465.0, e1201+3",
+P12,M1,4a,"Der Sitzlift ist sehr gut, damit kann man in der Küche Dinge runterholen, sich zum Herd und an den Tisch setzen",descriptive: performance,Sitzhöhe,Verpflegung,"d4153.0, e1151+3, ","d6309.0, d4452.0"
+P12,M1,4a,Der Rollstuhl ist recht schnell,descriptive: performance,Geschwindigkeit,,"d465.0, e1151+2",
+P12,M1,4a,"Die Bedienung ist gut, man kann sehr fein justieren",descriptive: performance,Bedienung,,"d4402.0, e1151+2",
+P12,M1,4a,"Ich finde sehr gut, dass man an Ort drehen kann",descriptive: performance,Manövrieren,,"d465.0, e1201+3",
+P12,M1,4a,"Der Treppenmodus kann einen Treppenlift ersetzen, was unter Umständen einen Treppenlift nicht erforderlich macht",descriptive: performance,Treppen steigen,,"d451.0,  e1201+2, e1500.0, e1550.0",
+P12,M1,4b,"Der Rollstuhl ist gleich gross wie andere Elektrorollstühle, aber grösser als ein Handrollstuhl",appraisal,Dimension,,e1201.1,
+P12,M1,4b,"Vielleicht ist die Software störungsanfällig, die Reparatur muss über einen Techniker",appraisal,Maintenance,,nd,
+P12,M1,7a,"Ich würde den Rollstuhl eher draussen nutzen, vorallem zum unterwegs sein",descriptive: performance,Mobilität outdoor,,"d4500.0, d4500.0, d4602.0, d465.0",
+P12,M1,7a,Ich würde den Rollstuhl im ÖV benutzen,descriptive: performance,Transport benutzen,,"d4702.0, e5400.0",
+P12,M1,7a,"Ich muss mir weniger Gedanken machen, wo Treppen und Stufen vorhanden sind",need / dependency,Treppen steigen,,"d451.0, e1201+3, e2108.0, b1602.0",
+P12,M1,7a,"Ich könnte mir gut vorstellen, im Wald spazieren zu gehen und unebenes Gelände auszuprobieren",appraisal,Spazieren,,"d9204.0, d4602.0, d4501.0, e2108.0, d4502.0",
+P12,M1,7a,Ich könnte einkaufen gehen,descriptive: performance,Einkaufen,,"d6200.0, d4602.0",
+P12,M1,7b,Am wichtigsten ist mir die unabhängige Mobilität,appraisal,Mobilität,,"d465.0, d499.0",

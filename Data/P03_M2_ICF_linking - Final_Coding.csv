@@ -1,0 +1,12 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P03,M2,2,Der Rollstuhl passt sich gut an verschiedene Umgebungen und Situationen an,descriptive:performance,Fortbewegung in unterschiedlichen Umgebungen,Umwelt,"d4502.0, d4609.0, d465.0, e1201+3",e2109.0
+P03,M2,2,der Rollstuhl ist gut für draussen und drinnen,descriptive:performance,Mobilität Innen und Aussen,,"d4502.0, d4600.0, d4601.0, d4602.0, d465.0, e1201+3",
+P03,M2,4a,Der Rollstuhl kann Treppen fahren und das ist ein Vorteil,descriptive: performance,Treppen steigen,,"d451.0, e1201+3",
+P03,M2,4a,"Hindernisse (z.B. Stufen) können besser überwunden werden als mit einem anderen Rollstuhl, so kann er zB seinen Bruder besuchen wo es eine 20 cm hohe Stufe hat",descriptive:performance,Hindernisse überwinsen,familiäre Beziehungen,"d451.0, e1550.0, e1201+3, d465.0","d7602.0, d9205.0"
+P03,M2,5a,Zuhause würde ich mit der Treppe einen Stock überwinden (ist wichtigste Funktion),descriptive: performance,Treppen steigen,,"d451.0, e1201+4, d4600.0, e1550.0",
+P03,M2,5a,Im Haus ist es zu eng für den Rollstuhl,descriptive: performance,Mit Rollstuhl fortbewegen,,"d465.2, d4600.2, e1201.2, e1551.2",
+P03,M2,5a,Die Pfeffermühle aus dem hohen Gestell rausnehmen ist viel besser gegangen wie mit dem anderen Rollstuhl (Sitzlift),descriptive: capacity,Objekte erreichen,Essen zubereiten,"d4153.0, d4452.0, e1151+4",d6300.0
+P03,M2,7,Man kann gut mit dem Rollstuhl auf unebenen Untergründen fahren,descriptive:performance,Mobilität in verschiedenen Umgebungen,physikalische Umwelt,"d4502.0, d4609.0, e1201+3",e2109.0
+P03,M2,7,Man kann im Sommer mit dem Rollstuhl in den Garten und auf den Sitzplatz oder ins Dorf gehen,descriptive:performance,Kurze und mittlere Distanzen fahren,In verschiedenen Umgebungen fortbewegen und Freizeit,"d4500.0, d4501.0","d4502.0, d4600.0, d4602.0, d465.0. e1201+3, d9204.0"
+P03,M2,7,Im Rollstuhl die Familie besuchen wäre möglich,descriptive:performance,Beziehungen pflegen,,"d7602.0, d9205.0",
+P03,M2,10,"Ich hatte nie ein ungutes Gefühl im Rollstuhl, man fühlt sich sehr sicher",appraisal,Selbstvertrauen,,"b1268.0, b1528.0",

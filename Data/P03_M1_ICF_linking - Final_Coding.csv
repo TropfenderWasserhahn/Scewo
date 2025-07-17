@@ -1,0 +1,10 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P03,M1,1b,Rollstuhl kann keine Treppen steigen,descriptive:performance,Treppensteigen,,"d451.4, e1201.4",
+P03,M1,2,Der Rollstuhl passt sich gut an verschiedene Umgebungen an,descriptive:performance,Fortbewegung in unterschiedlichen Umgebungen,Umwelt,"d4502.0, d4609.0, d465.0, e1201+3",e2109.0
+P03,M1,4a,"Man kann genau steuern und manövrieren, auch in engen Räumen",descriptive:performance,Manövrieren in engen Umgebungen,Feinmotorik,"d4503.0, d4600.0, d4601.0, d465.0, e1201+3",d4402.0. e1151+3
+P03,M1,4b,"Nachteil ist das Gewicht des Rollstuhls, um ihn mit einem Auto zu transportieren",appraisal ,Transportmöglichkeit in motorisierten Gefährt,,"d4701.2, e1201.2",
+P03,M1,5a,Der Rollstuhl hat eine gute Leistung zuhause,descriptive: performance,Mobilität Zuhause,,"d4600.0, d465.0, e1201+3",
+P03,M1,7,Man kann mit dem Rollstuhl ins Restaurant gehen,descriptive: performance,"Geselligkeit, Freizeit",Mobilität ausserhalb von Zuhause,"d9205.0, e1201+3","d4602.0, d4601.0, d465.0"
+P03,M1,7,"Ich weiss nicht genau wie der sich verhält im Gelände, das wäre wichtig, Steigungen und unebenen Boden vorallem",descriptive:performance,,,"d4502.8, d4602.8, e2108.8, e1201.9",
+P03,M1,7,"Ich muss üben um zu wissen welche Taste auf der Steuerkonsole was macht, zum drücken ist es einfach",appraisal,Gedächtnis & mentale Funktion,Bedienung,"b1441.1, b1442.1, b1643.1","e1151.1, d4402.0"
+P03,M1,9,Man fühlt sich sehr sicher,appraisal,Selbstvertrauen,,"b1268.0, b1528.0",

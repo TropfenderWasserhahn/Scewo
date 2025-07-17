@@ -1,0 +1,10 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P05,M2,5a,Der Rollstuhl wirkt instabiler,appraisal,Gefühl von Sicherheit und Stabilität,,"b1268.1, e1201.1",
+P05,M2,4a,Handling ist einfacher bei diesem Rollstuhl,descriptive:performance,Bedienung,Kognition,"d1551.0, e1151+1","b1646.0, b1442.0, d4402.0"
+P05,M2,4b,"Der Rollstuhl ist bequemer, Sitzen über längere Zeit",appraisal,Sitzen,Körpergefühl,"d4153.0, e1201+2","b265.0, b810.0"
+P05,M2,4b,Bei dem Rollstuhl muss ich mehr aufpassen und oft auf den Display schauen,descriptive:performance,,,"b1400.1, b1401.2, d1601.1",
+P05,M2,4b,"Der Rollstuhl schüttelt sehr draussen beim Überfahren von grösseren Steinen, der Rollstuhl fährt nicht so einfach drüber auch beim Kies",descriptive:performance,In verschiedenen Umgebungen fortbewegen,,"d4502.2, d4602.2, d465.2, e2108.2, e1201.2",
+P05,M2,5a,"Zuhause kann ich den Rollstuhl nicht benutzen ohne Umbau, ich würde überall anstehen (Schwelle auf die Terasse (fast so hoch wie Randstein), Badzimmer ist ausgebaut, Schlafzimmer würde auch gehen, wäre knapp aber machbar)",descriptive:performance,Mobilität indoor,Design von Gebäuden,"d4600.3, d465.3, e1201.3","e1550.3, e1551.3"
+P05,M2,5a,"Ich würde nicht in die Pfannen sehen von dem Rollstuhl aus, Spühltrog würde nicht gehen von der Höhe her",descriptive:performance,Haushalt (Kochen und Abwasch),,"d6309.4, d6401.4, e1201.4",
+P05,M2,7a,"Ins Restaurant gehen, aber nur, wenn es einen Lift hat bzw. rollstuhlgängig ist",need or dependency,Design von Gebäuden,,"d9205.1, d9208.1","e1500.0, e1501.0"
+P05,M2,7,"Postauto mit Rampe wäre keine Sache, bräuchte Hilfe von Chauffeur",need or dependency,Transportmittel benutzen,Abhängigkeit,d4702.0,"e345+3, e360+3"

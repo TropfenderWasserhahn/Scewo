@@ -1,0 +1,17 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P01,M1,1b,Moduswechsel ist relativ zeitraubend,descriptive:performance,Hilfsprodukte und unterstützende Technologien für den persönlichen Gebrauch im täglichen Leben,Entscheidungen treffen,e1151.1,d177.1
+P01,M1,1b,"Es dauert etwas, bis man die Bedienung ganz verstanden hat",descriptive:performance,Fertigkeiten aneignen und ausführen,Hilfsprodukte und unterstützende Technologien für den persönlichen Gebrauch im täglichen Leben, d1551.1,e1151.1
+P01,M1,1b,Grossflächig finde ich den Rollstuhl grossartig,appraisal,Emotionale Funktion,,b1522.0,
+P01,M1,2,"Auf Kopfsteinpflaster oder unebenem Boden fahren ist kein Problem, da es mehr federt und man nicht nach vorne bzw. unten wegrutscht",descriptive:performance,Fortbewegung auf unebenem Untergrund,Schmerz/Schütteln,"d465.0, d4602.0, e2108.0, e1201+2",b280.0
+P01,M1,4a,Treppen steigen und Steigungen fahren sind ein Vorteil,appraisal,"Mobilität, Treppen und Steigungen",,"d451.0, e1201+4, d465.0",
+P01,M1,4a,Wenn man genug Platz hat ist das Schaukeln ist sehr angenehm,appraisal,Emotionale Funktion,Vestibulärer Bewegungssinn,b1522.0,b2352.0
+P01,M1,4b,Indoor ist das Schaukeln negativ,appraisal,Indoor Mobilität,Vestibulärer Bewegungssinn,d4600.8,b2352.3
+P01,M1,4b,Der Rollstuhl ist zu gross für enge Räume,descriptive:performance,"Umgebung, Mobilität, Indoor",,"e150.2, e155.2, d4601.2, d4600.2",
+P01,M1,5a,"Ich würde den Rollstuhl zuhause wegen engen Platzverhältnissen nicht benutzen, da ich dort noch den Rollator nehmen kann",descriptive:performance,Indoor Benutzung,Hilfsmittel für Mobilität,"d4600.2, e155.2",e1201.2
+P01,M1,7a,"Ich würde den Rollstuhl benutzen, um die Steigung zum Haus zu überwinden",descriptive:performance,Hilfsmittel für Mobilität,Steiles Gelände,"d465.0, e1201+3 ",e2108.0
+P01,M1,7a,Ich würde mit dem Rollstuhl zur Physiotherapie fahren,descriptive:performance,Auf seine Gesundheit achten,"lange Distanzen bewältigen, Unterstützung des Hilfsmittels","d5708.0,","d4501.0, e1201+3"
+P01,M1,7a,"Der Rollstuhl ist sehr geländegängig, ich würde damit im Wald spazieren gehen und längere Distanzen überwinden",descriptive:performance,"Spazieren, Freizeit","längere Distanzen bewältigen, Geländegängigkeit, Outdoor",d9208.0,"d4501.0, e2108.0, d4602.0"
+P01,M1,7a,"Der Rollstuhl unterstützt mich, wenn ich mich mit Freunden treffen will",descriptive:performance,Interpersonelle Interaktionen,Hilfsmittel zur Partizipation und Geselligkeit,"d7500.0, d9100.0, d9205.0",e1201+3
+P01,M1,8,Mit dem Rollstuhl hat man mehr Freiheit und Möglichkeiten,descriptive:capacity,"Lebensqualität, Autonomie",Hilfsmittel,"nc-qol, d465.0",e1201+3
+P01,M1,9,Ich habe die Erfahrung mit dem Rollstuhl genossen,appraisal,Positive emotionale Evaluation,,b1522.0,
+P01,M1,10,Ich habe mich mit dem Rollstuhl sehr sicher gefühlt,appraisal,Gefühl der Sicherheit,Lebensqualität,b1522.0,nc-qol

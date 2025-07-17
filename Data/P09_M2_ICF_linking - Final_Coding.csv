@@ -1,0 +1,15 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P09,M2,1b,Das Wackeln bzw. Ausgleichen des Rollstuhls während des Manövrierens (z.B. beim Türe öffnen) ist nicht komfortabel,descriptive: performance,Bewegung des Rollstuhls,Türen öffnen,"d4153.1, d4106.2, e1151.2, d465.2","d4450.1, d4451.1, d4452.1"
+P09,M2,2,Der Rollstuhl hat sich sehr gut an die verschiedenen Umgebungen angepasst,descriptive: performance,Fortbwegwegung in verschiedenen Umgebungen,,"d465.0, d4609.0, e1201+3",
+P09,M2,4a,Der Rollstuhl hat eine angenehme Grösse,appraisal,Rollstuhl,,e1201+2,
+P09,M2,4a,"Der eingebaute Rucksack ist sehr praktisch, wenn z.B. Picknicken will",appraisal,Dinge transportieren,,"d4303.0, e1151+3",
+P09,M2,4a,"Man kann alles einstellen, zB Geschwindigkeit",descriptive: performance,Bedienung,,e1151+2,
+P09,M2,5a,"Sie würde den Rollstuhl überall im Haus benutzen, es muss einfach genug breit sein, damit man manövrieren kann",descriptive: performance,Indoor Mobilität,Design von Gebäuden,"d4600.0, d4601.0, d465.0","e1501.0, e1551.0"
+P09,M2,5a,In der Küche wäre der Rollstuhl am hilfreichsten,descriptive: performance,Küche,,"d6309.0, d4600.0, d465.0, e1201+4",
+P09,M2,5a,Zum Staubsaugen würde ich den Rollstuhl auch benutzen,descriptive: performance,Haushalt,,d6402.0,
+P09,M2,7a,"Ich gehe jeden Tag in die Stadt, da muss ich Steigungen überwinden, und Spaziergänge wären auch möglich, das wäre viel weniger anstrengend",descriptive: performance,Mobilität Outdoor,Spazieren & Freizeit,"d4602.0, d465.0, d4502.0, d4500.0, d4501.0, e2108.0","d9204.0, e1201+3, b1300.0,"
+P09,M2,7a,"Ich will wieder dabei sein in sozialen Interaktionen und das könnte ich mit dem Rollstuhl, ich muss unter die Leute",need/dependency,Sozialleben,,"d7509.0, d9205.0, e320+2, e325+2, e1201+3, d465.0",
+P09,M2,7a,Ich könnte mit dem Rollstuhl in ein Cafee ,descriptive: performance,Freizeit,,"d4602.0, d465.0, d9208.0",
+P09,M2,7a,Der Rollstuhl kann Treppensteigen,descriptive: performance,Treppen steigen,,d451.0,
+P09,M2,9,Nach langer Benutzung wird es etwas anstrengend,descriptive: performance,Kognitive Anstrengung,,"b1643.2, b1300.1",
+P09,M2,10,Man fühlt sich sicher bei der Benutzung,appraisal,Sicherheit,,"b1265.0, b1266.0, b1528.0",

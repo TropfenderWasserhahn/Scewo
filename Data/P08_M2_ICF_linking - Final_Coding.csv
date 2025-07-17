@@ -1,0 +1,16 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P08,M2,1b,Die Armlehnen sind nicht so gut,appraisal,Rollstuhlteil,,"e1151.2, b265.2",
+P08,M2,1b,"Ich hatte Mühe, die Räder gerade auszurichten, um über eine Türschwelle zu fahren",descriptive:performance,Türschwelle fahren,Gebäude,"d465.2, e1151.2","e1550.2, e1500.2"
+P08,M2,1b,Die Türe halten und über die Schwelle fahren war problematisch,descriptive: performance,Türen halten,Durch Türen fahren,"d4153.2, d4450.2, d4451.2, d4452.2","d465.2, e1500.2, e1550.2"
+P08,M2,4a,"Mit dem Rollstuhl ist man selbstständiger, ausser bei Treppen und Stufen",descriptive: performance,Selbstständigkeit,,"d465.1, e1201+2, d451.4, d2102.1",
+P08,M2,4a,"Der Rollstuhl ist gut beim täglichen Gebrauch im Haus, wenn es ebenerdig ist. Die Grösse des Rollstuhls ist gut",appraisal,Mobilität Indoor,,"d465.0, d4600.0, d4601.0, e1201+2",
+P08,M2,4b,Im Sand könnte es schwierig werden mit dem Rollstuhl,appraisal,Verschiedene Untergründe,,"e2108.3, d4502.2, d4602.2",
+P08,M2,4b,"Auf Kies fahren geht, auf Pflastersteinen ist es holprig",descriptive: performance,Verschiedene Untergründe,,"d4502.1, d4602.1, e2108.2, b2701.1, d465.1",
+P08,M2,4b,Die Steuerung und feine Bewegungen waren schwierig,descriptive: performance,Bedienung,,"d4402.3, e1151.3",
+P08,M2,5,"Der Rollstuhl würde mich zuhause unterstützen, man müsste halt die Treppen in der Wohnung mit einer Rampe überbrücken",descriptive: performance,Mobilität Indoor,,"d4600.0, d465.1, e1201+2, d451.4, e2108+3",
+P08,M2,7a,Ich könnte mit dem Rollstuhl in den Garten,descriptive: performance,Garten,,"d4600.0, 
+d465.0, d9204.0",
+P08,M2,7a,"Ich könnte mit dem Rollstuhl auf die Strasse und dann in den Bus steigen, wenn es eine Rampe hat",descriptive: performance,Transport benutzen,Distanzen,"d4602.0, d4702.0, e2108+3","d4501.0, d4500.0"
+P08,M2,7a,"In der Stadt wäre es kein Problem, ich könnte auch ins Café gehen",descriptive: performance,Freizeit,,"d4602.0, d465.0, d9208.0",
+P08,M2,7a,Ich kann andere Menschen abholen oder begleiten,descriptive: performance,Anderen Helfen,,"d6609.0, d7509.0, d9109.0, e1201+2, d9205.0",
+P08,M2,7b,Am wichtigsten wäre die Mobilität draussen,appraisal,Mobilität,,"d4602.0, d465.0, e1201+4",

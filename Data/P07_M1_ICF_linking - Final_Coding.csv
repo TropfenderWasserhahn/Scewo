@@ -1,0 +1,20 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P07,M1,1b,In einem kleinen Raum ist das Manövrieren schwierig,descriptive:performance,Manövrieren,kleiner Raum,d465.2,e1559.2
+P07,M1,1b,"Automatische Türen wären hilfreich, da das Öffnen sonst schwierig ist",descriptive:performance,Türen öffnen,Eingänge,"d4153.2, d4450.2, d4451.2, d4452.2,  d4453.2","e1500.2, e1550.2"
+P07,M1,1b,"Der Parkmodus ist verwirrend da dort viele Funktionen vorhanden sind, das muss man sich zuerst einprägen",descriptive:performance,Bedienung,Kognition,e1151.2,"b1442.1, b1443.1, b1643.2"
+P07,M1,2,Im Gelände traut man sich mehr mit dem Rollstuhl,descriptive:performance,Verschiedene Untergründe,Vertrauen,"e2109.0, d4502.0, d4602.0, d465.0",b1266.0
+P07,M1,2,"Treppe steigen war erstaunlich, Sicherheit ist sehr einbezogen, das war top",descriptive: performance,Treppen steigen,Vertrauen,"d451.0, e1201+3",b1266.0
+P07,M1,2,"Im Geröll muss man die Geschwindigkeit anpassen, es schüttelt viel weniger als mit einem anderen Rollstuhl",descriptive:performance,Verschiedene Untergründe,Körpergefühl,"e2108.0, d465.0, e1201+3, d4502.0, d4602.0", b2701.0
+P07,M1,2,Auf kleinen Steinen fahren geht gut,descriptive:performance,Verschiedene Untergründe,,"e2108.0, e1201+2, d4502.0, d4602.0",
+P07,M1,2,Steigungen fahren hat sich gut angefühlt mit dem Rollstuhl,appraisal,Steigungen ,,"e2108.0, d465.0, e1201+2",
+P07,M1,4a,Die Treppenfunktion und über Schwellen ist super,appraisal,Treppensteigen,,"d451.0, e1201+3",
+P07,M1,4a,"Der Sitzlift ist praktisch, wenn man aus dem Rollstuhl nicht mehr aufstehen kann, z.B. wenn man beim Einkaufen etwas aus dem Regal holen möchte",descriptive:performance,Sitzen bleiben,Einkaufen,"d4153.0, e1151+3","d6200.0, d4452.0"
+P07,M1,4a,"Drehungen seitwärts an Ort und Stelle ist sensationell, das geht mit meinem Rollstuhl nicht gut",descriptive: performance,Manövrieren,,"d465.0, e1201+3",
+P07,M1,4b,Das Ausgleichen des Rollstuhls ist ungewohnt und belastend wenn man müde wird,appraisal,Schwanken,Belastung,"e1151.2, d4106.2",b1300.1
+P07,M1,4b,Der Rollstuhl ist etwas gross,appraisal,Dimension des Rollstuhls,,e1201.1,
+P07,M1,,"Ich würde zuhause die Treppe fahren, wenn der Lift nicht kommt oder wenn es einen Brand gibt, ist man auf dem sicheren Weg, sosnt ist man ausgeliefert, gibt ein Gefühl von Sicherheit",descriptive:performance,Treppen steigen,Sicherheit,"d451.0, e1201+3","b1265.0, b1266.0"
+P07,M1,7a,Ich würde ihn zum Einkaufen benutzen,descriptive: performance,Einkaufen,,d6200.0,
+P07,M1,7a,"mit dem Rollstuhl könnte ich draussen jemanden ziehen, zum Beispiel die Steigung zum Friedhof hoch",descriptive: performance,Gemeinschaft und anderen helfen,Steigungen fahren,"d9100.0, d6601.0","d4602.0, e2108.0"
+P07,M1,7a,"Spazieren im Seniorenzentrum, vorallem bei Steigungen wäre der Rollstuhl geeignet",descriptive: performance,"Spazieren, Freizeit",,"d4502.0, d4602.0, e2108.0, d9204.0, d465.0, e1201+2",
+P07,M1,7a,"Ich bräuchte weniger Platz mit dem Rollstuhl beim drehen, zB im Bus, mein Rollstuhl braucht da mehr Platz",descriptive: performance,Manövrieren,Transport,"d465.0, e1201+2",d4702.0
+P07,M1,7a,In den Bus einsteigen müsste ich üben,descriptive:performance,öffentliche Verkehrsmittel,,d4702.1,

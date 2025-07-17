@@ -1,0 +1,17 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P02,M2,1b,"Man muss sich daran gewöhnen, wie sich der Rollstuhl bei Verlagerung der Körpergewichtes verhält (z.B in der Küche)",appraisal,Schwerpunkt verlagern,Erlernen / Erfahrung,d4106.1,"b1470.1, b2352.1"
+P02,M2,1b,"Es ist schwierig, beim Einkaufen die Türe des Kühlregals zu öffnen",descriptive: performance,Türe öffnen,Einkaufen,"d4450.2, d4452.2, e1501.2, d4601.2",d6200.2
+P02,M2,4a,Der Sitzlift ist sehr praktisch und man kann auch in erhöhter Sitzposition etwas fahren,descriptive: performance,"
+Erhöhen, etwas erreichen",Sich fortbewegen,"d4452.0, d4153.0","d4500.0, d465.0, e1201+3"
+P02,M2,2,der Rollsltuhl hat sich sehr gut an die verschiedenen Umgebungen angepasst,descriptive: performance,Mobilität in verschiedenen Umgebungen,Umwelt,"d4502.0, d4600.0, d4601.0, d4602.0, d465.0, e1201+3",e2109.0
+P02,M2,4a,"ein Vorteil ist, dass der Rollstuhl sehr sehr wendig ist ",descriptive:performance,Mobilität ,,"d465.0, e1201+3",
+P02,M2,4a,"Der Rollstuhul ist nicht breit, von der Breite her angenehm Manövrieren ist sehr einfach, Slalom kann runder gefahren werden",descriptive:performance,"Manövrieren, Bewegen",,"d465.0, d4503.0, e1201+3",
+P02,M2,4a,Man fühlt sich sehr sicher im Rollstuhl,appraisal,Selbstvertrauen,,"b1268.0, b152.0",
+P02,M2,4a,Das Handling ist sehr angenehm,appraisal,"Bedienung, Steuern",,"e1151+3, d4402.0",
+P02,M2,4a,"Sitzpositionen kann man individuell ganz gut anpassen, das gefällt mir auch sehr",appraisal,Sitzen,,"d4153.0, e1201+3",
+P02,M2,4b,"Die Rückfahrkamera ist praktisch und hilfreich, ich hätte aber gerne Hilfslinien, Synchrone Darstellung von den Rädern und der Umgebung",appraisal,Technologische Unterstützung,,"e1201+2, d465.0, e1251+1",
+P02,M2,5a,"Überall und für Alles im Haus (Wäsche machen, Hausarbeiten erledigen, Putzen (Besensauger), in der Küche nur, wenn sie L-förmig gebaut ist, schlauchartig nicht",descriptive: performance,Tägliche Arbeiten zuhause,,"d6400.0, d6402.0, d6409.0 d6309.0, e1201+3",
+P02,M2,7,"Ausserhalb des Hauses grossflächig, z.B. zum Einkaufen, Bankgeschäfte erledigen, Leute treffen, ins Cafe oder Restaurant gehen (auch mit Treppen erreichbar), für Spaziergänge und Ausflüge. Gute Leistung des Rollstuhls",descriptive: performance,Aktivitäten ausserhalb des Hauses,Interaktion mit Fremden und Freunden,"d6200.0, d6201.0, d9204.0, d9205.0, d865.0, d2302.0, e1201+3","d730.0, d7400.0, d7500.0, "
+P02,M2,7,"Ein grosser Vorteil ist, dass man Leute besuchen kann, die in Häusern mit Treppen oder alleine wohnen, da dort keine Hilfe von Freunden oder Fremden benötigt wird",descriptive:performance,Freunde besuchen,Hindernisse überwinden und Mobilität,"d7500.0, d9205.0, d730.0, e345.0, e320.0","d465.0, d451, e1201+4"
+P02,M2,7,"Es ist angenehm über unebenen Grund zu fahren, viel angenehmer wie mit anderem Rollstuhl, er kippt nicht nach vorne, er balanciert aus und ruckelt weniger, der Rollstuhl federt mehr",descriptive:performance,Mobilität im Aussenbereich,Angenehme Fahrweise,"d4602.0, d465.0, d4502.0, e2109.0, e1201+3",b2800.0
+P02,M2,9,"Die Bedienung muss etwas erlernt werden, daher auch etwas anstrengend. Mit der Zeit aber sehr intuitiv",descriptive: performance,Gedächtnis & Bedienung,,"b1441.1, b1442.1, e1151.1",

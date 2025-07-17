@@ -1,0 +1,20 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P10,M1,1b,"Ich kann die linke Seite nicht richtig wahrnehmen, manövrieren ist schwierig",descriptive: performance,Manövrieren,Wahrnehmung,d465.2,b1561.2
+P10,M1,1b,Bergab muss man richtig bremsen,descriptive: performance,Steigungen,,"d4609.1, d465.1, e2108.1",
+P10,M1,2,Es war angenehm mit dem Rollstuhl in verschiedenen Umgebungen,descriptive: performance,Verschiedene Umgebungen,,"d465.0, d4609.0, e1201+2",
+P10,M1,2,Bei mir zuhause wäre es nicht möglich mit dem Rollstuhl,appraisal,Indoor Mobilität,Gebäude,"d4600.4, d465.4","e1550.4, e1551.4"
+P10,M1,4a,"Man braucht keine Hilfe, niemand muss einen stossen",appraisal,Selbstständigkeit,,"d465.0, e1201+3, e399.0",
+P10,M1,4a,"Berg auf und bergab fahren war sehr gut, mit dem manuelllen Rollstuhl werde ich meistens schräg da ich nur mit einer Hand bremsen kann",descriptive: performance,Steigungen fahren,Handbenutzung,"d4609.0, d465.0, e1201+3, e2108.0","d4401.3, d4402.3, d4458.3"
+P10,M1,4a,Auf dem Kies fahren ist viel einfacher als mit einem Handrollstuhl,descriptive: performance,Verschiedene Untergründe,,"d4502.0, d4602.0, d465.0, e1201+3, e2108.0",
+P10,M1,4b,Auf die Toilette gehen muss man üben,appraisal,Toilette benutzen,,"d5309.2, e1551.1, e1501.1",
+P10,M1,4b,"Der Rollstuhl ist sehr gross, ein Nachteil in engen Räumen",descriptive: performance,Dimensionen,Design von Gebäuden,"e1201.2, d465.2","e1508.2, e1558.2, d4600.2"
+P10,M1,4b,"Nach draussen gehen ist schwierig mit dem Rollstuhl, da man nicht gut ins oder aus dem Haus kommt, ich müsste den Rollstuhl tragen",descriptive: performance,Nach draussen gehen,,"d4600.2, e1550.2, e1201.2",
+P10,M1,4b,Ich könnte die Treppe ins Haus nicht überwinden,descriptive: performance,Treppen steigen,,"d451.4, e1550.4",
+P10,M1,4b,Türe auf unf zu machen war herausfordernd,descriptive: performance,Türen,,"d4153.2, d4450.2, d4451.0, d4452.2, d4106.2",
+P10,M1,5a,Ich könnte mit dem Rollstuhl auf den Sitzplatz im Garten und die kleine Steigung dahin überwinden,descriptive: performance,Verschiedene Umgebungen,Freizeit,"d4600.0, d465.0, e1201+2, e2108.0",d9204.0
+P10,M1,5b,Garten ist die wichtigste Aktivität für mich,appraisal,Garten,Freizeit,d4600.0,d9204.0
+P10,M1,7a,Ich könnte mit dem Rollstuhl einkaufen gehen,descriptive: performance,Einkaufen,,"d4602.0, d465.0, d6200.0",
+P10,M1,7a,Ich könnte selbständig in die Therapie mit dem Rollstuhl,descriptive: performance,Therapie,,"d5702.0, d2102.0",
+P10,M1,7a,"Zum auswärtsessen oder ins Konzert brauche ich immer jemanden der Auto fährt und den Rollstuhl einlädt, das kann ich mir mit dem Rollstuhl eher weniger vorstellen",need/dependence,Freizeitaktivitäten,Unterstützung,"d550.2, d9202.2, d9204.2, d9205.2","d4701.2. e399+2, e5400+2"
+P10,M1,7a,"Beim Hochbeet hat es einen Absatz (so hoch wie einen Randstein), da könnte ich mit dem Rollstuhl nicht hin",descriptive: performance,Absätze überwinden,Garten,"d451.4, d4600.4, e1550.4",d9204.4
+P10,M1,7b,Die wichtigste Aktivität ist auswärts mit den Verwandten Essen gehen,appraisal,Soziale Kontakte pflegen,,"d9205.0, d4602.0, e310+4, e315+4, d7603.0, d550.0",

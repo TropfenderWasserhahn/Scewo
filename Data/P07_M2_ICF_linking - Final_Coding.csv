@@ -1,0 +1,14 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P07,M2,1b,"Rückwärtsfahren geht nicht gut, das Handling ist mühsam und muss viel geübt werden",descriptive:performance,Manövrieren,Handling,"d465.2, e1201.2",e1151.2
+P07,M2,1b,"Fahren über grosse Steine draussen war sehr erschütternd, würde ich eher umfahren",descriptive:performance,Verschiedene Untergründe,Körpergefühl,"d465.3, e1201.2, d4502.2, d4602.2, e1208.2", b2701.2
+P07,M2,2,"In der Küche braucht man eine gute Strategie, wie man die Probleme lösen kann, es ist aber gewöhnungssache",descriptive:performance,Manövrieren Indoor,Kognitive Felxibilität,"d465.1, d4600.1, e1201.1","b1643.2, d1750.2"
+P07,M2,4a,"Die Bedienung ist sehr fein, nicht brüsk",appraisal,Bedienung,,e1151+2,
+P07,M2,4a,Man kann an Ort drehen,descriptive:performance,Manövrieren,,"d465.0, e1201+2",
+P07,M2,4a,Der Rollstuhl macht sehr wenig Geräusche,appraisal,Geräusche,,"e2500.0, e1201.0",
+P07,M2,4a,Das Bedienungsfeld ist sehr übersichtlich,appraisal,Bedienung,,e1151+2,
+P07,M2,4b,"Gelände draussen muss vielfach umgangen werden, auf Steigung muss man auch achten, Rollstuhl ist nicht so geländegängig",descriptive:performance,Verschiedene Untergründe,,"d4502.2, d4602.2, e1201.2, e2108.2, e2109.2, d465.2",
+P07,M2,5a,Ich würde in der Wohnung inkl. Küche herumfahren,descriptive:performance,Indoor Mobilität,,"d4600.0, d465.0",
+P07,M2,5a,Türen sind kein Problem,descriptive:performance,Türen,Gebäude,"d4153.0, d4450.0, d4451.0, d4452.0, d4453.0","e1550.0, e1500.0"
+P07,M2,5a,In der Küche könnte ich Utensilien in der Höhe erreichen,descriptive:performance,Utensilien erreichen,,"d4153.0, d4452.0, e1151+2",
+P07,M2,7a,"im Bus (ÖV) könnte man die Drehung an Ort und Stelle ausnutzen, dann muss man nicht rückwärts fahren",descriptive:performance,Transport,,"d4702.0, d465.0, e1201+3",
+P07,M2,7a,"Ich kann nicht in den Wald fahren, da dort eine steile Steigung ist",descriptive:performance,Freizeit,Verschiedene Untergründe,"d9204.0, e2208.0","d4502.4, d4602.4, d465.4, e2108.4"

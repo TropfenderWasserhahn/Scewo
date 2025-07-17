@@ -1,0 +1,15 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P10,M2,1b,Rückwärts gerade an eine Treppe oder einen Randstein ran fahren ist schwierig mit dem Rollstuhl,descriptive: performance,Rückwärts manövrieren,Treppensteigen,"d4402.2, d465.2, b1143.2, e1151.2, e1201.2",d451.1
+P10,M2,1b,"Über die Strasse fahren kann gefährlich werden, wenn auf der anderen Seite ein Absatz ist, den man überwinden muss",appraisal,Verschiedene Umgebungen,,"d4501.3, d451.3, d4602.3, e1602.2",
+P10,M2,2,Der Rollstuhl hat sich sehr gut an verschiedene Umgebungen angepasst,descriptive: performance,Fortbwegwegung in verschiedenen Umgebungen,,"d465.0, d4609.0, e1201+3",
+P10,M2,2,Weitere Strecken überwinden ist sehr komfortabel,descriptive: performance,Mobilität,,"d4501.0, d465.0, e1201+3",
+P10,M2,2,"Im Haus ist es auch komfortabel, wenn man genug Platz hat",descriptive: performance,Indoor Mobilität,,"d4600.0, d4601.0, e1508.0, e1558.0",
+P10,M2,4a,"Man kann komfortabel mit dem öV unterwegs sein, weil man gut ohne Hilfe ein- und aussteigen kann",description:performance,öffentliche Verkrehrsmittel,,"d4702.0, d465.0, e399.0, d2202.0",
+P10,M2,4a,Man kann Treppen alleine bewältigen,descriptive: performance,Treppen steigen,,"d451.0, e1201+4, d2100.0",
+P10,M2,4b,"Der Rollstuhl ist zu gross, um ihn in einen normalen Kofferraum zu laden",descriptive: performance,Transport benutzen,,"e1201.3, d4701.4",
+P10,M2,5a,Ich könnte alleine in den Garten auf den Sitzplatz,descriptive: performance,Ums Haus bewegen,,"d4600.0, d465.0, e1201+3, d9204.0",
+P10,M2,5b,"Am liebsten bin ich im Garten, das ist die wichtigste Aktivität",appraisal,Garten,,"d4600.0, d9204.0, e1201+4",
+P10,M2,7a,"Wenn man den Rollstuhl transportieren kann, könnte ich ins Restaurant oder an ein Konzert gehen",description:performance,Transport,Freizeitaktivität,"d4701.2. e399+2, e5400+2","d550.2, d9202.2, d9204.2, d9205.0"
+P10,M2,7a,"Beim Spazieren müsste meine Frau mich nicht mehr stossen auf dem Kiesweg, das ist viel weniger anstrengend als mit dem Handrollstuhl",need/dependency,Hilfe durch Verwandte,Erschöpfung,"d4602.0, d465.0, e1201+3, d9204.0, e310.0 , e2108.0",b4552.0
+P10,M2,7a,Draussen über Kies oder grosse Steine fahren ist viel angenehmer als mit einem Handrollstuhl,descriptive: performance,Verschiedene Untergründe,,"d465.0, e1201+3, e2108.0, b2701.0, d4609.0, d4502.0",
+P10,M2,9,Der Rollstuhl hat eine gute Bedienung,appraisal,Bedienung,,e1151+2,

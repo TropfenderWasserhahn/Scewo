@@ -1,0 +1,16 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P06,M2,1b,"Rückwärtsfahren ist schwierig, da sich die kleinen Räder seltsam drehen und man zuerst in die falsche RIchtung fährt, daran muss man sich gewöhnen",descriptive: performance,Manövrieren,,"d465.2, e1201.2",
+P06,M2,2,"Der Rollstuhl hat sich gut an verschiedene Umgebungen angepasst, aber es ist gewöhnungssache",descriptive: performance,In verschiedenen Umgebungen fortbewegen,Lernen,"d4609.0, d465.0, e1201+2","d1551.2, d198.0"
+P06,M2,2,"Ich bin nicht auf den Rollstuhl angewiesen, daher ist er für mich auch nicht alltagstauglich",appraisal,Alltagstauglichkeit,,"d2309.2, e1201.2",
+P06,M2,4a,Man braucht weniger Kraft als mit einem Handrollstuhl,descriptive: performance,Anstrengung,,"b7309.0, e1201+2",
+P06,M2,4a,Der Rollstuhl unterstützt in der Mobilität,descriptive: performance,Mobilität,,"d4509.0, d4609.0, d465.0, e1201+2",
+P06,M2,4a,"Der Rollstuhl steht still, wenn man sich bewegt",descriptive: performance,Rollstuhlcharakteristik,Schwerpunkt verlagern,e1151.0,"d4106.0, e1201+2"
+P06,M2,4b,"Die öV Benutzung ist nicht möglich, wenn man eine steile Rampe oder einen grossen Abstand zwischen Perron und Zugtüre überwinden muss",descriptive: performance,öffentlichen Transport benutzen,,d4702.3,
+P06,M2,4b,"Ich denke es ist nicht möglich, den Rollstuhl in ein normales Auto zu verladen",appraisal,privaten Transport benutzen,,"d4701.3, e1201.3",
+P06,M2,5a,Mit dem Rollstuhl würde ich nicht ins Haus kommen,descriptive: performance,Ins Haus kommen,,"d465.3, e1201.3, e1550.3",
+P06,M2,5a,Das Tempo und der Modus (In- und outdoor) können schnell und einfach angepasst werden,descriptive: performance,Bedienung,Mobilität indoor und outdoor,e1151+3,"d4502.0, d4600.0, d4602.0, d465.0"
+P06,M2,7a,Ich würde den Rollstuhl für Spaziergänge benutzen,descriptive: performance,Freizeit,Distanzen überwinden,d9204.0,"d4509.0, d4602.0, d465.0"
+P06,M2,7a,Ich würde mit dem Rollstuhl Einkaufen gehen,descriptive: performance,Einkaufen,,"d6200.0, e1201+2",
+P06,M2,7a,"Mit dem Rollstuhl kann man ein Konzert besuchen, man braucht einfach mehr Platz als mit dem Handrollstuhl",descriptive: performance,Kultur,,"d9202.0, e1201.1",
+P06,M2,7a,Ich könnte mit dem Rollstuhl meinen Alltag meistern,descriptive: performance,Alltag bewältigen,,"d2202.0, d2309.0",
+P06,M2,10,Ich hatte keine Sicherheitsbedenken,appraisal,Sicherheit,,"b1268.0, b1528.0",

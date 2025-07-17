@@ -1,0 +1,18 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P13,M1,1b,"The auto-balancing mode was distracting, especially when opening a door",descriptive: performance,Türe öffnen,,"d4153.2, d4450.2, d4451.2, d4452.2, d4106.2, e1151.2",
+P13,M1,2,I was comfortable throughout in different environments with this wheelchair,descriptive: performance,Different environments,,"d465.0, d4609.0, e1201+2",
+P13,M1,4a,"The wheelchair is pretty effortless, fine adjustment of the controls are possible ",descriptive: performance,Controls,,"d4402.0, e1151+2, b1300.0, e1201+3",
+P13,M1,4a,"The basic control of the wheelchair is very intuitive, the more complex situations (Stairs and tracks) are a bit more challenging, its required to be trained to know when its appropriate to use which mode",descriptive: performance,Solving problems,Training,"d177.1, d451.1, d1750.0, d1751.1, e1151+2","b1442.1, b1443.1, d1551.1"
+P13,M1,4a,"It is more advanced than a manual wheelchair, you can get up steps independently",descriptive: performance,Absätze überwinden,,"d451.0, d2102.0, e1201+4",
+P13,M1,4a,The camera covers the back so your're able to see where to go,descriptive: performance,Technologie zur Unterstützung (Kamera),,"b1143.0, b1144.0, b1565.0, e1251+2",
+P13,M1,4b,"There is a uncertainity factor with this wheelchair, I get a bit worried when for example being on the stairs and it needs training",appraisal,Treppen steigen,Training,"b1265.2, b1266.2, b1528.2, d451.1","b1442.1, b1443.1.  d1551.1"
+P13,M1,5a,I could get up and down the stairs to my apartment,descriptive: performance,Stairs,,"d451.0, e1201+4, d4600.0",
+P13,M1,5a,"I could do some housework (e.g. dusting, hoovering may not be possible)",descriptive: performance,Housework,,d6409.1,
+P13,M1,5a,"I'd have access to shelves in the kitchen, cooking would also be possible",descriptive: performance,Kochen,,"e1151+3, d6309.0, d4452.0, d4153.0",
+P13,M1,5b,"The most important function for me is mobility, it enables me to get out and about",descriptive: performance,Mobilität,,"d465.0, d4609.0, e1201+4",
+P13,M1,7a,"I need to go to appointments, public transport to be in the city",descriptive: performance,Termine im Alltag,,"d2309.0, d4702.0, e5400.0, d465.0, d4609.0",
+P13,M1,7a,Getting a regular cab wouldn't be possible,descriptive: performance,Transportation,,"d4701.4, e5400.4",
+P13,M1,7a,I need to go to work with the wheelchair,descriptive: performance,Arbeit,,"d8451.0, d4602.0, d4601.0",
+P13,M1,7a,"Going to the shop and reach things from the shelf, which I could not reach before",descriptive: performance,Shopping,,"d6200.0, d4452.0, e1151+3, d4153.0",
+P13,M1,7a,"Meet friends, going to the badi, different terrains (gras, gravel)",descriptive: performance,Freizeit,Verschiedene Untergründe,"d9100.0, d9201.0, d9204.0, d9205.0, d7500.0","d4502.0, d4602.0, e2108.0"
+P13,M1,7b,Transport / Mobility is the most important activity,descriptive: performance,Mobilität,,"d465.0, e1201+4, d4500.0, d4501.0",

@@ -1,0 +1,21 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P12,M2,1b,Der Rollstuhl fühlt sich massig und schwerfällig an,appraisal,Dimension,,e1201.2,
+P12,M2,2,"Der Rollstuhl hat sich gut an die verschiedenen Umgebungen angepasst, indoor besser als outdoor",descriptive: performance,Verschiedene Umgebungen,,"d465.0, d4600.0. d4601.0, d4602.1, e1201+2",
+P12,M2,1b,Der Rollstuhl kann keine Hindernisse überwinden und ist nicht komfortabel auf unebenem Gelände,descriptive: performance,Hindernisse,Unebenes Gelände,"d451.4, e2109.3","d465.2, e1201.2, d4502.2, d4609.2, b2701.2"
+P12,M2,4a,"Indoor ist er einfacher, da er nicht balanciert, man muss nicht den Modus wechseln, was komfortabler ist",descriptive: performance,Manövrieren indoor,Modus wechseln,"d4600.0, b755.0, d4106.0",e1151+2
+P12,M2,4a,Das Handling ist einfacher wegen weniger Möglichkeiten,descriptive: performance,Handling,,"b1643.0, d4402.0, e1151+2",
+P12,M2,4a,Man kann den Sitz sehr gut einstellen,descriptive: performance,Sitz,,"d4153.0, d4108.0, e1151+3, d5700.0",
+P12,M2,4a,"Im Raum drinnen fand ich den Rollstuhl angenehm, weil er nicht balanciert",descriptive: performance,Manövrieren indoor,,"d4600.0, d4601.0, e1151+2, e1509.0, e1559.0",
+P12,M2,4b,"Auf Kopfsteinpflaster schüttelt es enorm, es fühlt sich an als bekommt man einen Bandscheibenvorfall",descriptive: performance,Verschiedene Untergründe,,"d4502.3, e2108.3, b2701.3, e255.3, b28013.3",
+P12,M2,4b,"Der Sitzlift kann nicht tief genug, man sitzt sehr hoch am Tisch, das ist nicht so komfortabel",descriptive: performance,Sitzhöhe,,"d4153.2, e1151.2",
+P12,M2,4b,Treppen steigen ist nicht möglich,descriptive: performance,Treppen steigen,,d451.4,
+P12,M2,4b,Türen öffnen und Transfer zwischen den Räumen war schwierig,descriptive: performance,Türen öffnen,Räume wechseln,"d4153.3, d4450.3, d4451.3, d4452.3, d4453.3","e1500.3, e1501.3, e1550.3, e1551.3"
+P12,M2,4b,Das Feintuning ist schwierig,descriptive: performance,Bedienung,,"d4402.2, e1151.2",
+P12,M2,5a,"Ich könnte ihn zum arbeiten brauchen, auch für kleine Transfers",descriptive: performance,Arbeiten,,"d8451.0, d465.0, d4500.0, e1201+2",
+P12,M2,5a,Im Haushalt ist er geeignet,descriptive: performance,Haushalt,,d469.0,
+P12,M2,5b,Die wichtigsten Aktivitäten im Haus sind Sachen von A nach B zu bewegen und Dinge von irgendwo runter zu holen,appraisal,Transport von Gegenständen,Utensilien erreichen,"d4309.0, d465.0, d4500.0, d4600.0","d4153.0, d4452.0"
+P12,M2,7a,Outdoor würde ich ihn im ÖV verwenden,descriptive: performance,Transport benutzen,,"d4602.0, d4702.0, e5400.0",
+P12,M2,7a,"Ich müsste immer überlegen, wo es Randsteine, Treppen oder Absätze und Aufzüge hat, ich würde mich weniger frei fühlen",appraisal,Hindernisse,,"d451.4, e2109.3, b1565.2, b1646.2",
+P12,M2,7a,Ich könnte Einkaufen oder zum Arzt gehen und weitere Termine wahrnehmen,descriptive: performance,Alltag bewältigen,,"d6200.0, d5702.0, d2309.0, d4501.0, d465.0",
+P12,M2,7a,"Ich würde nur auf Asphalt oder Kieswegen fahren, im Wald nicht",descriptive: performance,Verschiedene Untergründe,,"d4502.1, d4602.1, d465.1, e1201.1, e2108.0, e2208.4",
+P12,M2,7b,"Am wichtigsten ist mir die Mobilität, von A nach B zu kommen, man muss aber immer den Untergrund im Kopf haben",appraisal,Mobilität,,"d465.0, d4500.0, d4501.0, d4502.1, d4609.0, e2109.1",

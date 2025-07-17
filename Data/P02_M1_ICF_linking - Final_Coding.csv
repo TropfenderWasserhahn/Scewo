@@ -1,0 +1,18 @@
+Patient ID,Measurement,Number of question,Verbatim health information,Perspective,Main concept,Additional concept,ICF category of main concept,ICF category of other concepts
+P02,M1,1b,"Rückwärts über Schwellen fahren ist schwierig, vorwärts ist einfacher",descriptive:performance,Manövrieren über Hindernis,,"d465.2, e1500.2, e1550.2, e1201.2",
+P02,M1,1b,Am Tisch konnte ich nicht genug tief sein mit dem Rollstuhl um drunter zu fahren,descriptive:performance,Sitzen,"Einschränkung bei sozialem Leben (essen, Arbeiten)","d4153.3, e1201.3","d550.3, d850.3"
+P02,M1,1b,Das Kunststoffmaterial des Sitzes ist unangenehm. Darunter wird es schwitzig,appraisal,sensorische Wahrnehmung der Oberfläche,Schwitzen/Hautgefühl,"b265.2, b298.2, e1150.2",b830.2
+P02,M1,2,"Auf Pflastersteinen fahren ist unangenehm, da es fest rüttelt und Spastik auslösen könnte",descriptive:performance,Fortbewegen auf verschiedenen Untergründen,Spastik,"d465.2, d4602.1, e2108.2, e1201.2","b7359.2, b7801.9"
+P02,M1,4a,"hat einen kleinen Aktionsradius, ist angenehm",descriptive:performance,Mobilitätsradius,,"d465.0, e1201+2",
+P02,M1,4b,Die Rückfahrkamera fehlt,dependency/need,Technische Unterstützung bei der Fortbewegung,,"d465.1, e1151.1, e1251.2",
+P02,M1,4b,In sehr engen Räumen oder schlauchartigen Küchen ist der Rollstuhl zu sperrig/gross,descriptive:performance,Grösse des Rollstuhls,Design von Gebäuden,"d4600.2, d4601.2","e1201.2, e1551.2"
+P02,M1,4b,"Beschriftung von den Knöpfen auf der Steuerkonsole fehlt, sieht nicht welcher Knopf welche Funktion hat, sollte infacher sein zum erkennen",appraisal,Bedienung ,,"e1151.2, b1646.1",
+P02,M1,4b,"Im Haus müsste eine elektrische Türe vorhanden sein, damit man nach dem Einkaufen ohne Probleme über die Schwelle kommt",need/dependency,Technische Unterstützung / Design von Gebäuden,,e1550.2,
+P02,M1,5a,"Sie würde den Rollstuhl brauchen, um den Haushalt zu machen",descriptive:performance,Haushalt,,"d640.0, d4600.0, e1201+2",
+P02,M1,7a,"Sie würde den Rollstuhl brauchen, um spazieren zu gehen",descriptive:performance,Freizeit und Erholung,Mobilität,d9204.0,"d4500.0, d4501.0, d465.0, e1201+2"
+P02,M1,6,Die Leistung des Rollstuhls zuhause ist in Ordnung. Sie kommt damit aber nicht in den Keller wegen einem hohen Absatz,descriptive:performance,Technische Unterstützung in der Mobilität,Design von Gebäuden,"e1201.1, d465.1","d451.4, e1551.4"
+P02,M1,7a,"Sie würde mit dem Rollstuhl einkaufen gehen, weiss aber nicht, wie gut sie die Waren transportieren kann",descriptive:performance,Tägliche Erledigungen wie Einkaufe,Fortbewegen und Objekte transportieren ,d6200.0,"d465.1, d4500.1, d4501.1, d4302.1"
+P02,M1,7a,Ich brauche den Rollstuhl für den Arbeitsweg,descriptive:performance,Fortbewegen (Arbeitsweg),,"d4500.0, d4501.0, d4601.0, d4602.0, d465.0, e1201+2",
+P02,M1,7a,Ich brauche den Rollstuhl fürs Arbeiten,descriptive:performance,Arbeiten,,"d8451.0, e1351+3",
+P02,M1,7b,"Ausserhalb des Hauses hat der Rollstuhl eine zufriedenstellende Leistung, grössere Absätze können aber nicht gut genommen werden, ist gut für flache Abschnitte ",descriptive:performance,Mobilität,,"d4500.0. d4501.0, d451.4, d465.2, e1201.1, e2108.1",
+P02,M1,10,Mit der Zeit fühlt man sich sicherer bei der Benutzung,appraisal,Sicherheitsgefühl,,b1268.1,
